@@ -1,0 +1,42 @@
+<head>
+    
+    <title>Document</title>
+
+</head>
+<body class="coursebody">
+    <div class="content">
+        <div class="sect">
+            <div class="cscsection">
+                
+            </div>
+        </div>  
+    </div>
+<script src="../scripts/csc.js">
+</script>
+<script>    
+    let html = ``;
+    section = document.getElementsByClassName("cscsection")[0];
+    for(let i = 0; i < computerCourses.length; i++){
+        html += `
+                <div class="individual">
+                    <div>
+    <img class="detailsimg" src="${computerCourses[i].img}" alt="">
+</div>
+<div>
+    <div><span class="details">${computerCourses[i].courseCode}</span></div>
+    <div><span class="details">${computerCourses[i].name}</span></div>
+    <div><span class="details">${computerCourses[i].level}</span></div>
+    <div><span class="details"><a href="${computerCourses[i].mylink}">Check Materials</a></span></div>              
+</div>
+                     </div>`
+        section.innerHTML = html;}
+    </script>
+
+
+</body>
+
+
+</html>
+
+
+

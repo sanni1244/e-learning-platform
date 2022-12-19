@@ -1,0 +1,633 @@
+* {
+  list-style: none;
+  list-style-type: none;
+  text-decoration: none;
+}
+h1 {
+  font-size: 24px;
+}
+h2 {
+  font-size: 20px;
+  margin: 1rem 0rem;
+}
+h4 {
+  color: rgb(150, 163, 175);
+}
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Josefin Sans", sans-serif;
+  height: 100vh;
+  width: 96vw;
+  font-weight: 600;
+
+}
+.red {
+  color: red;
+}
+a {
+  font-size: 16px;
+}
+.brand {
+  display: flex;
+}
+.acct {
+  margin-right: 3rem;
+  font-family: "Bree Serif", serif;
+  gap: 200rem;
+}
+.acct a {
+  color: black;
+}
+.acct a:nth-child(2) {
+  color: rgb(24, 88, 172);
+  font-size: 1.3rem;
+  margin-left: 1rem;
+}
+.acct a:nth-child(1) {
+  border: black solid 0.1rem;
+  padding: 10px;
+}
+.navsaw {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 10vh;
+}
+.navsaw a {
+  text-decoration: none;
+  color: black;
+}
+
+/* search center  */
+.search {
+  outline-offset: 0px;
+  padding: 0.2rem 0rem 0.2rem 0.5rem;
+  border: 0.1rem solid black;
+  border-radius: 10rem;
+  width: min(40vw, 20rem);
+  padding-left: 10px;
+  font-size: 1rem;
+  font-family: inherit;
+}
+.searchitem {
+  width: 100%;
+  font-size: 15px;
+}
+.searchspace {
+  margin-bottom: 0rem;
+  margin-top: 1rem;
+  border: 2px solid black;
+  padding: 1rem;
+  background-color: rgb(255, 255, 255);
+  opacity: 80%;
+  box-sizing: border-box;
+  border-radius: 18px;
+}
+/* search right  */
+.right-search {
+  padding: 2rem 0rem 0rem 2rem;
+}
+.features {
+  line-height: 31px;
+  font-size: 1.2rem;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.reslt {
+  font-size: 1.6rem;
+}
+.frm10 {
+  margin-top: 1.4rem;
+}
+/* dashboard content  */
+.container1 {
+  display: grid;
+  padding: 0px;
+  margin: 0px;
+  grid-template-columns: 15vw 70vw 15vw;
+  height: 100%;
+  position: relative;
+}
+.container2 {
+  display: grid;
+  padding: 0px;
+  margin: 0px;
+  grid-template-columns: 15vw 80vw;
+  height: 100%;
+  position: relative;
+}
+/* dashboard left  */
+.one {
+  position: relative;
+}
+.left {
+  background-color: rgb(255, 255, 255);
+  padding: 2rem;
+
+  box-shadow: 7px 130px rgb(247, 247, 247);
+}
+.left-section {
+  padding: 15px 0rem;
+  text-align: center;
+  background-color: rgb(255, 255, 255);
+  margin-block-start: 1.6vh;
+  /* opacity: 50%; */
+  color: rgb(7, 7, 7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.8rem;
+}
+
+.left-section img,
+.l img {
+  width: 25px;
+  height: 25px;
+}
+svg {
+  fill: red;
+}
+
+.h4 {
+  font-size: 1.3rem;
+  width: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  font-family: "Courier New", Courier, monospace;
+  color: #0b5cd6e7;
+}
+ul {
+  margin-block-start: 4vh;
+  padding-inline-start: 0px;
+}
+.ul {
+  margin-block-start: 1vh;
+}
+.ul li {
+  margin: 2rem 0rem;
+  font-size: 1rem;
+}
+.ul a {
+  color: rgb(39, 48, 39);
+  font-size: 0.9rem;
+}
+.Settings {
+  position: absolute;
+  top: max(80vh);
+  width: 80%;
+}
+.selection {
+  background-color: #0b5cd6e7;
+  color: white;
+  border-radius: 12px;
+}
+
+.blue {
+  filter: invert(100%) sepia(63%) saturate(0%) hue-rotate(246deg)
+    brightness(100%) contrast(156%);
+}
+/* dashboard center */
+.center {
+  padding: 3rem;
+}
+.tip {
+  color: black;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 2rem;
+  width: 100%;
+}
+.tip2 {
+  font-size: 1rem;
+}
+
+/* all courses section  */
+.top {
+  margin-bottom: 2rem;
+  margin-top: -2rem;
+  color: black;
+  font-size: 15rem;
+  text-align: center;
+  color: #0b5cd6e7;
+}
+main {
+  position: relative;
+}
+main .courselist {
+  display: grid;
+  margin-top: 0rem;
+  grid-template-columns: auto auto auto auto;
+  font-size: 1rem;
+  background-color: #0b5cd6e7;
+  font-family: "Courier New", Courier, monospace;
+}
+.courselist * {
+  color: black;
+  color: white;
+  text-align: center;
+  height: 35px;
+  align-items: center;
+  background-color: transparent;
+}
+main .courselist li {
+  border: 1px solid white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 600ms ease-in-out;
+  font-weight: 600;
+}
+main .courselist li:hover {
+  font-size: 20px;
+  background-color: white;
+  color: black;
+}
+.content {
+  border: 1px solid;
+  /* padding: 10px; */
+  background-color: rgb(247, 247, 247);
+}
+
+.section {
+  box-sizing: border-box;
+  height: 18rem;
+}
+main {
+  font-family: "Lora", serif;
+}
+.sect {
+  display: grid;
+  text-align: center;
+  margin-left: -1rem;
+  grid-template-columns: calc(81vw / 3) calc(81vw / 3) calc(81vw / 3);
+}
+.l .fixed {
+  font-size: 1.7rem;
+  position: absolute;
+  top: 8rem;
+  left: 1rem;
+}
+a.fixed:visited {
+  color: black;
+}
+.sect .section .lower {
+}
+.sect .section img {
+  width: 200px;
+  height: 10rem;
+  margin-top: 1rem;
+}
+.section div {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-weight: 600;
+  /* padding-top: 0.7rem; */
+}
+.section div:first-of-type {
+  margin-top: 1.2rem;
+}
+.section div:last-of-type {
+  margin-top: 0.4rem;
+  margin-bottom: 1.2rem;
+}
+
+/* available courses sumbit  */
+.allcourse {
+  display: flex;
+  justify-content: center;
+  color: black;
+}
+.allcourse button {
+  background-color: #0b5cd6e7;
+  padding: 0.4rem;
+  justify-content: center;
+  width: 15rem;
+}
+.availableButton {
+  color: white;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: 600;
+}
+/* available courses sumbit  */
+.content div button {
+}
+.cscsection {
+  /* display: flex; */
+  flex-wrap: wrap;
+  text-align: center;
+}
+.cntn1 label {
+  font-weight: 600;
+  opacity: 70%;
+  margin-bottom: 0.4rem;
+  font-size: 1.1rem;
+}
+
+/* edit details  */
+.head7 {
+  text-align: center;
+  font-size: 2rem;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  color: #0b5cd6e7;
+}
+.mlm {
+  height: 5vh;
+  margin-bottom: 1rem;
+  border-radius: 7px;
+  padding-left: 9px;
+  font-size: 1.1rem;
+}
+input.mlm:focus {
+  color: #212529;
+  background-color: #fff;
+  border-color: #0b5cd6e7;
+  outline: 0;
+  box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+}
+.mvr1 {
+  display: flex;
+  flex-direction: column;
+  font-weight: 600;
+  line-height: 5vh;
+  margin-right: 1rem;
+  /* color: #0b5cd6e7; */
+}
+.mvr2 {
+  display: flex;
+  flex-direction: column;
+  width: min(40vw, 30rem);
+  font-size: 1rem;
+  font-family: inherit;
+  margin-bottom: 1rem;
+}
+label.mlm {
+  font-size: 1.5rem;
+  font-weight: 500;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.mvr3 {
+  margin-top: 3rem;
+  gap: 3rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.updateit {
+  /* width: 20vw; */
+  display: flex;
+  margin-top: 5rem;
+  justify-content: end;
+}
+.same {
+  background-color: #0b5cd6e7;
+  border: #0b5cd6e7 0.1rem solid;
+  border-radius: 5px;
+  color: white;
+  width: max(10vw, 7rem);
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  padding: 0.5rem;
+  font-weight: 600;
+}
+.redbttn {
+  background-color: red;
+  border: red 0.1rem solid;
+}
+.mvr3 {
+  display: flex;
+  justify-content: center;
+}
+.editmail {
+  background-color: black;
+  color: white;
+  opacity: 60%;
+  border: 2px solid black;
+  height: 5vh;
+  margin-bottom: 1rem;
+  border-radius: 7px;
+  padding-left: 9px;
+  font-size: 1.1rem;
+}
+
+/* .vvv{
+    margin-bottom: 1.1rem;
+}
+.lbl1{
+    width: min(40vw, 30rem);
+    border-radius: 7px;
+    height: 4.3vh;
+    border: black solid 1px;
+    padding-left: 5px;
+    font-size: 1rem;
+    font-family: inherit;
+}
+.lbl2{
+    width: min(40vw, 30rem);
+    border-radius: 7px;
+    height: 4.3vh;
+    padding-left: 5px;
+    font-size: 1.3rem;
+    font-family: 'Bree Serif', serif;
+    color: red;
+}
+.lbl3{
+    width: 100%;
+}
+.lbl1:hover, .lbl1:focus{
+    border: #5b88cae7 solid 2px;
+}
+
+input[type = "radio"]{
+    margin-left: 6px;
+} */
+
+/*
+
+::placeholder{
+    color: rgb(192, 95, 95);
+}
+.h1{
+    margin-top: 5rem;
+    margin-bottom: 2rem;
+     display: inline-flex;
+    font-family: 'Josefin Sans', sans-serif;
+    gap: 6vw;
+    margin-left: calc(19vw - 6vw - 1rem);
+}
+.material-symbols-sharp {
+    width: 1rem;
+    font-variation-settings:
+    'wght' 900,
+    'GRAD' 400,
+    'opsz' 48
+}
+.submit{
+    width: 8rem;
+    padding: 5px 0px;
+    background-color: transparent;
+    border-radius: 1rem;
+    cursor: hand;
+} 
+
+.signupcontain{
+    height: 30vw;
+    font-family: monospace;
+    font-size: 18px;
+}
+.blank{
+    color: red;
+}
+.nobutton{
+    background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+    justify-content: space-between;
+}
+label{
+    display: block;
+margin-bottom: 0.4rem;
+} 
+
+span.imp{
+    margin-right: 0.5rem;
+    margin-left: 1.2rem;
+}
+
+.bottom{
+    margin-bottom: 18rem;
+
+}
+
+.button{
+    width: 20vw;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: min(2vw, 1rem);
+    background-color: white;
+    text-align: center;   
+    margin-bottom: 1rem;
+    border: 0.1rem silver solid;
+}
+.profilepic{
+    height: 2rem;
+    width: 2rem;
+}
+.greet{
+    display: flex;
+    justify-content: right;
+    gap: 1rem;
+    margin-right: 1rem;
+}
+.logo2{
+    width: 2rem;
+} 
+
+
+
+
+
+
+
+
+
+
+/*.navbar1{
+    display: flex    ;
+    justify-content: space-between;
+}
+.navcat{
+    align-items: center;
+}
+.selectsection option {
+    width: 20rem;
+}
+.navend{
+    align-items: center;
+}
+.navbar1, .navbar1 *{
+    background-color: rgb(249, 246, 246);
+}
+.navbar1 .logo{
+    width: 3rem;
+    height: 3rem;
+}
+.navbar1 .navend{
+    display: flex;
+    gap: var(--gap1);
+    justify-content: right;
+}
+.navbar1 .navcat{
+    gap: var(--gap);
+    display: flex;
+    flex-direction: row;
+}
+.navbar1 .navcat select{
+    border: none;
+}
+.searchimg1{
+    height: 1.7rem;
+    width: 2rem;
+    margin-top: 100rem;
+    border: 0.1rem black solid;
+}
+.searchimg{
+    height: 1.3rem;
+    padding-top: 0.1rem;
+    width: 1.3rem;
+}
+.signup a,.login a{
+    font-size: 16px;
+    color: black;
+}
+.signup a,.login a{
+    padding: 5px; margin-right: 3px;
+}*/
+p {
+  font-weight: 500;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 14px;
+}
+.deleted {
+  color: #0b5cd6e7;
+  font-size: large;
+  font-weight: 600;
+}
+
+/* csc.php  */
+.coursebody {
+}
+.cscsection2 {
+  margin-top: 1rem;
+  /* width: 10vw; */
+  display: grid;
+  grid-template-columns: 25vw 25vw;
+  grid-gap: 6rem;
+  justify-content: center;
+}
+.individual {
+  gap: 10rem;
+  border-radius: 1rem;
+    box-shadow: #0b5cd6e7 0px 0px 0px 3px, white 0px 0px 0px 6px, white 0px 0px 0px 9px, white 0px 0px 0px 12px, #0b5cd6e7 0px 0px 0px 15px;
+  background-color: #ffffffe7;
+  padding: 1rem;
+
+}
+img {
+  width: 140px;
+  height: 120px;
+}
+.individual * {
+  margin-top: 1rem;
+  font-weight: 500;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 15px;
+
+}
+.availableButton button{
+  margin-top: 1rem;
+  background-color: white;
+  color: #0b5cd6e7;
+}
+.none{
+  font-size: 15px;
+  font-weight: 100;
+}

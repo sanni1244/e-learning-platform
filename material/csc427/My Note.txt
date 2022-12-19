@@ -1,0 +1,111 @@
+       CSC 427 Numerical Analysis
+Numerical Methods: Algorithms used to obtain numerical solutions of a mathematical problem.
+Analytical Methods: Using the exact formula to present solutions to a mathematical problem.
+Not all equations have an exact or fixed formulars, so algorithms can be developed to determine its solution.
+Numerical Methods can be used when…
+1. Analytical solutions are difficult to obtain or difficult to practice.
+2. Analytical solutions do not exist for that problem.
+Basic Needs in numerical analysis
+1. Practical: Can easily be computed in a reasonable amount of time.
+2. Accurate: Should be close(approximate) to it’s true value.
+3. Information about the approximate error. (Should be able to determine the margin of error or deviation from its true value).
+
+Some simple Non-linear equation can be solved using the quadratic formula (Almighty formula)
+	x=(-b±?(b^2-4ac))/2a
+	
+	Ex of simple non-linear equation is x2 + 4x + 3 = 0
+Some have no analytical solutions
+Ex.
+
+
+There is no exact formula that can be used to solve such equation, numerical methods must be used in this situation.
+
+There are three methods for solving such Non-linear equations
+1. Bisection Method
+2. Newton-Raphson Method
+3. Secant Method
+	We can also see that although it is much easier to solve linear equations with analytical 	solutions, problem arise when we have more than two unknown variables and when we 	have a thousand unknown variables, it becomes a challenge.	
+       
+Just from reasoning, Cramer’s rule will obviously not be able to support large problems.
+There are three methods for solving Linear equations.
+1. Naïve Guassian Elimination.
+2. Guassian Elimination with Scaled Partial Pivoting.
+3. Algorithm for Tri-diagonal equations.
+
+
+
+Curve Fitting
+	It means constructing a curve that best fits the data points.
+
+Data on the left, the line/curve on the right
+Curve fitting also means showing the relationship between two variables
+(in this case x and y) constructing a curve that fits the data.
+
+Interpolation
+	*Using known values to determine unknown ones that fall between*
+	Process of estimating unknown values that fall between known values.
+
+Method of Curve Fitting
+1. Least Square Method
+1. Linear Regression
+2. Non Linear Least Square Problems
+		2.  Interpolation
+ 			1. Newton Polynomial Interpolation
+			2. Lagrange Interpolation
+
+	Integration
+		Summing up parts of a function to find the whole.
+			Some functions can be solved analytically	
+				
+
+	Methods of Numerical Integration
+1. Upper and Lower Sums
+2. Trapezoid Method
+3. Romberg Method
+4. Gauss Quadrature
+
+
+Look Into Ordinary Differentiation and Partial Differentiation a little
+
+
+
+Chapter 2:
+
+Number Representation
+	Real Numbers:  Any number that can be plotted on the number line
+		All numbers are real numbers
+		
+	Types of real Numbers
+		Rational Numbers
+		Irrational Numbers
+
+
+Fresh Reminder
+1. Natural Numbers --- 1, 2, 3, 4, 5, 6 ….. 
+Zero, negative and decimal numbers are not natural 
+Numbers.
+
+2. Whole Numbers--- They are natural numbers but zero is 
+Included. 0, 1, 2, 3, 4, 5 ….
+3. Integers --- Also include negative natural numbers
+ 			-3, -2, -1, 0, 1, 2, 3, 4, ….
+
+4. Rational numbers: Includes all integers as well fractions and decimals 
+			that can be expressed as fractions. That means
+			the numerator and denominator of the fraction 
+   must be integers and the denominator are not 0.
+   Ex. 2/3, 3.12, 0.4, -5/8
+   
+   Integers, whole numbers and Natural numbers are all natural numbers.
+   
+5. Irrational numbers:  Never ending set of numbers that don’t repeat with a constant decimal. Ex. ?, ?2, ?3, ?5
+   
+
+
+
+SELF EXPLANATORY
+
+
+Some numbers that can be represented in one binary system can be infinite and difficult to represent in another binary system.
+1.1 in base 10 gives an infinite value in base 2.
+
