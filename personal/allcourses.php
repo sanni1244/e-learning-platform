@@ -30,14 +30,5 @@ include_once("../personal/userdata.php");
 
 
 
-
-
-
-
-
-
-
-
-
     </div>
 </body>

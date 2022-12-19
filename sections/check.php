@@ -1,7 +1,3 @@
-<?php 
-
-
-?>
 <?php
 session_start();
 if(!isset($fname) && !isset($lname) && !isset($wemail) && !isset($matric1)){
@@ -82,9 +78,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['signup'])){
                                                 $successful_reg = "Yes"; 
                                                 if($matric1 == ""){
                                                      $matric1 = "NULL";
-                                                }}}}}}
-    }}
-}}}}
+                                                }}}}}}}}}}}}
     else{
         echo "An error occured!";
     }}
@@ -96,14 +90,15 @@ if(isset($successful_reg)){
     $check3 = mysqli_query($conn, $check_mail);
     if(mysqli_num_rows($check3) !== 0){
         $warning = "Your sign up was successful";
+        $_SESSION['mer'] = $_POST['email'];
         echo "<meta http-equiv='refresh' content='2; url=../user/login.php'>";
     }}
-
-    //login
+ //login
+$wemail1 = @$_SESSION['mer'];
 
 if($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['login'])){
-  
-
+    // if($isset($wemail1))
+    $_SESSION['mer'] = null;
     $conn = mysqli_connect("localhost","root", "", "learning") or die('Connection Failed');
     if(isset($_POST['email'])  && isset($_POST['password']) ||isset($_POST['matric'])  && isset($_POST['password']) ){
 
@@ -147,7 +142,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['login'])){
                             $warning = "Login was successful";
                             $matric1 = $_POST['matric'];
                             echo "<script>localStorage.setItem('sd12133', '$matric1');</script>";
-                            header("refresh: 4; url=../personal/dashboard.php");
+                            header("refresh: 2; url=../personal/dashboard.php");
                         }
                         else{
                                 $warning = "Incorrect details";                      

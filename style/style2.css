@@ -306,6 +306,13 @@ a.fixed:visited {
   font-family: "Courier New", Courier, monospace;
   font-weight: 600;
 }
+.section a{
+  color: #0b5cd6e7;
+}
+.section a:hover{
+  color: red;
+}
+
 /* available courses sumbit  */
 .content div button {
 }
@@ -626,6 +633,19 @@ img {
   margin-top: 1rem;
   background-color: white;
   color: #0b5cd6e7;
+}
+.row a{
+  color: #0b5cd6e7;
+}
+
+.row a:hover{
+  color: red;
+}
+.details a{
+  color: #0b5cd6e7;
+}
+.details a:hover{
+  color: red;
 }
 .none{
   font-size: 15px;

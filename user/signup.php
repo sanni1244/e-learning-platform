@@ -77,14 +77,14 @@ elseif(isset($_POST['radio']) && $_POST['radio'] == "no"){
         </div>
         <div class="signup-section">
             <div class="cntn1">
-                <input type="submit" class="lbl1" name="signup" value="Signup" id="submit1">      
+                <input type="submit" class="lbl1" name="signup" value="Signup" id="submit1">       
             </div>
         </div>
                     </div>
     </form>
     <div class="notyet">
-        <h5>Already have an account?</h5> <br>
-        <a href="login.php">Log In here</a>
+        <p>Already have an account? <a href="login.php">Log In here</a></p>
+        
     </div>
 
 </body>

@@ -43,6 +43,7 @@ body{
 }
 .brand{
     display: flex;
+    color: #0b5cd6e7;
 }
 .navsaw{
     display: flex;
@@ -72,10 +73,10 @@ body{
 
 }
 .header1{
-    font-size: 3.5rem;
+    font-size: 3.1rem;
     padding: 0rem 0rem 0rem 0rem;
     margin: 0rem;
-    font-family: 'Inter', sans-serif;
+    font-family: Georgia, Times, 'Times New Roman', serif;
 }
 
 .text1{
@@ -86,11 +87,15 @@ b{
     font-size: 1rem;
 }
 .h61{
+    margin-top: 10px;
+    margin-left: 4px;
     display: block;
     font-size: 16px;
     font-weight: 500;
     line-height: 1.6rem;
     opacity: 50%;
+    font-family: 'Inter', sans-serif;
+
 }
 @media (max-width: 900px) {
     .img1{
@@ -210,12 +215,21 @@ input[type = "radio"]{
     font-weight: 700;
     color: white;
 }
-.notyet{
-    display: flex;
-    flex-direction: column;
+
+.notyet *{
+    /* display: flex; */
+    /* flex-direction: column; */
     text-align: center;
-    padding: 1rem;
-    margin-top: 1rem;
+    /* padding: 1rem; */
+    font-size: 0.92rem;
+    margin-top: 1.7rem;
+}
+.notyet a:hover{
+    color: red;
+}
+.notyet a{
+    color: #0b5cd6e7;
+
 }
 .sbody{
     background-image: url('../images/19366.jpg');
@@ -265,10 +279,8 @@ input[type = "radio"]{
     padding: 4rem;
     padding-top: 3.5rem;
     background-color: #ffffff;
-    box-sizing: border-box;
-    
+    box-sizing: border-box;    
 }
-
 .myoptions{
     display: flex;
     justify-content: center;
@@ -292,8 +304,10 @@ input[type = "radio"]{
     font-weight: 600;
 }
 .lbl8{
-    width: 10vw;
+    width: min(17vw, 20rem);
     padding: 4px;
+    border-radius: 7px;
+    background-color: #0b5cd6e7;
 }
 @media (max-width: 950px) {
     .loginbody{
@@ -315,7 +329,4 @@ input[type = "radio"]{
     .myoptions a{
         padding: 0xp;
     }
-    
-
-
 }
