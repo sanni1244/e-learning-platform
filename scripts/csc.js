@@ -198,6 +198,24 @@ let computerCourses = [
         mylink: "/vent/personal/link.php?aq=csc319"
     },
     {
+        img: "/vent/material/csc323/csc323.png",
+        courseCode: "CSC 323",
+        name: "EVOLUTIONARY COMPUTATION",
+        level: "300 Level",
+        material_no: "1",
+        location: "/vent/material/csc323",
+        mylink: "/vent/personal/link.php?aq=csc323"
+    },
+    {
+        img: "/vent/material/csc327/csc327.png",
+        courseCode: "CSC 327",
+        name: "DATABASE MANAGEMENT SYSTEM 2",
+        level: "300 Level",
+        material_no: "1",
+        location: "/vent/material/csc327",
+        mylink: "/vent/personal/link.php?aq=csc327"
+    },
+    {
         img: "/vent/material/csc333/csc333.png",
         courseCode: "CSC 333",
         name: "COMPUTER RESEARCH METHODOLOGY",

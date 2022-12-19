@@ -2,7 +2,7 @@ let physicsCourses = [
     {
         img: "/vent/material/phy101/phy101.png",
         courseCode: "PHY 101",
-        name: "General Physics I",
+        name: "GENERAL PHYSICS I",
         level: "100 Level",
         material_no: "1",
         location: "/vent/material/Phy101/1.pdf",
@@ -11,7 +11,7 @@ let physicsCourses = [
     {
         img: "/vent/material/phy103/phy103.jpg",
         courseCode: "PHY 103",
-        name: "Basic Heat",
+        name: "BASIC HEAT",
         level: "100 Level",
         material_no: "1",
         location: "/vent/material/phy103/1.ppt",

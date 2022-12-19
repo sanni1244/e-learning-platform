@@ -42,21 +42,21 @@
             }
             echo "<center><div class=''><h2>{$word}</h2></div>
                             <div class=''><h4>{$nnb['Course Title']}</h4></div></center>";
-    $sqlquery1 = "SELECT materials FROM `courses`";
-    $query1 = mysqli_query($conn, $sqlquery1);
-    $nnb1 = mysqli_fetch_array($query1);
-    echo $nnb1[0];
+    // $sqlquery1 = "SELECT materials FROM `courses`";
+    // $query1 = mysqli_query($conn, $sqlquery1);
+    // $nnb1 = mysqli_fetch_array($query1);
+    // echo $nnb1[0];
 
 
 
 
-    // $fil = '../material/' .$rtr .'/' .$rtr .'.xml';
-    // $filename = fopen($fil, 'r') or die ("weakness" );
-    // while(!feof($filename)){
-    //     $line = fgets($filename);
-    //     echo $line;
-    // }
-    // fclose($filename);
+    $fil = '../material/' .$rtr .'/' .$rtr .'.xml';
+    $filename = fopen($fil, 'r') or die ("weakness" );
+    while(!feof($filename)){
+        $line = fgets($filename);
+        echo $line;
+    }
+    fclose($filename);
 }
     }
 
