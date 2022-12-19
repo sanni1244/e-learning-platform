@@ -64,17 +64,12 @@ body{
     gap: 200rem;   
 }
 .acct a{
-    color: black;
-}
-.acct a:nth-child(2){
+    border: rgb(24, 88, 172) solid 0.1rem;
+    padding: 10px;
     color: rgb(24, 88, 172);
     font-size: 1.3rem;
     margin-left: 1rem;
 
-}
-.acct a:nth-child(1){
-    border: black solid 0.1rem;
-    padding: 10px;
 }
 .header1{
     font-size: 3.5rem;
@@ -146,6 +141,7 @@ label{
 }
 .signup-section{
     margin-top: 1rem;
+
     display: flex;
     justify-content: space-around;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -170,11 +166,10 @@ label{
 }
 .lbl2{
     width: min(40vw, 30rem);
-    border-radius: 7px;
-    height: 4.3vh;
-    padding-left: 5px;
-    font-size: 1.3rem;
+    height: 0.3vh;
+    font-size: 1.2rem;
     font-family: 'Bree Serif', serif;
+    font-weight: 600;
     color: red;
 }
 .lbl3{
@@ -267,7 +262,8 @@ input[type = "radio"]{
 }
 .right-side{
     height: inherit;
-    padding: 6rem;
+    padding: 4rem;
+    padding-top: 3.5rem;
     background-color: #ffffff;
     box-sizing: border-box;
     

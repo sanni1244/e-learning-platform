@@ -8,7 +8,14 @@
     <title>LOG IN</title>
 </head>
 <!--NavBar section-->
-<?php include '../sections/navbar.html'; ?>
+<div class="">
+    <div class="navsaw">
+        <a href="/vent/index.html"><div class="brand"><h1>YEET KNOWLEDGE</h1></div>   </a>        
+        <div class="acct">
+            <a href="/vent/user/signup.php">Sign Up</a>
+       </div>
+    </div>
+</div>
 <body class="lbody">
      <div class="loginbody">
          <div class="lg1">
@@ -21,12 +28,12 @@
                     <a href="/vent/user/login.php?e=1"><div class="button">Use E-mail</div></a> <hr>
                     <a href="/vent/user/login.php?e=0"><div class="button">Use Matric Number</div></a>
                 </div>
-                <?php if (!(isset($_GET['e'])) || isset($_GET['e']) && $_GET['e'] == 1){  ?>
+                <?php if (!(isset($_GET['e'])) || isset($_GET['e']) && $_GET['e'] != 0){  ?>
 
 <div>
 
 <div class="cntn1 vvv">
-                <label for="">Email<sup title="This field is required">*</sup></label>
+                <label for="">Email<sup title="This field is required"></sup></label>
                 <input class="lbl1 lbl3" value="<?php echo $wemail ?>" placeholder="<?php echo $blankemail ?>" type="email" name="email" id=""></input>      
             </div>
 </div>
@@ -41,7 +48,7 @@
 
 <div class="">
             <div class="cntn1 vvv">
-                <label for="">Password*<sup title="This field is required. It must be at least 4 characters long."></sup></label>
+                <label for="">Password<sup title="This field is required. It must be at least 4 characters long."></sup></label>
                 <input class="lbl1 lbl3" placeholder="<?php echo $blankpass?>" type="password" name="password" id=""></input>
             </div>
             <div class="cntn1">
@@ -57,7 +64,10 @@
         </div>
 
 </form>
-
+<div class="notyet">
+        <h5>Already have an account?</h5> <br>
+        <a href="login.php">Log In here</a>
+    </div>
 
         </div>
 
