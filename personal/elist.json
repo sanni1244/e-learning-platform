@@ -1,0 +1,17 @@
+{
+    "csc111": 
+    [
+        {"material name": "INTRO TO COMPUTER SC.ppt", "link": "1.ppt" }   
+    ],  
+    "csc112": 
+    [
+        {"material name": "Computer Organization and Architecture.pdf", "link": "Computer Organization and Architecture 10th - William Stallings.pdf" },
+        {"material name": "Structured Computer Organization.pdf", "link": "Structured Computer Organization, 5th Edition by Andrew S. Tanenbaum (z-lib.org).pdf" },   
+    ],
+    "csc204":
+    [
+        {"material name": "Logic and Set Theory.ppt", "link": "1.ppt" }   
+    ]
+}
+
+    

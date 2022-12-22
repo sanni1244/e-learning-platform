@@ -206,6 +206,7 @@ let computerCourses = [
         location: "/vent/material/csc323",
         mylink: "/vent/personal/link.php?aq=csc323"
     },
+    
     {
         img: "/vent/material/csc327/csc327.png",
         courseCode: "CSC 327",
@@ -243,7 +244,7 @@ let computerCourses = [
     //     mylink: "/vent/personal/link.php?aq=csc111"
     // },
     {
-        img: "/vent/material/csc405/csc405.jpeg",
+        img: "/vent/material/csc405/csc405.png",
         courseCode: "CSC 405",
         name: "ETHICS",
         level: "400 Level",
@@ -278,11 +279,57 @@ let computerCourses = [
     //     location: "./material/",
     //     mylink: "/vent/personal/link.php?aq=csc111"
     // },
+    {
+        img: "/vent/material/csc420/csc420.png",
+        courseCode: "CSC 420",
+        name: "INTRODUCTION TO COMPUTER SECURITY",
+        level: "400 Level",
+        material_no: "1",
+        location: "./material/",
+        mylink: "/vent/personal/link.php?aq=csc420"
+    },
+    {
+        img: "/vent/material/csc424/csc424.png",
+        courseCode: "CSC 424",
+        name: "EXPERT SYSTEMS AND KNOWLEDGE ENGINEERING",
+        level: "400 Level",
+        material_no: "1",
+        location: "./material/",
+        mylink: "/vent/personal/link.php?aq=csc424"
+    },
+    {
+        img: "/vent/material/csc428/csc428.png",
+        courseCode: "CSC 428",
+        name: "COMPUTER GRAPHICS AND VISUAL COMPUTING",
+        level: "400 Level",
+        material_no: "1",
+        location: "./material/",
+        mylink: "/vent/personal/link.php?aq=csc428"
+    },
+    {
+        img: "/vent/material/csc432/csc432.png",
+        courseCode: "CSC 432",
+        name: "PRINCIPLES OF PROGRAMMING LANGUAGES",
+        level: "400 Level",
+        material_no: "1",
+        location: "./material/",
+        mylink: "/vent/personal/link.php?aq=csc432"
+    },
+    {
+        img: "/vent/material/csc438/csc438.png",
+        courseCode: "CSC 438",
+        name: "COMPUTER NETWORK AND DATA COMMUNICATION",
+        level: "400 Level",
+        material_no: "1",
+        location: "./material/",
+        mylink: "/vent/personal/link.php?aq=csc438"
+    },
+    
     // {
     //     img: "./material/",
     //     courseCode: "CSC 426",
     //     name: "FURTHER STATISTICAL PROCESSING",
-    //     level: "200 Level",
+    //     level: "400 Level",
     //     material_no: "1",
     //     location: "./material/",
     //     mylink: "/vent/personal/link.php?aq=csc111"
@@ -296,24 +343,6 @@ let computerCourses = [
         location: "/vent/material/csc427",
         mylink: "/vent/personal/link.php?aq=csc427"
     },
-    // {
-    //     img: "./material/",
-    //     courseCode: "CSC 428",
-    //     name: "COMPUTER GRAPHICS AND VISUAL COMPUTING",
-    //     level: "200 Level",
-    //     material_no: "1",
-    //     location: "./material/",
-    //     mylink: "/vent/personal/link.php?aq=csc111"
-    // },
-    // {
-    //     img: "./material/",
-    //     courseCode: "CSC 432",
-    //     name: "PRINCIPLES OF PROGRAMMING LANGUAGE II",
-    //     level: "200 Level",
-    //     material_no: "1",
-    //     location: "./material/",
-    //     mylink: "/vent/personal/link.php?aq=csc111"
-    // },
     {
         img: "/vent/material/csc437/csc437.png",
         courseCode: "CSC 437",
@@ -323,15 +352,6 @@ let computerCourses = [
         location: "/vent/material/csc437",
         mylink: "/vent/personal/link.php?aq=csc437"
     },
-    // {
-    //     img: "./material/",
-    //     courseCode: "CSC 438",
-    //     name: "COMPUTER NETWORK/ COMMUNICATION",
-    //     level: "200 Level",
-    //     material_no: "1",
-    //     location: "./material/",
-    //     mylink: "/vent/personal/link.php?aq=csc111"
-    // },
     {
         img: "/vent/material/csc451/csc451.png",
         courseCode: "CSC 451",

@@ -619,8 +619,8 @@ p {
 
 }
 img {
-  width: 140px;
-  height: 120px;
+  width: 160px;
+  height: 130px;
 }
 .individual * {
   margin-top: 1rem;
@@ -651,3 +651,90 @@ img {
   font-size: 15px;
   font-weight: 100;
 }
+
+/* logout page  */
+.outbody{
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 2em;
+  font-weight: 900;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.block1{
+  background-color: #0b5cd6e7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24vw;
+  color: white;
+  height: 6vh;
+  border: 2px solid black;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  border-radius: 15px;
+}
+.block2{
+  background-color: #0b5cd6e7;
+  width: 10vw;
+  color: white;
+  height: 4vh;
+  border: 2px solid black;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+.logout{
+  width: 20vw;
+  height: 30vh;
+}
+.vrt1{
+  margin-top: 1rem;
+}
+.vrt{
+  color: #0b5cd6e7;
+  font-size: 0.8rem;
+
+}
+.vrt:hover{
+  color: red;
+}
+.lkk{
+  position: fixed;
+  width: 25rem;
+  height: 18rem;
+  top: 3rem;
+  left: 10rem;
+}
+.lkl{
+  position: fixed;
+  right: 10rem;
+  width: 25rem;
+  height: 18rem;
+  top: 3rem;
+}
+.coursedetails{
+  width: max(70vw);
+  font-size: 17px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 1rem;
+}
+.coursedet1{
+  margin: auto;
+  font-size: 15px;
+  opacity: 70%;
+}
+.enrol{
+  /* width: 300px; */
+  text-align: center;
+  margin: 3rem 15rem;
+  border: #0b5cd6e7 2px solid;
+  padding: 3px;
+  color:#0b5cd6e7;
+}
+
+
+
+

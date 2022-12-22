@@ -13,7 +13,7 @@
 
             </ul>
         </div>
-    <div class="one center">
+    <div class="one center coursedetails">
     <!-- <center>
     <div class=""><h2>The course code</h2></div>
     <div class=""><h5>The course title</h5></div>
@@ -28,6 +28,9 @@
     4. <br>
     5. <br> -->
     <?php
+            $json = "include('../personal/elist.json')";
+            echo $json;
+
     $conn = mysqli_connect("localhost", "root", "", "learning");
     if(isset($_GET["aq"])){
         if($_GET["aq"]){
@@ -41,14 +44,29 @@
                 header("location:/vent/personal/allcourses.php");
             }
             echo "<center><div class=''><h2>{$word}</h2></div>
-                            <div class=''><h4>{$nnb['Course Title']}</h4></div></center>";
-    // $sqlquery1 = "SELECT materials FROM `courses`";
-    // $query1 = mysqli_query($conn, $sqlquery1);
-    // $nnb1 = mysqli_fetch_array($query1);
-    // echo $nnb1[0];
+                            <div class=''><h4>{$nnb['Course Title']} ({$nnb['Level']})</h4></div></center>
+                            
+                            <div class='coursedet1'>{$nnb['materials']}</div>";
+            
+                 echo "<div class=''>
+                 <a href=''><div class='enrol'>Enrol for this course</div></a>
+                 
+            <div class=''>Download Materials</div>";
 
-
-
+            echo"
+            <div class=''>
+                <p></p>
+            
+            
+            
+            
+            </div>
+             
+             
+             
+             
+             
+             </div>";   
 
     $fil = '../material/' .$rtr .'/' .$rtr .'.xml';
     $filename = fopen($fil, 'r') or die ("weakness" );
@@ -57,56 +75,11 @@
         echo $line;
     }
     fclose($filename);
-}
-    }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+}}
     else{
         header("location:/vent/personal/allcourses.php");
     }
-
-
-
-
-
-
-
-?>
-
-
-
-
-
+?> <br> <br><br>
 
     </div>
 

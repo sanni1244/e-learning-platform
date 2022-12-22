@@ -1,6 +1,7 @@
 <?php
     require_once('userdata.php');
 ?>
+<link rel="stylesheet" href="../style/style2.css">
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,16 +11,22 @@
     <title>Logging Out</title>
 </head>
 <body>
-    <div style="width: 150px; margin:auto; height:500px; margin-top:300px;" >
-        <?php
-            echo '<progress max=100><strong>Progress: 60% done.</strong></progress></br>';
-            echo '<span>Logging Out...</span>'; 
-        ?>
-    </div>
-    <?php
+    <div class="outbody">
+    <div class="">You are now logged out.</div> <br>
+<img src="../images/z8.jpg" class="logout" alt="goodbye">
+
+<a href="../user/login.php"><div class="block1">Log In</div></a>
+<div class="vrt1"><a class="vrt" href="../index.html">Go Home</a></div>
+</div>
+
+<!-- <div class="nmm">
+<img class="lkk" src="../images/z8.jpg" alt="">
+<img class="lkl" src="../images/z8.jpg" alt="">
+</div> -->
+<?php
     session_destroy();
     mysqli_close($conn);
-    echo '<meta http-equiv="refresh" content="2; url=../index.html">';
+    echo '<meta http-equiv="refresh" content="5 url=../index.html">';
     ?>
 </body>
 </html>
