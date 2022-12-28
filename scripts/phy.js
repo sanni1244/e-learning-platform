@@ -20,7 +20,7 @@ let physicsCourses = [
     {
         img: "/vent/material/phy105/phy105.png",
         courseCode: "PHY 105",
-        name: "Experimental Physics I",
+        name: "EXPERIMENTAL PHYSICS I",
         level: "100 Level",
         material_no: "1",
         location: "/vent/material/phy105/1.pdf",

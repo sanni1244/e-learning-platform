@@ -1,5 +1,7 @@
 <link rel="stylesheet" href="../style/style2.css">
 <div class="container1 container2">
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"> </script>
+
 <div class="one left">
             <a href="/vent/personal/allcourses.php"><div class="brand"><h4 class="h4">YEET KNOWLEDGE</h4></div></a>
 
@@ -12,6 +14,7 @@
                 <a href="/vent/personal/logout.php"><li class="left-section Settings"><img src="../icons/logout.svg">Log Out</li></a>
 
             </ul>
+
         </div>
     <div class="one center coursedetails">
     <!-- <center>
@@ -28,8 +31,6 @@
     4. <br>
     5. <br> -->
     <?php
-            $json = "include('../personal/elist.json')";
-            echo $json;
 
     $conn = mysqli_connect("localhost", "root", "", "learning");
     if(isset($_GET["aq"])){
@@ -44,29 +45,40 @@
                 header("location:/vent/personal/allcourses.php");
             }
             echo "<center><div class=''><h2>{$word}</h2></div>
-                            <div class=''><h4>{$nnb['Course Title']} ({$nnb['Level']})</h4></div></center>
+                            <div class=''><h4>{$nnb['Course Title']} ({$nnb['level']})</h4></div></center>
                             
                             <div class='coursedet1'>{$nnb['materials']}</div>";
             
                  echo "<div class=''>
                  <a href=''><div class='enrol'>Enrol for this course</div></a>
                  
-            <div class=''>Download Materials</div>";
+            <div class=''>Download Materials</div>"; ?>
+<script>
+var creater = "<?php echo $rtr; ?>";
+$(function() {
+$.getJSON('./elist.json', function(data) {
+   $.each(data[creater], function(i, f) {
+      var tblRow = "<p  class='yyy'>" + "<span>" + f.materialname + "</span><a href='" + f.link + "'><img class='dwl' src='/Vent/icons/download.png'></a></p>"
+       $(tblRow).appendTo("#userdata ");
+ });
 
-            echo"
-            <div class=''>
-                <p></p>
-            
-            
-            
-            
-            </div>
-             
-             
-             
-             
-             
-             </div>";   
+});
+
+});
+</script>
+</head>
+
+<body>
+
+<div class="wrapper">
+<div class="profile">
+<div id= "userdata" border="2">
+
+</div>
+
+</div>
+
+<?php 
 
     $fil = '../material/' .$rtr .'/' .$rtr .'.xml';
     $filename = fopen($fil, 'r') or die ("weakness" );

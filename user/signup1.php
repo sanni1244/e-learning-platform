@@ -15,54 +15,54 @@ if(!isset($sssrrt)){
                 <option <?php if($sssrrt == "01"){?> selected <?php } ?> selected value="01">FACULTY OF EDUCATION</option>
                 <option <?php if($sssrrt == "02"){?> selected <?php } ?>  value="02">FACULTY OF ENGINEERING</option>
                 <option <?php if($sssrrt == "03"){?> selected <?php } ?>  value="03">FACULTY OF ARTS</option>
-                <option <?php if($sssrrt == "4"){?> selected <?php } ?>  value="04">FACULTY OF LAW</option>
-                <option <?php if($sssrrt == "5"){?> selected="selected" <?php } ?>  value="05">FACULTY OF SCIENCE</option>
-                <option <?php if($sssrrt == "6"){?> selected="selected" <?php } ?>  value="06">FACULTY OF SOCIAL SCIENCE</option>
-                <option <?php if($sssrrt == "7"){?> selected="selected" <?php } ?>  value="07">FACULTY OF CLINICAL SCIENCES</option>
-                <option <?php if($sssrrt == "8"){?> selected="selected" <?php } ?>  value="08">FACULTY OF MANAGEMENT SCIENCE</option>
-                <option <?php if($sssrrt == "9"){?> selected="selected" <?php } ?>  value="09">SCHOOL OF COMMUNICATION</option>
-                <option <?php if($sssrrt == "10"){?> selected="selected" <?php } ?>  value="10">SCHOOL OF TRANSPORT AND LOGISTICS</option>
-                <option <?php if($sssrrt == "11"){?> selected="selected" <?php } ?>  value="11">FACULTY OF BASIC MEDICAL SCIENCES</option>
-                <option <?php if($sssrrt == "12"){?> selected="selected" <?php } ?>  value="12">FACULTY OF DENTISTRY</option>
-                <option <?php if($sssrrt == "13"){?> selected="selected" <?php } ?>  value="13">SCHOOL OF AGRICULTURE</option>
-                <option <?php if($sssrrt == "14"){?> selected="selected" <?php } ?>  value="14">FACULTY OF BASIC CLINICAL SCIENCES</option>
-                <option <?php if($sssrrt == "15"){?> selected="selected" <?php } ?>  value="15">SCHOOL OF LIBRARY, ARCHIVAL AND INFORMATION SCIENCE</option>
-                <option <?php if($sssrrt == "16"){?> selected="selected" <?php } ?>  value="16">FACULTY OF PHARMACY</option>
-                <option <?php if($sssrrt == "17"){?> selected="selected" <?php } ?>  value="17">FACULTY OF ALLIED HEALTH SCIENCES</option>
-                <option <?php if($sssrrt == "18"){?> selected="selected" <?php } ?> value="">CHOOSE YOUR FACULTY</option>
+                <option <?php if($sssrrt == "04"){?> selected <?php } ?>  value="04">FACULTY OF LAW</option>
+                <option <?php if($sssrrt == "05"){?> selected <?php } ?>  value="05">FACULTY OF SCIENCE</option>
+                <option <?php if($sssrrt == "06"){?> selected <?php } ?>  value="06">FACULTY OF SOCIAL SCIENCE</option>
+                <option <?php if($sssrrt == "07"){?> selected <?php } ?>  value="07">FACULTY OF CLINICAL SCIENCES</option>
+                <option <?php if($sssrrt == "08"){?> selected <?php } ?>  value="08">FACULTY OF MANAGEMENT SCIENCE</option>
+                <option <?php if($sssrrt == "09"){?> selected <?php } ?>  value="09">SCHOOL OF COMMUNICATION</option>
+                <option <?php if($sssrrt == "10"){?> selected <?php } ?>  value="10">SCHOOL OF TRANSPORT AND LOGISTICS</option>
+                <option <?php if($sssrrt == "11"){?> selected <?php } ?>  value="11">FACULTY OF BASIC MEDICAL SCIENCES</option>
+                <option <?php if($sssrrt == "12"){?> selected <?php } ?>  value="12">FACULTY OF DENTISTRY</option>
+                <option <?php if($sssrrt == "13"){?> selected <?php } ?>  value="13">SCHOOL OF AGRICULTURE</option>
+                <option <?php if($sssrrt == "14"){?> selected <?php } ?>  value="14">FACULTY OF BASIC CLINICAL SCIENCES</option>
+                <option <?php if($sssrrt == "15"){?> selected <?php } ?>  value="15">SCHOOL OF LIBRARY, ARCHIVAL AND INFORMATION SCIENCE</option>
+                <option <?php if($sssrrt == "16"){?> selected <?php } ?>  value="16">FACULTY OF PHARMACY</option>
+                <option <?php if($sssrrt == "17"){?> selected <?php } ?>  value="17">FACULTY OF ALLIED HEALTH SCIENCES</option>
+                <option <?php if($sssrrt == "18"){?> selected <?php } ?>  value="" hidden>CHOOSE YOUR FACULTY</option>
 
             </select>
         </div>
     <div class="cntn1">
 
         <label for="">Department</label>
-            <select class="lbl1" name="" id="deptt">
-                <option class="dwwdllll" name="thesame" value=""></option>
-                <option class="dwwdllll" name="thesame" value=""></option>
-                <option class="dwwdllll" name="thesame" value=""></option>
-                <option class="dwwdllll" name="thesame" value=""></option>
-                <option class="dwwdllll" name="thesame" value=""></option>
-                <option class="dwwdllll" name="thesame" value=""></option>
-                <option class="dwwdllll" name="thesame" value=""></option>
-                <option class="dwwdllll" name="thesame" value=""></option>
-                <option class="dwwdllll" name="thesame" value=""></option>
-                <option class="dwwdllll" name="thesame" value=""></option>
-                <option class="dwwdllll" name="thesame" value=""></option>
-                <option class="dwwdllll" name="thesame" value=""></option>
-                <option class="dwwdllll" name="thesame" value=""></option>
-                <option class="dwwdllll" name="thesame" value=""></option>
-                <option class="dwwdllll" name="thesame" value=""></option>
-                <option class="dwwdllll" name="thesame" value=""></option>
-                <option class="dwwdllll" name="thesame" value=""></option>
-                <option class="dwwdllll" name="thesame" value=""></option>
-                <option class="dwwdllll" name="thesame" value=""></option>
-                <option class="dwwdllll" name="thesame" value=""></option>
-                <option class="dwwdllll" name="thesame" value=""></option>
-                <option class="dwwdllll" name="thesame" value=""></option>
-                <option class="dwwdllll" name="thesame" value=""></option>
-                <option class="dwwdllll" name="thesame" value=""></option>
-                <option class="dwwdllll" name="thesame" value=""></option>
-                <option class="dwwdllll" name="thesame" value=""></option>
+            <select class="lbl1" name="dtment" id="deptt">
+                <option class="dwwdllll" name="thesame" value="001"></option>
+                <option class="dwwdllll" name="thesame" value="002"></option>
+                <option class="dwwdllll" name="thesame" value="003"></option>
+                <option class="dwwdllll" name="thesame" value="004"></option>
+                <option class="dwwdllll" name="thesame" value="005"></option>
+                <option class="dwwdllll" name="thesame" value="006"></option>
+                <option class="dwwdllll" name="thesame" value="007"></option>
+                <option class="dwwdllll" name="thesame" value="008"></option>
+                <option class="dwwdllll" name="thesame" value="009"></option>
+                <option class="dwwdllll" name="thesame" value="010"></option>
+                <option class="dwwdllll" name="thesame" value="011"></option>
+                <option class="dwwdllll" name="thesame" value="012"></option>
+                <option class="dwwdllll" name="thesame" value="013"></option>
+                <option class="dwwdllll" name="thesame" value="014"></option>
+                <option class="dwwdllll" name="thesame" value="015"></option>
+                <option class="dwwdllll" name="thesame" value="016"></option>
+                <option class="dwwdllll" name="thesame" value="017"></option>
+                <option class="dwwdllll" name="thesame" value="018"></option>
+                <option class="dwwdllll" name="thesame" value="019"></option>
+                <option class="dwwdllll" name="thesame" value="020"></option>
+                <option class="dwwdllll" name="thesame" value="021"></option>
+                <option class="dwwdllll" name="thesame" value="022"></option>
+                <option class="dwwdllll" name="thesame" value="023"></option>
+                <option class="dwwdllll" name="thesame" value="024"></option>
+                <option class="dwwdllll" name="thesame" value="025"></option>
+                <option class="dwwdllll" name="thesame" value="026"></option>
             </select>
     </div>
 </div>
@@ -219,7 +219,7 @@ if(!isset($sssrrt)){
             document.getElementsByClassName("dwwdllll")[0].innerHTML = 'PHARMACY';
 <?php $sssrrt = $_POST["facrrr"];} ?>  
 <?php 
-            if(isset($_POST["facrrr"]) && $_POST["facrrr"] == "07"){
+            if(isset($_POST["facrrr"]) && $_POST["facrrr"] == "17"){
                 ?>
             document.getElementsByClassName("dwwdllll")[0].innerHTML = 'PHYSIOTERAPHY';
             document.getElementsByClassName("dwwdllll")[1].innerHTML = 'RADIOGRAPHY';

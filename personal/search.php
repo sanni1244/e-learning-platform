@@ -38,7 +38,7 @@
         $q = $_GET['q'] ;
         if($q !== "" && $q !== " "){
     require_once("../sections/check.php");
-    $QQ = "SELECT * FROM `COURSES` WHERE `Course Code` like '%$q%' OR `Course Title` like '%$q%'";
+    $QQ = "SELECT * FROM `COURSES` WHERE `Course Code` like '%$q%' OR `Course Title` like '%$q%' ORDER BY `level` ASC, `ID` ASC, `Course Title` DESC";
     $query = mysqli_query($conn, $QQ);
     $nnb = mysqli_num_rows($query);?> <br>
     <p class="reslt"><?php
@@ -48,9 +48,11 @@
     while($row = mysqli_fetch_array($query)){
         $code = $row['Course Code'];
         $title = $row['Course Title']; 
-        $level = $row['Level']; 
+        $level = $row['level']; 
         // $link = $row['link']; 
-        $link = "a";     
+        $word1 = substr($code, 0, 3) .  substr($code, 4, 6) ;
+
+        $link = "../personal/link.php?aq=$word1";     
         ?>
         
     <?php 

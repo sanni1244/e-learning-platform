@@ -1,0 +1,13 @@
+<div class="none">
+    <br/><br/><br/><br/>
+    <center><h2>CSC 214 Short Note</h2></center>
+    <h2>Database management system (DBMS)</h2>
+    <p>A database management system (DBMS) is a software program that allows users to create, update, and manage a database. It provides a structured environment for storing, organizing, and accessing data in a systematic way. The DBMS enables users to create tables, fields, and relationships between different pieces of data, and provides tools for searching, sorting, and retrieving data as needed. It also provides security measures to protect data from unauthorized access or modification. Overall, a DBMS plays a crucial role in enabling organizations to efficiently manage and use their data resources.</p>
+    <p>A database management system (DBMS) is a software tool that allows for the creation, organization, and management of a database. It is essential for storing, organizing, and accessing data in a structured manner.</p>
+    <p>There are several types of DBMS, including relational, object-oriented, and NoSQL databases. Relational databases are based on tables and rows, with data organized into columns. Object-oriented databases store data in the form of objects, which are defined by their attributes and behaviors. NoSQL databases, on the other hand, are designed for handling large amounts of data and are well-suited for handling unstructured data.</p>
+    <p>The DBMS is responsible for the overall management of the database, including data input, data manipulation, data retrieval, and data security. It also plays a crucial role in the database design process, ensuring that the database is optimized for efficiency and scalability.</p>
+    <p>One of the primary advantages of using a DBMS is that it allows users to access and manipulate data in a centralized and organized manner. This makes it easier to perform tasks such as data analysis, reporting, and decision-making. It also allows for data integrity and consistency, as the DBMS ensures that data is stored and accessed in a consistent manner.</p>
+    <p>In conclusion, a database management system is a crucial tool for managing and accessing data in a structured manner. It allows for efficient data manipulation, organization, and retrieval, making it an essential tool for businesses and organizations of all sizes.</p>
+
+
+    </div>

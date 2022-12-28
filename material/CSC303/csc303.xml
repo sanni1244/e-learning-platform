@@ -1,0 +1,23 @@
+<div class="none">
+    <br/><br/><br/><br/>
+    <center><h2>CSC 303 Short Note</h2></center>
+    <h3>Basic Concepts of Object Oriented Programming</h3>
+    <p>Object-oriented programming (OOP) is a programming paradigm that is based on the concept of "objects", which can contain data and behavior in the form of methods. OOP languages are designed to encapsulate data and behavior within objects, allowing for modular and reusable code.</p><br/>
+    <p>One of the basic concepts of OOP is encapsulation, which refers to the ability of an object to hide its internal details and expose only the necessary information to the outside world. Encapsulation helps to maintain data integrity and prevent unintended changes to the object's state.</p><br/>
+    <p>Inheritance is another key concept of OOP, which allows objects to inherit properties and behavior from a parent class. This allows for code reuse and the ability to create a hierarchy of classes, where subclass objects can inherit and override methods from their parent class.</p><br/>
+    <p>Polymorphism is the ability of an object to take on multiple forms, either through inheritance or through method overloading and method overriding. Method overloading refers to the ability of a class to have multiple methods with the same name but different parameter lists. Method overriding refers to the ability of a subclass to override a method of its parent class and provide its own implementation.</p><br/>
+    <p>Abstraction is the process of hiding the implementation details of a class and only exposing the necessary information to the outside world. This allows for flexibility in the design of objects and allows for changes to the implementation without affecting the user of the object.</p><br/>
+    <p>In OOP, objects interact with each other through methods, which are functions associated with a class. Methods can be classified as either instance methods, which operate on a specific instance of an object, or class methods, which operate on the class as a whole.</p><br/>
+    <p>OOP also includes the concept of polymorphism, which allows objects to take on multiple forms. This can be achieved through inheritance, where a subclass can inherit properties and behavior from a parent class, or through method overloading and method overriding.</p><br/>
+    <p>One of the main advantages of OOP is code reuse, as objects can be created and reused in multiple contexts. This allows for more efficient and modular code, as well as easier maintenance and updates. OOP also promotes encapsulation and abstraction, which help to maintain data integrity and flexibility in the design of objects.</p><br/>
+    <p>However, OOP is not without its drawbacks. One major issue is that OOP can result in a complex codebase, with a large number of interconnected objects. This can make it difficult to understand and maintain the code, especially in larger projects. OOP can also require more resources and time to implement, as it requires a more structured and detailed design process.</p><br/>
+    <p>Overall, OOP is a powerful programming paradigm that is widely used in the development of software applications. Its concepts of encapsulation, inheritance, polymorphism, and abstraction allow for efficient code reuse and flexible object design. While it may have its challenges, OOP remains a popular choice for software development due to its many benefits.</p><br/>
+
+
+
+    </div>
+
+    
+
+
+

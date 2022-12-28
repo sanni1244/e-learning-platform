@@ -57,7 +57,7 @@ elseif(isset($_POST['radio']) && $_POST['radio'] == "no"){
             </div>
             <div class="cntn1">
                 <label for="">Level</label>
-                <select name="Level" id="Level" class="lbl1">
+                <select name="level" id="Level" class="lbl1">
                     <option selected value="100">100 level</option><option value="200">200 level</option><option value="300">300 level</option><option value="400">400 level</option><option value="500">500 level</option>
                 </select>
             </div>

@@ -647,10 +647,7 @@ img {
 .details a:hover{
   color: red;
 }
-.none{
-  font-size: 15px;
-  font-weight: 100;
-}
+
 
 /* logout page  */
 .outbody{
@@ -734,7 +731,32 @@ img {
   padding: 3px;
   color:#0b5cd6e7;
 }
+.yyy{
+  position: relative;
+  margin-left: 2rem;
+  gap: 3rem;
+  display: flex;
+  align-items: center;
+  height: 2rem;
+  font-size: 18px;
 
+}
+.dwl{
+  position: absolute;
+  top: 0rem;
+  right: 10rem;
+  display: flex;
+  justify-content: center;
+  width: 2rem;
+  height: 2rem;
+}
 
-
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap');
+.none p{
+  font-size: 16px;
+  font-weight: 400;
+  font-family: 'Crimson Text', serif;
+  width: 60vw;
+  margin: auto;
+}
 

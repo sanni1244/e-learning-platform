@@ -1,0 +1,39 @@
+<div class="none">
+<br/><br/><br/><br/>
+<center><h2>CSC 112 Short Note</h2></center>
+<h3>STRUCTURED COMPUTER ORGANIZATION</h3>
+<span class="none">
+A digital computer is a machine that can solve problems for people by carrying out instructions given to it. A sequence of instructions describing how to perform a certain task is called a program.
+Together, a computer’s primitive instructions form a language in which people can communicate with the computer. Such a language is called a machine
+language. The people designing a new computer must decide what instructions to
+include in its machine language. Usually, they try to make the primitive instructions as simple as possible, consistent with the computer’s intended use and performance requirements, in order to reduce the complexity and cost of the electronics needed. Because most machine languages are so simple, it is difficult and
+tedious for people to use them.
+This simple observation has, over the course of time, led to a way of structuring computers as a series of abstractions, each abstraction building on the one below it. In this way, the complexity can be mastered and computer systems can
+be designed in a systematic, organized way. We call this approach structured
+computer organization and have named the book after it. In the next section we
+will describe what we mean by this term. <br/> After that we will look at some historical developments, the state-of-the-art, and some important examples.
+
+<br/><br/>
+<b>Computer architecture</b> refers to those attributes of a system visible to a programmer or, put another way, those attributes that have a direct impact on the
+logical execution of a program. A term that is often used interchangeably with computer architecture is <b>instruction set architecture (ISA)</b>. The ISA defines instruction
+formats, instruction opcodes, registers, instruction and data memory; the effect of
+executed instructions on the registers and memory; and an algorithm for controlling instruction execution. Computer organization refers to the operational units
+and their interconnections that realize the architectural specifications. Examples of
+architectural attributes include the instruction set, the number of bits used to represent various data types (e.g., numbers, characters), I/O mechanisms, and techniques
+for addressing memory. Organizational attributes include those hardware details
+transparent to the programmer, such as control signals; interfaces between the computer and peripherals; and the memory technology used.
+
+
+
+
+
+
+
+</span>
+
+
+
+
+
+
+</div>
