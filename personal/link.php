@@ -32,60 +32,60 @@
             }
             echo "<center><div class=''><h2>{$word}</h2></div>
                             <div class=''><h4>{$nnb['Course Title']} ({$nnb['level']})</h4></div></center>              
-                            <div class='coursedet1'>{$nnb['materials']}</div>";
+                            <div class='coursedet1'>{$nnb['materials']}</div>" ;
                             $f2 = $nnb['Course Code'];
-    $yr = "SELECT mycourse FROM users WHERE id = $save AND `mycourse` like '%$rtr%'";
-    $yr1 = mysqli_query($conn, $yr);
-    $nnbdd= mysqli_fetch_array($yr1);
-    function runMyFunction() {
-        global $save;
-        global $rtr;
-        global $conn;
-        global $yr1;
-        if(mysqli_num_rows($yr1) == 0){
-            $addit = "UPDATE users SET mycourse = CONCAT(`mycourse`, ', $rtr') WHERE id = $save";
-            mysqli_query($conn, $addit);
-            echo "<script>location.reload();</script>";
+            $yr = "SELECT mycourse FROM users WHERE id = $save AND `mycourse` like '%$rtr%'";
+            $yr1 = mysqli_query($conn, $yr);
+            $nnbdd= mysqli_fetch_array($yr1);
+            function runMyFunction() {
+                global $save;
+                global $rtr;
+                global $conn;
+                global $yr1;
+                if(mysqli_num_rows($yr1) == 0){
+                    $addit = "UPDATE users SET mycourse = CONCAT(`mycourse`, ', $rtr') WHERE id = $save";
+                    mysqli_query($conn, $addit);
+                    echo "<script>location.reload();</script>";
+                }
+                else{
+                    return 0;
+                }}
+            function runMyFunction1() {
+                global $save;
+                global $rtr;
+                global $conn;
+                global $yr1;
+                if(mysqli_num_rows($yr1) !== 0){
+                    $addit = "SELECT * FROM users WHERE id = $save";
+                    $fre = mysqli_query($conn, $addit);
+                    $row = mysqli_fetch_assoc($fre);
+                    $mycourse = $row['mycourse'];
+                    $mycourse = (string)$mycourse;
+                    $mycourse = strtolower($mycourse);
+                    $mycourse = str_replace(", ".$rtr, "", $mycourse);
+                    $query = "UPDATE users SET mycourse = '$mycourse' WHERE id = $save";
+                    mysqli_query($conn, $query);
+                    $_GET['enr'] = '';
+                    echo "<script>location.reload();</script>";
+                }
+                else{
+                    return 0;
+                }}  
+    if(mysqli_num_rows($yr1) !== 0){
+        echo "<a href='/vent/personal/link.php?aq={$rtr}&enr=yes'><div class='enrol enrolled'>Enrolled</div></a>";}
+    else{
+        echo "<a href='/vent/personal/link.php?aq={$rtr}&enr=no'><div class='enrol'>Enrol for this course</div></a>";
+        }      
+        if(isset($_GET['enr']) && $_GET['enr'] == 'yes') {
+            runMyFunction1();
         }
-        else{
-            return 0;
-        }}
-        function runMyFunction1() {
-            global $save;
-            global $rtr;
-            global $conn;
-            global $yr1;
-            if(mysqli_num_rows($yr1) !== 0){
-                $addit = "UPDATE users SET mycourse = SUBSTRING_INDEX(`mycourse`, ', $rtr', 1) WHERE id = $save";
-                mysqli_query($conn, $addit);
-                echo "<script>location.reload();</script>";
-            }
-            else{
-                return 0;
-            }}
-    if(isset($_GET['enr']) && $_GET['enr'] == 'yes') {
-        runMyFunction1();
-    }
-    elseif (isset($_GET['enr']) && $_GET['enr'] == 'no'){
-        runMyFunction();
-      }
-
-    
-        if(mysqli_num_rows($yr1) !== 0){
-            echo "<a href='/vent/personal/link.php?aq={$rtr}&enr=yes'><div class='enrol enrolled'>Enrolled</div></a>";}
-        else{
-            echo "<a href='/vent/personal/link.php?aq={$rtr}&enr=no'>'><div class='enrol'>Enrol for this course</div></a>";
-            }          
-            echo "<div class=''>Download Materials</div>"; 
-            ?>
+        elseif (isset($_GET['enr']) && $_GET['enr'] == 'no'){
+            runMyFunction();
+        }    
+        echo "<div class=''>Download Materials</div>"; 
+        ?>
             
 <script>
-<?php
-    
-
-      ?>
-
-
 var creater = "<?php echo $rtr; ?>";
 $(function() {
 $.getJSON('./elist.json', function(data) {
@@ -130,3 +130,4 @@ $.getJSON('./elist.json', function(data) {
 
 
 
+e

@@ -21,9 +21,9 @@
         <div class="one center centrb">
 <?php
 echo "<table class='table1'>
-        <tr  class='tr1'>
+<tr  class='tr1'>
                 <td>COURSE CODE</td>
-                <td>COURSE NAME</td>
+                <td>COURSE TITLE</td>
                 <td>LEVEL</td>
                 <td colspan='3'><center>ACTIVITIES</center></td>
             </tr>";
@@ -36,52 +36,22 @@ echo "<table class='table1'>
            $array = str_split($q3, 8);
 foreach($array as $val){
     $ttt = strtoupper($val[2]).strtoupper($val[3]).strtoupper($val[4])." ".$val[5]. $val[6] . $val[7];
+    $hrr = "SELECT * FROM `courses` WHERE `Course Code` = '$ttt'";
+    $hty = mysqli_query($conn, $hrr);
+    $htl = mysqli_fetch_row($hty);
     $newop = $val[2].$val[3].$val[4].$val[5].$val[6].$val[7];     
-    $array10[] = $newop;
-    $array11[] = $ttt;
-}?>
-    <?php 
-        	for ($i = 0; $i < count($array10); $i++) {
-                $hrr = "SELECT * FROM `courses` WHERE `Course Code` = '$array11[$i]'";
-                $hty = mysqli_query($conn, $hrr);
-                $htl = mysqli_fetch_row($hty);
-                echo "<tr class='tr1'>
-                <td>$htl[1]</td>
-                <td>$htl[2] </td>
-                <td>$htl[3]</td>
-                <td><a class='stake' href='/vent/personal/link.php?aq=$newop'>Read</a></td>
-                <td>Take Test</td>
-                <td><button onclick='echoValue(" . $i . ")'>Remove <br/>" . $htl[1] . "</button></td>
-                </tr>";
-              }
-            $_SESSION['gbg'] = $array11;
     ?>
-       <tr class='tr1'>
-                
-                
-                <td><?php  echo "<button onclick='echoValue(" . $ttt . ")'>Button " . $ttt . "</button>"; ?>
-
-                </td>
+    <tr class='tr1'>
+                <td><?php echo $ttt ?></td>
+                <td><?php echo $htl[2]; ?></td>
+                <td><?php echo $htl[3]; ?></td>
+                <?php echo "<td><a class='stake' href='/vent/personal/link.php?aq=$newop'>Read</a></td>"?>
+                <td>Take Test</td>
+                <?php echo "<td><a href='./vet.php?j=$newop'>Go</a></td> "; ?>
             </tr>
-            <!-- // echo $newop; -->
-        
-<!-- echo $newop; -->
-
+        <?php }?>
+    </table>
 </div>
-<script>
-  function echoValue(valz) {
-        // console.log(val);
-        $.ajax({
-    url: "./vet.php?myVar=" + valz,
-    success: function(response) {
-        document.write(response);
-  }
-});
-      }
-</script>
 </div>
 </body>
 <script src="../scripts/jquery-3.6.3.min.js"></script>
-<?php
-
-?>
