@@ -16,11 +16,8 @@ h4 {
 body {
   padding: 0;
   margin: 0;
-  font-family: "Josefin Sans", sans-serif;
   height: 100vh;
   width: 96vw;
-  font-weight: 600;
-
 }
 .red {
   color: red;
@@ -112,11 +109,11 @@ a {
   display: grid;
   padding: 0px;
   margin: 0px;
-  grid-template-columns: 15vw 80vw;
+  grid-template-columns: 15vw 85vw;
   height: 100%;
   position: relative;
 }
-/* dashboard left  */
+/* dashboard left */
 .one {
   position: relative;
 }
@@ -176,11 +173,7 @@ ul {
   top: max(80vh);
   width: 80%;
 }
-.selection {
-  background-color: #0b5cd6e7;
-  color: white;
-  border-radius: 12px;
-}
+
 
 .blue {
   filter: invert(100%) sepia(63%) saturate(0%) hue-rotate(246deg)
@@ -301,6 +294,7 @@ a.fixed:visited {
   justify-content: center;
   width: 15rem;
 }
+
 .availableButton {
   color: white;
   font-family: "Courier New", Courier, monospace;
@@ -505,15 +499,7 @@ span.imp{
 
 }
 
-.button{
-    width: 20vw;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: min(2vw, 1rem);
-    background-color: white;
-    text-align: center;   
-    margin-bottom: 1rem;
-    border: 0.1rem silver solid;
-}
+
 .profilepic{
     height: 2rem;
     width: 2rem;
@@ -713,7 +699,6 @@ img {
   top: 3rem;
 }
 .coursedetails{
-  width: max(70vw);
   font-size: 17px;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   font-size: 1rem;
@@ -730,6 +715,12 @@ img {
   border: #0b5cd6e7 2px solid;
   padding: 3px;
   color:#0b5cd6e7;
+}
+.enrolled{
+  border: #4f555de7 2px solid;
+  color:white;
+  background-color: #4f555de7;
+
 }
 .yyy{
   position: relative;
@@ -758,5 +749,91 @@ img {
   font-family: 'Crimson Text', serif;
   width: 60vw;
   margin: auto;
+}
+.container2{
+  margin: 0;
+  height: 100vh;
+  padding: 0px;
+  scrollbar-width: 1px;
+  }
+  ::-webkit-scrollbar{
+      display: none;
+  }
+.one{
+  margin: 0;
+  
+} 
+.left{
+  margin: 0;
+  background-color: rgb(255, 255, 255);
+  padding: 2rem;
+  box-sizing: border-box;
+  box-shadow: 7px 130px rgb(247, 247, 247);
+}
+.center{
+  margin: 0;
+  overflow-x: hidden;
+
+}
+
+.left-section{
+  text-align: center;
+  padding: 15px 0rem;
+  text-align: center;
+  background-color: rgb(255, 255, 255);
+  margin-block-start: 1.6vh;
+  color: rgb(7, 7, 7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.8rem;
+
+}
+.selection {
+background-color: #0b5cd6e7;
+color: white;
+border-radius: 12px;
+}
+
+/* my courses  */
+
+.centrb{
+  margin: 1.5rem 0rem 0rem 2rem;
+  border-radius: 1rem;
+  padding: 3rem;
+  
+}
+.table1{
+  width: 100%;
+  padding: 0rem 0rem 0rem 0rem ; 
+  background-color: white;
+  font-size: 1rem;
+  border-spacing: 1rem;
+}
+.tr1{
+  margin: 1rem;
+  border: 5px solid black;
+box-shadow: 0px 0px 1rem 0.3rem #60614b36;
+  border-radius: 1rem;
+
+}
+.tr1 td{
+  height: 4rem;
+  padding: 1.4rem;
+
+}
+.tr1:hover{
+  border: none;
+  height: 4rem;
+  box-shadow: 0rem 0rem 0.4rem 0.4rem #60614b51;
+
+}
+.tr1:nth-child(1){
+  height: 4rem;
+  background-color: #ffffffe7;
+  font-size: 1rem;
+  border: none;
+  box-shadow: none;
+
 }
 

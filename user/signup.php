@@ -65,7 +65,7 @@ elseif(isset($_POST['radio']) && $_POST['radio'] == "no"){
         <?php } ?>
         <div class="signup-section">
             <div class="cntn1">
-                <label for="">Password*<sup title="This field is required. It must be at least 4 characters long."></sup></label>
+                <label for="">Password<sup title="This field is required. It must be at least 4 characters long.">*</sup></label>
                 <input class="lbl1" placeholder="<?php echo $blankpass?>" type="password" name="password" id=""></input>
             </div>
             <div class="cntn1">

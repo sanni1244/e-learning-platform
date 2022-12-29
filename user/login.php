@@ -25,7 +25,7 @@
             <h1 class="h1">Login</h1>
             <form class="form" action="" id="form1" method="post">
                 <div class="myoptions">
-                    <a href="/vent/user/login.php?e=1"><div class="button">Use E-mail</div></a> <hr>
+                    <a href="/vent/user/login.php?e=1"><div class="button button1">Use E-mail</div></a> <hr>
                     <a href="/vent/user/login.php?e=0"><div class="button">Use Matric Number</div></a>
                 </div>
                 <?php if (!(isset($_GET['e'])) || isset($_GET['e']) && $_GET['e'] != 0){  ?>

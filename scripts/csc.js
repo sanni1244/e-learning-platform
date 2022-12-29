@@ -63,7 +63,7 @@ let computerCourses = [
         mylink: "/vent/personal/link.php?aq=csc205"
     },
     {
-        img: "/vent/material/csc208/csc208.png",
+        img: "/vent/material/csc208/csc208.jpg",
         courseCode: "CSC 208",
         name: "INTRODUCTION TO HARDWARE LABORATORY",
         level: "200 Level",

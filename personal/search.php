@@ -53,7 +53,7 @@
         $word1 = substr($code, 0, 3) .  substr($code, 4, 6) ;
 
         $link = "../personal/link.php?aq=$word1";     
-        ?>
+        ?> 
         
     <?php 
     echo '<div class="searchspace"><h2>' . $code . '</h2> ' ."<i class='features'>" . ucfirst(strtolower($title)) . "<br/>". $level . "<br/>" . "<i><a href='$link'>Read Material</a>" ."</div>";

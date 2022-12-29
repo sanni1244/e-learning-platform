@@ -303,6 +303,11 @@ input[type = "radio"]{
     font-family: 'Bree Serif', serif;
     font-weight: 600;
 }
+.myoptions a:hover{
+    background-color: rgb(0, 0, 0);
+    color: white;
+    opacity: 80%;    
+}
 .lbl8{
     width: min(17vw, 20rem);
     padding: 4px;

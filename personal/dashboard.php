@@ -32,7 +32,7 @@ include_once("../personal/userdata.php");
 
 
         </div>
-        <div class="one right"></div>
+        <!-- <div class="one right"></div> -->
 
 
 
