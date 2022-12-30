@@ -47,7 +47,7 @@ foreach($array as $val){
                 <td><?php echo $htl[3]; ?></td>
                 <?php echo "<td><a class='stake' href='/vent/personal/link.php?aq=$newop'>Read</a></td>"?>
                 <td>Take Test</td>
-                <?php echo "<td><a href='./vet.php?j=$newop'>Go</a></td> "; ?>
+                <?php echo "<td><a href='./vet.php?j=$newop'>Remove <br/>Course</a></td> "; ?>
             </tr>
         <?php }?>
     </table>

@@ -125,7 +125,6 @@ if($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['login'])){
                             if($array1['id'] == $array2['id']){
                                 $warning = "Login was successful";
                                     $wemail = $_POST['email'];
-
                                    $_SESSION['id'] = $array4;
                                     header("refresh: 3; url=../personal/dashboard.php");
                             }
@@ -138,12 +137,14 @@ if($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['login'])){
                             $check3 = mysqli_query($conn, $check_mat);
                             $array1 = mysqli_fetch_array($check3);
                             $array2 = mysqli_fetch_array($check2);
-
+                            $array4 = $array1['id'];
                         if(isset($array1['id']) && $array2['id'] !== NULL && $array1['id'] == $array2['id']  ){
                             
                             $warning = "Login was successful";
                             $matric1 = $_POST['matric'];
-                            echo "<script>localStorage.setItem('sd12133', '$matric1');</script>";
+                            // echo "<script>localStorage.setItem('sd12133', '$matric1');</script>";
+                            $_SESSION['id'] = $array4;
+
                             header("refresh: 2; url=../personal/dashboard.php");
                         }
                         else{

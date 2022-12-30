@@ -836,4 +836,12 @@ box-shadow: 0px 0px 1rem 0.3rem #60614b36;
   box-shadow: none;
 
 }
+.tr1 a{
+  font-size: 1rem;
+  font-family: 'Times New Roman', Times, serif;
+  color: blue;
+}
+.tr1 a:hover{
+  color: red;
+}
 
