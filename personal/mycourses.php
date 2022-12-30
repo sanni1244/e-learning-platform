@@ -1,5 +1,5 @@
 <link rel="stylesheet" href="/vent/style/style2.css">
-<!-- <link rel="stylesheet" href="/vent/style/bootstrap.css"> -->
+<link rel="stylesheet" href="/vent/style/style3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 <body class="b4">
 <?php 

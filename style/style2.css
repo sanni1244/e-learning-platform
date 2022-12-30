@@ -3,6 +3,12 @@
   list-style-type: none;
   text-decoration: none;
 }
+body {
+  padding: 0;
+  margin: 0;
+  height: 100vh;
+  width: 96vw;
+}
 h1 {
   font-size: 24px;
 }
@@ -12,12 +18,6 @@ h2 {
 }
 h4 {
   color: rgb(150, 163, 175);
-}
-body {
-  padding: 0;
-  margin: 0;
-  height: 100vh;
-  width: 96vw;
 }
 .red {
   color: red;
@@ -55,7 +55,6 @@ a {
   text-decoration: none;
   color: black;
 }
-
 /* search center  */
 .search {
   outline-offset: 0px;
@@ -135,7 +134,6 @@ a {
   justify-content: center;
   gap: 0.8rem;
 }
-
 .left-section img,
 .l img {
   width: 25px;
@@ -144,7 +142,6 @@ a {
 svg {
   fill: red;
 }
-
 .h4 {
   font-size: 1.3rem;
   width: 100%;
@@ -173,8 +170,6 @@ ul {
   top: max(80vh);
   width: 80%;
 }
-
-
 .blue {
   filter: invert(100%) sepia(63%) saturate(0%) hue-rotate(246deg)
     brightness(100%) contrast(156%);
@@ -192,7 +187,6 @@ ul {
 .tip2 {
   font-size: 1rem;
 }
-
 /* all courses section  */
 .top {
   margin-bottom: 2rem;
@@ -239,7 +233,6 @@ main .courselist li:hover {
   /* padding: 10px; */
   background-color: rgb(247, 247, 247);
 }
-
 .section {
   box-sizing: border-box;
   height: 18rem;
@@ -262,8 +255,6 @@ main {
 a.fixed:visited {
   color: black;
 }
-.sect .section .lower {
-}
 .sect .section img {
   width: 200px;
   height: 10rem;
@@ -281,7 +272,6 @@ a.fixed:visited {
   margin-top: 0.4rem;
   margin-bottom: 1.2rem;
 }
-
 /* available courses sumbit  */
 .allcourse {
   display: flex;
@@ -294,7 +284,6 @@ a.fixed:visited {
   justify-content: center;
   width: 15rem;
 }
-
 .availableButton {
   color: white;
   font-family: "Courier New", Courier, monospace;
@@ -306,10 +295,7 @@ a.fixed:visited {
 .section a:hover{
   color: red;
 }
-
 /* available courses sumbit  */
-.content div button {
-}
 .cscsection {
   /* display: flex; */
   flex-wrap: wrap;
@@ -321,7 +307,6 @@ a.fixed:visited {
   margin-bottom: 0.4rem;
   font-size: 1.1rem;
 }
-
 /* edit details  */
 .head7 {
   text-align: center;
@@ -349,7 +334,6 @@ input.mlm:focus {
   font-weight: 600;
   line-height: 5vh;
   margin-right: 1rem;
-  /* color: #0b5cd6e7; */
 }
 .mvr2 {
   display: flex;
@@ -369,9 +353,7 @@ label.mlm {
   gap: 3rem;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-
 .updateit {
-  /* width: 20vw; */
   display: flex;
   margin-top: 5rem;
   justify-content: end;
@@ -405,192 +387,9 @@ label.mlm {
   padding-left: 9px;
   font-size: 1.1rem;
 }
-
-/* .vvv{
-    margin-bottom: 1.1rem;
-}
-.lbl1{
-    width: min(40vw, 30rem);
-    border-radius: 7px;
-    height: 4.3vh;
-    border: black solid 1px;
-    padding-left: 5px;
-    font-size: 1rem;
-    font-family: inherit;
-}
-.lbl2{
-    width: min(40vw, 30rem);
-    border-radius: 7px;
-    height: 4.3vh;
-    padding-left: 5px;
-    font-size: 1.3rem;
-    font-family: 'Bree Serif', serif;
-    color: red;
-}
-.lbl3{
-    width: 100%;
-}
-.lbl1:hover, .lbl1:focus{
-    border: #5b88cae7 solid 2px;
-}
-
-input[type = "radio"]{
-    margin-left: 6px;
-} */
-
-/*
-
-::placeholder{
-    color: rgb(192, 95, 95);
-}
-.h1{
-    margin-top: 5rem;
-    margin-bottom: 2rem;
-     display: inline-flex;
-    font-family: 'Josefin Sans', sans-serif;
-    gap: 6vw;
-    margin-left: calc(19vw - 6vw - 1rem);
-}
-.material-symbols-sharp {
-    width: 1rem;
-    font-variation-settings:
-    'wght' 900,
-    'GRAD' 400,
-    'opsz' 48
-}
-.submit{
-    width: 8rem;
-    padding: 5px 0px;
-    background-color: transparent;
-    border-radius: 1rem;
-    cursor: hand;
-} 
-
-.signupcontain{
-    height: 30vw;
-    font-family: monospace;
-    font-size: 18px;
-}
-.blank{
-    color: red;
-}
-.nobutton{
-    background: none;
-	color: inherit;
-	border: none;
-	padding: 0;
-	font: inherit;
-	cursor: pointer;
-	outline: inherit;
-    justify-content: space-between;
-}
-label{
-    display: block;
-margin-bottom: 0.4rem;
-} 
-
-span.imp{
-    margin-right: 0.5rem;
-    margin-left: 1.2rem;
-}
-
-.bottom{
-    margin-bottom: 18rem;
-
-}
-
-
-.profilepic{
-    height: 2rem;
-    width: 2rem;
-}
-.greet{
-    display: flex;
-    justify-content: right;
-    gap: 1rem;
-    margin-right: 1rem;
-}
-.logo2{
-    width: 2rem;
-} 
-
-
-
-
-
-
-
-
-
-
-/*.navbar1{
-    display: flex    ;
-    justify-content: space-between;
-}
-.navcat{
-    align-items: center;
-}
-.selectsection option {
-    width: 20rem;
-}
-.navend{
-    align-items: center;
-}
-.navbar1, .navbar1 *{
-    background-color: rgb(249, 246, 246);
-}
-.navbar1 .logo{
-    width: 3rem;
-    height: 3rem;
-}
-.navbar1 .navend{
-    display: flex;
-    gap: var(--gap1);
-    justify-content: right;
-}
-.navbar1 .navcat{
-    gap: var(--gap);
-    display: flex;
-    flex-direction: row;
-}
-.navbar1 .navcat select{
-    border: none;
-}
-.searchimg1{
-    height: 1.7rem;
-    width: 2rem;
-    margin-top: 100rem;
-    border: 0.1rem black solid;
-}
-.searchimg{
-    height: 1.3rem;
-    padding-top: 0.1rem;
-    width: 1.3rem;
-}
-.signup a,.login a{
-    font-size: 16px;
-    color: black;
-}
-.signup a,.login a{
-    padding: 5px; margin-right: 3px;
-}*/
-p {
-  font-weight: 500;
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-  font-size: 14px;
-}
-.deleted {
-  color: #0b5cd6e7;
-  font-size: large;
-  font-weight: 600;
-}
-
 /* csc.php  */
-.coursebody {
-}
 .cscsection2 {
   margin-top: 1rem;
-  /* width: 10vw; */
   display: grid;
   grid-template-columns: 25vw 25vw;
   grid-gap: 6rem;
@@ -602,7 +401,6 @@ p {
     box-shadow: #0b5cd6e7 0px 0px 0px 3px, white 0px 0px 0px 6px, white 0px 0px 0px 9px, white 0px 0px 0px 12px, #0b5cd6e7 0px 0px 0px 15px;
   background-color: #ffffffe7;
   padding: 1rem;
-
 }
 img {
   width: 160px;
@@ -613,7 +411,6 @@ img {
   font-weight: 500;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   font-size: 15px;
-
 }
 .availableButton button{
   margin-top: 1rem;
@@ -623,7 +420,6 @@ img {
 .row a{
   color: #0b5cd6e7;
 }
-
 .row a:hover{
   color: red;
 }
@@ -633,8 +429,6 @@ img {
 .details a:hover{
   color: red;
 }
-
-
 /* logout page  */
 .outbody{
   height: 100vh;
@@ -679,7 +473,6 @@ img {
 .vrt{
   color: #0b5cd6e7;
   font-size: 0.8rem;
-
 }
 .vrt:hover{
   color: red;
@@ -709,7 +502,6 @@ img {
   opacity: 70%;
 }
 .enrol{
-  /* width: 300px; */
   text-align: center;
   margin: 3rem 15rem;
   border: #0b5cd6e7 2px solid;
@@ -720,7 +512,6 @@ img {
   border: #4f555de7 2px solid;
   color:white;
   background-color: #4f555de7;
-
 }
 .yyy{
   position: relative;
@@ -730,7 +521,6 @@ img {
   align-items: center;
   height: 2rem;
   font-size: 18px;
-
 }
 .dwl{
   position: absolute;
@@ -741,7 +531,6 @@ img {
   width: 2rem;
   height: 2rem;
 }
-
 @import url('https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap');
 .none p{
   font-size: 16px;
@@ -761,7 +550,6 @@ img {
   }
 .one{
   margin: 0;
-  
 } 
 .left{
   margin: 0;
@@ -773,9 +561,7 @@ img {
 .center{
   margin: 0;
   overflow-x: hidden;
-
 }
-
 .left-section{
   text-align: center;
   padding: 15px 0rem;
@@ -787,61 +573,9 @@ img {
   align-items: center;
   justify-content: center;
   gap: 0.8rem;
-
 }
 .selection {
 background-color: #0b5cd6e7;
 color: white;
 border-radius: 12px;
 }
-
-/* my courses  */
-
-.centrb{
-  margin: 1.5rem 0rem 0rem 2rem;
-  border-radius: 1rem;
-  padding: 3rem;
-  
-}
-.table1{
-  width: 100%;
-  padding: 0rem 0rem 0rem 0rem ; 
-  background-color: white;
-  font-size: 1rem;
-  border-spacing: 1rem;
-}
-.tr1{
-  margin: 1rem;
-  border: 5px solid black;
-box-shadow: 0px 0px 1rem 0.3rem #60614b36;
-  border-radius: 1rem;
-
-}
-.tr1 td{
-  height: 4rem;
-  padding: 1.4rem;
-
-}
-.tr1:hover{
-  border: none;
-  height: 4rem;
-  box-shadow: 0rem 0rem 0.4rem 0.4rem #60614b51;
-
-}
-.tr1:nth-child(1){
-  height: 4rem;
-  background-color: #ffffffe7;
-  font-size: 1rem;
-  border: none;
-  box-shadow: none;
-
-}
-.tr1 a{
-  font-size: 1rem;
-  font-family: 'Times New Roman', Times, serif;
-  color: blue;
-}
-.tr1 a:hover{
-  color: red;
-}
-
