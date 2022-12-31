@@ -34,10 +34,12 @@ $lll = $row1['ccourse'] ;
     <center><h5>Question 1</h5></center>
     <div class="area1">
 <?php echo "<form method='POST'>" ;
-$count = 10000;
+if(!isset($count)){
+  $count = 10000;
+}
 echo "<input type='submit' name='submittest' value='NEXT'>";
 if(isset($_POST['submittest']))
-  for($i = 1; $i < 2; $i++){
+  for($i = 1; $i < 3; $i++){
     $count ++;
     $query3 = "SELECT * FROM test WHERE `ccourse` = '$testcode' AND `questionid` = $count";
     $result3 = mysqli_query($conn, $query3);
@@ -56,7 +58,7 @@ if(isset($_POST['submittest']))
     <li><input type="radio" name="q1" value="<?php echo $options[3]; ?>" id=""><label for=""> <?php echo $options[3]; ?>
     </label></li>
     </ol>
-  <?php  }} ?>
+  <?php  }} ; $_POST['submittest'] = null; ?>
 
     
 
