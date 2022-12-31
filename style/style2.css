@@ -308,8 +308,12 @@ a.fixed:visited {
   font-size: 1.1rem;
 }
 /* edit details  */
+.effe{
+  overflow: hidden;
+}
 .head7 {
   text-align: center;
+  margin-top: 1rem;
   font-size: 2rem;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   color: #0b5cd6e7;
@@ -349,7 +353,7 @@ label.mlm {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 .mvr3 {
-  margin-top: 3rem;
+  margin-top: 1rem;
   gap: 3rem;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }

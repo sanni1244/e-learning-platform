@@ -29,7 +29,7 @@ echo "<table class='table1'>
             </tr>";
             $conn = mysqli_connect("localhost", "root", "", "learning");
             $save = $_SESSION['id'];
-           $qwery = "SELECT mycourse FROM users WHERE id = $save";
+           $qwery = "SELECT mycourse FROM users WHERE id = $save ";
            $q1 = mysqli_query($conn, $qwery);
            $q2 = mysqli_fetch_row($q1);
            $q3 = implode($q2);
@@ -46,7 +46,7 @@ foreach($array as $val){
                 <td><?php echo $htl[2]; ?></td>
                 <td><?php echo $htl[3]; ?></td>
                 <?php echo "<td><a class='stake' href='/vent/personal/link.php?aq=$newop'>Read</a></td>"?>
-                <td>Take Test</td>
+                <?php echo "<td><a href='../test/test.php?tst=$ttt'>Take <br/>Test</a></td> ";?>
                 <?php echo "<td><a href='./vet.php?j=$newop'>Remove <br/>Course</a></td> "; ?>
             </tr>
         <?php }?>
