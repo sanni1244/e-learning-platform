@@ -1,4 +1,5 @@
 <?php
+session_start();
   $conn = mysqli_connect("localhost", "root", "", "learning");
   if($conn->connect_error){
     die("Connection failed: " . $conn->connect_error);
@@ -10,8 +11,6 @@ $result1 = mysqli_query($conn, $query1);
 $result2 = mysqli_query($conn, $query2);
 $row1 = mysqli_fetch_assoc($result1);
 $row2 = mysqli_fetch_assoc($result2);
-
-
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -44,3 +43,6 @@ $row2 = mysqli_fetch_assoc($result2);
 </body>
 
 </html>
+
+
+

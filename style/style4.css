@@ -12,10 +12,14 @@ body::after{
     border-top-left-radius: 12rem;
     border-bottom-left-radius: 12rem;
 }
+h5{
+    font-size: 2.5rem;
+    opacity: 70%;
+    margin-top: 2.3rem;
+}
 body{
     display: flex;
     background-color: hwb(216 16% 28% / 0.906);
-
     height: 100vh;
     width: 100vw;
 }
