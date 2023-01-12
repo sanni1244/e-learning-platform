@@ -3,8 +3,7 @@
     padding: 0;
     margin: 0;
     list-style: none;
-    text-decoration: none;
-    
+    text-decoration: none; 
 }
 :root{
     --gap: 0.4rem;
@@ -14,7 +13,6 @@ h1{
     font-size: 24px;
     font-family: 'Times New Roman', Times, serif;
 }
-
 h2{
     font-size: 20px;
     font-family: Arial, Helvetica, sans-serif;
@@ -30,8 +28,7 @@ body{
     font-family: 'Josefin Sans', sans-serif;
     height: 100vh;
     width: 100vw;
- }
-
+}
 /* New landing page  */
 .body1{
     background-image: linear-gradient(160deg, rgb(247,247,247), rgb(247,247,247), rgb(247,247,247), rgb(247,247,247), #bdcde6e7);
@@ -49,7 +46,6 @@ body{
     display: flex;
     justify-content: space-around;
     align-items: center;
-
     height: 10vh;
 }
 .navsaw a{
@@ -70,7 +66,6 @@ body{
     color: rgb(24, 88, 172);
     font-size: 1.3rem;
     margin-left: 1rem;
-
 }
 .header1{
     font-size: 3.1rem;
@@ -78,7 +73,6 @@ body{
     margin: 0rem;
     font-family: Georgia, Times, 'Times New Roman', serif;
 }
-
 .text1{
     width: 30vw;
    float: right;
@@ -95,7 +89,6 @@ b{
     line-height: 1.6rem;
     opacity: 50%;
     font-family: 'Inter', sans-serif;
-
 }
 @media (max-width: 900px) {
     .img1{

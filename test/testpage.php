@@ -4,8 +4,7 @@ session_start();
   if($conn->connect_error){
     die("Connection failed: " . $conn->connect_error);
 } 
-// $testcode = $_GET['j'];
-$testcode = "CSC 111";
+$testcode = $_GET['j'];
 $query1 = "SELECT * FROM test WHERE `ccourse` = '$testcode'";
 $query2 = "SELECT * FROM courses WHERE `Course Code` = '$testcode'";
 
@@ -35,7 +34,7 @@ $lll = $row1['ccourse'] ;
 <?php echo "<form action='#' method='POST'>" ;
 
 if (!isset($_POST['add'])) {
-    $_SESSION['attnum'] = 10001; 
+    $_SESSION['attnum'] = $row1['questionid']; 
     $_SESSION['num'] = 1;
     $_SESSION['incr'] = [];
     $_SESSION['answw'] = [];
@@ -77,7 +76,7 @@ echo "<center><h5>Question " .$_SESSION['num'] . "</h5></center>";
       // $row3['answer'];
   }
   else{
-    echo "<div class='answer'><center><h1>Answers</h1></center><div><table border='5px'> <tr><td></td> <td>Your Answer</td><td>Correct Answer</td><tr>";
+    echo "<div class='answer'><center><h1>Answers</h1></center><div><table border='5px'><tr><td></td> <td>Correct Answer</td><td>Your Answer</td><tr>";
     $score = 0;
     for($i = 0; $i < $row4; $i++){
       $trt = $_SESSION['attnum'];
@@ -98,7 +97,7 @@ echo "<center><h5>Question " .$_SESSION['num'] . "</h5></center>";
     }
     echo "</table><div>You scored ". $score . "/" .$i . "<br/>";
         echo"<a class='button_mark' href='../personal/mycourses.php'><div>End Test</div></a>";
-        echo"<a class='button_mark' href='http://localhost/vent/test/test.php?tst=CSC%20111'><div>Restart Test</div></a></div></div>";
+        echo"<a class='button_mark' href='http://localhost/vent/test/test.php?tst=".$testcode ."'><div>Restart Test</div></a></div></div>";
 
 
    

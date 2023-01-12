@@ -1,0 +1,92 @@
+.brand{
+    color: black;
+}
+/* .acct a:nth-child(2){
+    margin-left: 3rem;
+    border: none;
+    background-color: black;
+    color: #ffffff;
+}
+.blabla{
+    display: flex;
+    height: 6rem;
+    background-color: black;
+    color: white;
+    align-items: center;
+    justify-content: center;
+}
+button{ 
+    margin-top: 1rem;
+    border: 2px solid black;
+    width: 100vw;
+    height: 2rem;
+    background-color: rgba(184, 184, 184, 0.521);
+    box-shadow: 0rem 0rem 0.5rem 0.2rem black;
+    border-top-right-radius: 1%;
+    border-bottom-right-radius: 1%;
+    border: none;
+    margin: 0;
+    text-align: left;
+    padding-left: 0.2rem;
+}
+
+p{
+    display: flex;
+    height: 100%;
+    align-items: center;
+} */
+
+.faq{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 3rem;
+    width: 100vw;
+    align-items: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 0.9rem;
+
+
+}
+.flex_bttn{
+    display: flex;
+    column-gap: 1.3rem;
+    width:  max(35vw, 20rem);
+    align-items: center;
+    padding-left: 3vw;
+    border: 2px solid rgb(143, 143, 143);
+    height: 3.2rem;
+    background-color: rgba(210, 210, 210, 0.521);
+    box-shadow: 0rem 0rem 0.5rem 0.1rem rgba(187, 187, 187, 0.229);
+    border-radius: 10px;
+    box-sizing: border-box;
+    margin-bottom: 1rem;
+}
+.creet{
+    width: 32px;
+}
+.dropText1{
+    display: flex;
+    column-gap: 1.3rem;
+    background-color: white;
+    font-size: 0.9rem;
+    margin-top: 7px;
+    height: 8rem;
+    color: black;
+    width:  max(35vw, 20rem);
+    box-shadow: 0rem 0rem 0.5rem 0.01rem rgb(115, 114, 114);
+    border-radius: 6px;
+    padding: 1.5vw 2vw 0vw 2vw;
+    box-sizing: border-box;
+    margin-bottom: 2rem; 
+}
+.contact_lasu{
+    height: 12rem;
+    /* padding: 1rem; */
+    width: 60%;
+    box-sizing: border-box;
+    background-color: rgba(116, 116, 116, 0.493);
+}
+
+
+

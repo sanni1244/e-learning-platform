@@ -60,14 +60,16 @@ hr{
     color: white;
 
 }
-
+::-webkit-scrollbar{
+    display: none;
+}
 .area1{
-    /* position: relative; */
-    /* display: flex; */
-    height: 70%;
+    position: relative;
+    height: 100%;
     align-items: center;
     flex-direction: column;
     justify-content: center;
+    overflow: scroll;
 }
 form{
     position: absolute;
@@ -103,6 +105,7 @@ input[type="radio"]{
 }
 .answer{
     position: absolute;
+    width: 1rem;
 }
 table{
     border-collapse: separate;
@@ -123,4 +126,7 @@ table{
     text-align: center;
     background-color: white;
     font-size: 1rem;
+}
+form{
+    height: 11rem;
 }
