@@ -1,3 +1,7 @@
+body{
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
 .brand{
     color: black;
 }
@@ -35,12 +39,17 @@ p{
     height: 100%;
     align-items: center;
 } */
-
+.acct a, .brand{
+    color: white;
+}
+.acct a{
+    border: 2px solid white;
+}
 .faq{
     display: flex;
     justify-content: center;
     flex-direction: column;
-    margin-top: 3rem;
+    margin-top: 1rem;
     width: 100vw;
     align-items: center;
     font-family: 'Times New Roman', Times, serif;
@@ -54,7 +63,7 @@ p{
     width:  max(35vw, 20rem);
     align-items: center;
     padding-left: 3vw;
-    border: 2px solid rgb(143, 143, 143);
+    border: 2px solid #0b5cd6e7;
     height: 3.2rem;
     background-color: rgba(210, 210, 210, 0.521);
     box-shadow: 0rem 0rem 0.5rem 0.1rem rgba(187, 187, 187, 0.229);
@@ -65,28 +74,46 @@ p{
 .creet{
     width: 32px;
 }
+.creet1{
+    width: 19px;
+}
 .dropText1{
     display: flex;
     column-gap: 1.3rem;
     background-color: white;
     font-size: 0.9rem;
-    margin-top: 7px;
     height: 8rem;
     color: black;
     width:  max(35vw, 20rem);
-    box-shadow: 0rem 0rem 0.5rem 0.01rem rgb(115, 114, 114);
+    box-shadow: 0rem 0rem 0.5rem 0.01rem rgba(0, 0, 0, 0.314);
     border-radius: 6px;
     padding: 1.5vw 2vw 0vw 2vw;
     box-sizing: border-box;
     margin-bottom: 2rem; 
 }
-.contact_lasu{
-    height: 12rem;
-    /* padding: 1rem; */
-    width: 60%;
-    box-sizing: border-box;
-    background-color: rgba(116, 116, 116, 0.493);
-}
+.navsaw{
+    background-color: rgba(0, 0, 0, 0.218);
+    margin-bottom: 0.6rem;
 
+}
+.sdsd{
+    margin-top: 1rem;
+    height: 1rem;
+    
+    border: none;
+
+}
+.contact_lasu{
+    padding: 2rem;
+    box-sizing: border-box;
+    box-shadow: 0rem -1rem 10rem 0.01rem rgba(0, 0, 0, 0.314);
+}
+.contact_lasu p{
+    margin: 1rem;
+    
+    display: flex;
+    align-items: center;
+    column-gap: 1.6rem;
+}
 
 
