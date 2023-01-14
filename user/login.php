@@ -25,7 +25,7 @@
             <h1 class="h1">Login</h1>
             <form class="form" action="" id="form1" method="post">
                 <div class="myoptions">
-                    <a href="/vent/user/login.php?e=1"><div class="button">Use E-mail</div></a> <hr>
+                    <a href="/vent/user/login.php?e=1"><div class="button button1">Use E-mail</div></a> <hr>
                     <a href="/vent/user/login.php?e=0"><div class="button">Use Matric Number</div></a>
                 </div>
                 <?php if (!(isset($_GET['e'])) || isset($_GET['e']) && $_GET['e'] != 0){  ?>
@@ -34,7 +34,7 @@
 
 <div class="cntn1 vvv">
                 <label for="">Email<sup title="This field is required"></sup></label>
-                <input class="lbl1 lbl3" value="<?php echo $wemail ?>" placeholder="<?php echo $blankemail ?>" type="email" name="email" id=""></input>      
+                <input class="lbl1 lbl3" value="<?php echo $wemail; echo @$wemail1; ?>" value="<?php echo $wemail && @$wemail1 ?>" placeholder="<?php echo $blankemail ?>" type="email" name="email" id=""></input>      
             </div>
 </div>
 <?php } ?>
@@ -45,7 +45,6 @@
                 <input class="lbl1 lbl3" value="<?php echo $matric1 ?>" placeholder="<?php echo $matt ?>" type="number" name="matric" id=""></input>    
             </div></div>
 <?php } ?>
-
 <div class="">
             <div class="cntn1 vvv">
                 <label for="">Password<sup title="This field is required. It must be at least 4 characters long."></sup></label>
@@ -55,44 +54,21 @@
             <div class="lbl2">
                 <?php if($warning != ""){echo $warning; }?>
             </div>
-            </div>
-        
+            </div>      
 <div class="signup-section">
             <div class="cntn1">
                 <input type="submit" class="lbl8" name="login" value="Log In" id="submit1">      
             </div>
         </div>
-
 </form>
 <div class="notyet">
-        <h5>Already have an account?</h5> <br>
-        <a href="login.php">Log In here</a>
+        <p>Don't have an account? <a href="signup.php">Sign up here</a></p> 
+        
     </div>
 
         </div>
-
-
-
-
-
-
-
-
         </div>
-
     </div>
-    <!--
-         <span title="Go Back" class="material-symbols-sharp">
-            <a class="fixed" href="./signup.php">arrow_back</a>
-        </span>
-         
-            
-        <div class="notyet">
-            <h5>Not yet registered?</h5> <br>
-            <a href="signup.php">Sign Up here</a>
-        </div>
-    </div> -->
-    
 </body>
 <script>
     function login(){

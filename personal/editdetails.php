@@ -4,7 +4,8 @@
 
 <body>
 <?php
-include_once("../personal/userdata.php");   
+error_reporting(0); 
+include_once("../personal/userdata.php");  
 ?>
  <div class="container1">
         <div class="one left">
@@ -18,7 +19,7 @@ include_once("../personal/userdata.php");
                 <a href="/vent/personal/logout.php"><li class="left-section Settings"><img src="../icons/logout.svg">Log Out</li></a>
             </ul>
         </div>
-        <div class="one center">
+        <div class="one center effe">
         <div>
             <h4 class="head7">Edit Your Profile</h4>
     </div>
@@ -45,7 +46,7 @@ include_once("../personal/userdata.php");
             </div>
             
         </div>
-        <?php echo @$err44 ?>
+        <?php echo @$err44; ?>
        </form>
        
     </div>

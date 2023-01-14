@@ -1,0 +1,44 @@
+<div class="none">
+<br/><br/><br/><br/>
+<center><h2>CSC 205 Short Note</h2></center>
+<h2>WHAT IS AN OPERATING SYSTEM? </h2>
+It is hard to pin down what an operating system is other than saying it is the
+software that runs in kernel mode—and even that is not always true. Part of the
+problem is that operating systems perform two basically unrelated functions: providing application programmers (and application programs, naturally) a clean
+abstract set of resources instead of the messy hardware ones and managing these hardware resources. Depending on who is doing the talking, you might hear
+mostly about one function or the other. Let us now look at both. <br/><br/>
+<h3>The Operating System as an Extended Machine </h3>
+<p>The architecture (instruction set, memory organization, I/O, and bus structure) of most computers at the machine language level is primitive and awkward
+to program, especially for input/output. To make this point more concrete, consider how floppy disk I/O is done using the NEC PD765 compatible controller
+chips used on most Intel-based personal computers. (Throughout this book we
+will use the terms "floppy disk" and "diskette" interchangeably.) We use the
+floppy disk as an example, because, although it is obsolete, it is much simpler
+than a modern hard disk. The PD765 has 16 commands, each specified by loading
+between I and 9 bytes into a device register. These commands are for reading and
+writing data, moving the disk arm, and formatting tracks, as well as initializing,
+sensing, resetting, and recalibrating the controller and the drives.</p>
+
+<h3>HISTORY OF OPERATING SYSTEMS</h3>
+Operating systems have been evolving through the years. In the following
+sections we will briefly look at a few of the highlights. Since operating systems
+have historically been closely tied to the architecture of the computers on which
+they run, we will look at successive generations of computers to see what their operating systems were like. This mapping of operating system generations to computer generations is crude, but it does provide some structure where there would
+otherwise be none.
+The progression given below is largely chronological, but it has been a bumpy
+ride. Each development did not wait until the previous one nicely finished before
+getting started. There was a lot of overlap, not to mention many false starts and
+dead ends. Take this as a guide, not as the last word.
+The first true digital computer was designed by the English mathematician
+Charles Babbage (1792-1871).<br/> Although Babbage spent most of his life and fortune trying to build his "analytical engine," he never got it working properly because it was purely mechanical, and the technology of his day could not produce
+the required wheels, gears, and cogs to the high precision that he needed. Needless to say, the analytical engine did not have an operating system.
+As an interesting historical aside, Babbage realized that he would need software for his analytical engine, so he hired a young woman named Ada Lovelace,
+who was the daughter of the famed British poet Lord Byron, as the world's first
+programmer. The programming language Ada® is named after her. 
+<p>The First Generation (1945-55) Vacuum Tubes </p>
+<p>The Second Generation (1955-65) Transistors and Batch Systems </p>
+<p>The Third Generation (1965-1980) ICs and Multiprogramming</p>
+<p>The Fourth Generation (1980-Present) Personal Computers</p>
+
+
+
+</div>

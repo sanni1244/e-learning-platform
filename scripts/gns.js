@@ -32,7 +32,7 @@ let gnsCourse = [
     {
         img: "/vent/material/gns301/gns301.jpg",
         courseCode: "GNS 301",
-        name: "Logic and Philosophy",
+        name: "LOGIC AND PHYLOSOPHY",
         level: "300 Level",
         material_no: "1",
         location: "/vent/material/Phy101/1.pdf",
@@ -42,7 +42,7 @@ let gnsCourse = [
     {
         img: "/vent/material/ent302/ent302.png",
         courseCode: "ENT 302 (WATER TREATMENT)",
-        name: "WATER TREATMENT, PACKAGING AND MARKETING",
+        name: "ENTREPRENEURSHIP II",
         level: "300 Level",
         material_no: "1",
         location: "/vent/material/ent302/1.pdf",

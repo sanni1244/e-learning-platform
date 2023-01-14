@@ -1,1 +1,123 @@
-<h1>Hell</h1>
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Consecutive Sign-in</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <div id="signin-form">
+    <h1>Sign In</h1>
+    <form>
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username">
+      <input type="button" value="Sign in" onclick="signIn()">
+    </form>
+    <div id="consecutive-days"></div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
+
+
+<style>
+  #signin-form {
+  width: 300px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#signin-form h1 {
+  margin-bottom: 20px;
+}
+
+#signin-form label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+#signin-form input[type="text"] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+
+#signin-form input[type="button"] {
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+}
+
+#consecutive-days {
+  margin-top: 20px;
+  font-size: 18px;
+}
+
+</style>
+
+<script>
+  function signIn() {
+  var username = $("#username").val();
+  $.ajax({
+    type: "POST",
+    url: "signin.php",
+    data: { username: username },
+    success: function(data) {
+      $("#consecutive-days").text(data);
+    }
+  });
+}
+</script>
+
+
+
+<?php
+  $username = $_POST['username'];
+  $consecutive_days = getConsecutiveDays($username);
+  echo $consecutive_days;
+
+  function getConsecutiveDays($username) {
+    // Connect to the database
+    $host = "localhost";
+    $user = "your_username";
+    $password = "your_password";
+    $dbname = "your_dbname";
+    $conn = mysqli_connect($host, $user, $password, $dbname);
+
+    // Retrieve the last sign-in date from the database
+    $query = "SELECT last_signin FROM users WHERE username = '$username'";
+    $result = mysqli_query($conn, $query);
+    $row = mysqli_fetch_assoc($result);
+    $last_signin = $row['last_signin'];
+
+    // Check if the last sign-in date is today
+    $today = date('Y-m-d');
+    if ($last_signin == $today) {
+      // Update the last sign-in date in the database
+      $query = "UPDATE users SET consecutive_days = consecutive_days + 1 WHERE username = '$username'";
+      mysqli_query($conn, $query);
+    } else {
+      // Update the last sign-in date and reset consecutive days in the database
+      $query = "UPDATE users SET last_signin = '$today', consecutive_days = 1 WHERE username = '$username'";
+      mysqli_query($conn, $query);
+    }
+    
+    // Retrieve the consecutive days from the database
+    $query = "SELECT consecutive_days FROM users WHERE username = '$username'";
+    $result = mysqli_query($conn, $query);
+    $row = mysqli_fetch_assoc($result);
+    $consecutive_days = $row['consecutive_days'];
+    
+    // Close the database connection
+    mysqli_close($conn);
+    
+    // Return the consecutive days
+    return $consecutive_days;
+
+    
+    ?>

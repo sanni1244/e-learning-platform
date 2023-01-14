@@ -36,7 +36,7 @@
             mylink: "/vent/personal/link.php?aq=bio101"
         },
         {
-            img: "/vent/material/csc208/csc208.jpeg",
+            img: "/vent/material/csc208/csc208.jpg",
             courseCode: "CSC 208",
             name: "INTRODUCTION TO HARDWARE LABORATORY",
             level: "200 Level",

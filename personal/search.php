@@ -1,5 +1,6 @@
 <?php 
     $r = 0;
+    error_reporting(1); 
 ?>
 <link rel="stylesheet" href="/vent/style/style2.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
@@ -38,7 +39,7 @@
         $q = $_GET['q'] ;
         if($q !== "" && $q !== " "){
     require_once("../sections/check.php");
-    $QQ = "SELECT * FROM `COURSES` WHERE `Course Code` like '%$q%' OR `Course Title` like '%$q%'";
+    $QQ = "SELECT * FROM `COURSES` WHERE `Course Code` like '%$q%' OR `Course Title` like '%$q%' ORDER BY `level` ASC, `ID` ASC, `Course Title` DESC";
     $query = mysqli_query($conn, $QQ);
     $nnb = mysqli_num_rows($query);?> <br>
     <p class="reslt"><?php
@@ -48,10 +49,12 @@
     while($row = mysqli_fetch_array($query)){
         $code = $row['Course Code'];
         $title = $row['Course Title']; 
-        $level = $row['Level']; 
+        $level = $row['level']; 
         // $link = $row['link']; 
-        $link = "a";     
-        ?>
+        $word1 = substr($code, 0, 3) .  substr($code, 4, 6) ;
+
+        $link = "../personal/link.php?aq=$word1";     
+        ?> 
         
     <?php 
     echo '<div class="searchspace"><h2>' . $code . '</h2> ' ."<i class='features'>" . ucfirst(strtolower($title)) . "<br/>". $level . "<br/>" . "<i><a href='$link'>Read Material</a>" ."</div>";

@@ -1,0 +1,32 @@
+
+<div class="none">
+    <br/><br/><br/><br/>
+    <center><h2>CSC 223 Short Note</h2></center>
+    COURSE OUTLINE FOR CSC 223: INTRODUCTION TO INFORMATION PROCESSING METHODS
+<br/>
+1.  Information Systems. <br/>
+
+2.  Management Information System (MIS).<br/>
+
+3.  Overview of file organization.
+<br/>
+4.  Overview of data structure.<br/>
+
+5.  Overview of sorting and merging.<br/>
+
+6.  Overview of Construction and maintenance of search trees.<br/>
+
+7.  Decision tables.<br/>
+
+8.  Structure of decision table.<br/>
+
+    <h3>Information Systems</h3>
+    <p>Information systems are a combination of hardware, software, and communication networks that people use to process, store, and transmit information. These systems allow organizations to efficiently manage, analyze, and disseminate data and information to support decision-making, problem-solving, and communication within and between organizations.</p>
+    <p>There are several types of information systems, including transaction processing systems, management information systems, decision support systems, expert systems, and artificial intelligence systems. Transaction processing systems are used to process and record routine business transactions, such as sales or payroll. Management information systems provide managers with information they need to make decisions, such as financial reports or sales data. Decision support systems assist in the decision-making process by providing access to relevant information and analysis tools. Expert systems are designed to replicate the decision-making abilities of a human expert in a specific field, such as medicine or engineering. Artificial intelligence systems use machine learning algorithms to perform tasks that would normally require human intelligence, such as language translation or image recognition.</p>
+    <p>Information systems play a crucial role in modern organizations, enabling them to collect, process, store, and transmit large amounts of data and information quickly and accurately. They also allow organizations to automate many routine tasks, improving efficiency and productivity. However, information systems also present risks, such as the potential for data breaches and cyber attacks, and require proper management and security measures to protect sensitive data and ensure the integrity of the system.</p>
+<h3>File organization</h3>
+    <p>File organization refers to the way in which electronic files are arranged and stored on a computer or other electronic device. Proper file organization is essential for finding, accessing, and using digital information efficiently and effectively.</p>
+    <p>There are many different methods of file organization, including hierarchical file systems, flat file systems, and database systems. In a hierarchical file system, files are arranged in a tree-like structure with folders and subfolders. This allows for a clear and logical structure that is easy to navigate and understand. Flat file systems, on the other hand, do not have a hierarchical structure, and all files are stored in a single directory. This can make it more difficult to find specific files, but can also be more efficient for certain tasks.</p>
+    <p>Database systems are designed to store and organize large amounts of data in a structured and efficient way. They are often used to store and manage large amounts of data in a business or organization.</p>
+    <p>Regardless of the method used, it is important to have a clear and consistent system for organizing files. This can involve using descriptive and meaningful file names, creating consistent and logical folder structures, and keeping related files together. Proper file organization can save time, reduce frustration, and improve productivity. It can also help to prevent data loss and ensure that important information can be easily retrieved when needed.</p>
+</div>

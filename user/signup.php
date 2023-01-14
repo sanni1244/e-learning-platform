@@ -57,7 +57,7 @@ elseif(isset($_POST['radio']) && $_POST['radio'] == "no"){
             </div>
             <div class="cntn1">
                 <label for="">Level</label>
-                <select name="Level" id="Level" class="lbl1">
+                <select name="level" id="Level" class="lbl1">
                     <option selected value="100">100 level</option><option value="200">200 level</option><option value="300">300 level</option><option value="400">400 level</option><option value="500">500 level</option>
                 </select>
             </div>
@@ -65,7 +65,7 @@ elseif(isset($_POST['radio']) && $_POST['radio'] == "no"){
         <?php } ?>
         <div class="signup-section">
             <div class="cntn1">
-                <label for="">Password*<sup title="This field is required. It must be at least 4 characters long."></sup></label>
+                <label for="">Password<sup title="This field is required. It must be at least 4 characters long.">*</sup></label>
                 <input class="lbl1" placeholder="<?php echo $blankpass?>" type="password" name="password" id=""></input>
             </div>
             <div class="cntn1">
@@ -77,14 +77,14 @@ elseif(isset($_POST['radio']) && $_POST['radio'] == "no"){
         </div>
         <div class="signup-section">
             <div class="cntn1">
-                <input type="submit" class="lbl1" name="signup" value="Signup" id="submit1">      
+                <input type="submit" class="lbl1" name="signup" value="Signup" id="submit1">       
             </div>
         </div>
                     </div>
     </form>
     <div class="notyet">
-        <h5>Already have an account?</h5> <br>
-        <a href="login.php">Log In here</a>
+        <p>Already have an account? <a href="login.php">Log In here</a></p>
+        
     </div>
 
 </body>

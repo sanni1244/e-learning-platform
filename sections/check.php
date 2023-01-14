@@ -1,7 +1,3 @@
-<?php 
-
-
-?>
 <?php
 session_start();
 if(!isset($fname) && !isset($lname) && !isset($wemail) && !isset($matric1)){
@@ -15,12 +11,17 @@ $file = file_get_contents($filename);
 $conn = mysqli_connect("localhost","root", "", "learning") or die('Connection Failed');
 $file2 = file_get_contents($filename2);
 $noinput = "This field cannot be left blank!";
+//sign up
+
 if($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['signup'])){
     if(isset($_POST['firstname']) && isset($_POST['lastname'])  && isset($_POST['email'])  && isset($_POST['password']) ){
         $firstname = strtolower($_POST['firstname']);
         $lastname = strtolower($_POST['lastname']);
         $email = strtolower($_POST['email']);
         $password = $_POST['password'];
+        $facl = @$_POST["facrrr"];
+        $dtr = @$_POST["dtment"];
+        $level = @$_POST["level"];
         if(isset($_POST['matric'])){
             $matric = $_POST['matric'];
         }
@@ -80,30 +81,26 @@ if($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['signup'])){
                                             if($matt == " "){
                                                 $mypass = $_POST['password'];    
                                                 $successful_reg = "Yes"; 
-                                                if($matric1 == ""){
-                                                     $matric1 = "NULL";
-                                                }}}}}}
-    }}
-}}}}
+                                                }}}}}}}}}}}
     else{
         echo "An error occured!";
     }}
 if(isset($successful_reg)){
-    // Work on inserting into the database
-    $insert_details = "INSERT INTO `Users`(`first name`,`last name`, `email`, `matricNo`, `password`) VALUES ('$fname', '$lname', '$wemail', '$matric1', '$mypass')";
+    //inserting into the database
+    $insert_details = "INSERT INTO `Users`(`first name`,`last name`, `email`, `matricNo`, `faculty`, `department`, `level`, `password`) VALUES ('$fname', '$lname', '$wemail', '$matric1', '$facl', '$dtr', '$level', '$mypass')";
     $check2 = mysqli_query($conn, $insert_details);
     $check_mail = "SELECT * FROM `users` WHERE `email` = '$wemail'";
     $check3 = mysqli_query($conn, $check_mail);
     if(mysqli_num_rows($check3) !== 0){
         $warning = "Your sign up was successful";
+        $_SESSION['mer'] = $_POST['email'];
         echo "<meta http-equiv='refresh' content='2; url=../user/login.php'>";
     }}
-
-    //login
+ //login
+$wemail1 = @$_SESSION['mer'];
 
 if($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['login'])){
-  
-
+    $_SESSION['mer'] = null;
     $conn = mysqli_connect("localhost","root", "", "learning") or die('Connection Failed');
     if(isset($_POST['email'])  && isset($_POST['password']) ||isset($_POST['matric'])  && isset($_POST['password']) ){
 
@@ -124,11 +121,10 @@ if($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['login'])){
                         $check3 = mysqli_query($conn, $check_mail);
                         $array1 = mysqli_fetch_array($check3);
                         $array2 = mysqli_fetch_array($check2);
-                        $array4 = $array1['id'];
-                            if($array1['id'] == $array2['id']){
+                        $array4 = @$array1['id'];
+                            if(@$array1['id'] == @$array2['id']){
                                 $warning = "Login was successful";
                                     $wemail = $_POST['email'];
-
                                    $_SESSION['id'] = $array4;
                                     header("refresh: 3; url=../personal/dashboard.php");
                             }
@@ -141,13 +137,15 @@ if($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['login'])){
                             $check3 = mysqli_query($conn, $check_mat);
                             $array1 = mysqli_fetch_array($check3);
                             $array2 = mysqli_fetch_array($check2);
-
+                            $array4 = $array1['id'];
                         if(isset($array1['id']) && $array2['id'] !== NULL && $array1['id'] == $array2['id']  ){
                             
                             $warning = "Login was successful";
                             $matric1 = $_POST['matric'];
-                            echo "<script>localStorage.setItem('sd12133', '$matric1');</script>";
-                            header("refresh: 4; url=../personal/dashboard.php");
+                            // echo "<script>localStorage.setItem('sd12133', '$matric1');</script>";
+                            $_SESSION['id'] = $array4;
+
+                            header("refresh: 2; url=../personal/dashboard.php");
                         }
                         else{
                                 $warning = "Incorrect details";                      
@@ -156,19 +154,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['login'])){
                     else{
                         $warning = "Incorrect details";                      
                 }
-                }
-                
-                
-
-
-
-        }
-
-
-
-
-
-        }
+                }}}
         // $wemail = "";
 
 ?>

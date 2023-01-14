@@ -1,0 +1,38 @@
+<div class="none">
+<br/><br/><br/><br/>
+<center><h2>CSC 204 Short Note</h2></center>
+<h2>Logic and Set Theory</h2>
+<p>In mathematics, a proof is a demonstration that, assuming certain axioms, some
+statement is necessarily true. That is, a proof is a logical argument, not an empirical one. One must demonstrate that a proposition is true in all cases before it is
+considered a theorem of mathematics. An unproven proposition for which there is
+some sort of empirical evidence is known as a conjecture. Mathematical logic is
+the framework upon which rigorous proofs are built. It is the study of the principles
+and criteria of valid inference and demonstrations. <br/><br/>
+Logicians have analyzed set theory in great details, formulating a collection of
+axioms that affords a broad enough and strong enough foundation to mathematical
+reasoning. The standard form of axiomatic set theory is denoted ZFC and it consists
+of the Zermelo-Fraenkel (ZF) axioms combined with the axiom of choice (C). Each
+of the axioms included in this theory expresses a property of sets that is widely
+accepted by mathematicians. It is unfortunately true that careless use of set theory
+can lead to contradictions. Avoiding such contradictions was one of the original
+motivations for the axiomatization of set theory</p>
+A logical conjunction is an operation on two logical propositions that produces
+a value of true if both statements are true, and is false otherwise. The conjunction
+(or logical AND) of P and Q, denoted by P ∧ Q. <br/> 
+<p>a logical disjunction is an operator on two logical propositions that
+is true if either statement is true or both are true, and is false otherwise. The disjunction (or logical OR) of P and Q.</p>
+<br/>
+In mathematics, a negation is an operator on the logical value of a proposition
+that sends true to false and false to true. The negation (or logical NOT) of P,
+denoted ¬P. <br/><br/>
+The next method of combining mathematical statements is slightly more subtle
+than the preceding ones. The conditional connective P → Q is a logical statement
+that is read “if P then Q”.
+
+
+
+
+
+
+
+</div>
