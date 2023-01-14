@@ -257,6 +257,8 @@ if ($fac == '01'){
       $dep = 'MEDICAL LABORATORY SCIENCE';
     }
   }
-    echo ("<h2 class='fac'>" .ucfirst(strtolower($fac)) . "</h2>");
+    if($fac !== ""){
+      echo ("<h2 class='fac'>" .ucfirst(strtolower($fac)) . "</h2>");
     echo ("<h2 class='fac'>" .ucfirst(strtolower($dep)) . " (". $lev ." level) </h2>");
+    }
 ?>

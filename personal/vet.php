@@ -16,3 +16,4 @@ $fre = mysqli_query($conn, $addit);
             header("location:./mycourses.php");
             // echo "<script>location.reload();</script>";
 ?>
+

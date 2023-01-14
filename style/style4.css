@@ -28,12 +28,11 @@ body{
     position: relative;
     background-color: white;
     height: 75vh;
-    width: 63vw;
+    width: 76vw;
     margin: auto;
     border-radius: 20px;
     padding: 1rem;
     box-shadow: 0px 0px 10px 10px;
-    font-size: 1.2rem;
 }
 hr{
     display: flex;
@@ -72,9 +71,7 @@ hr{
     overflow: scroll;
 }
 form{
-    position: absolute;
-    left: 10%;
-    width: 80%;
+    width: 95%;
 } 
 li{
     list-style-type: lower-alpha;
@@ -103,13 +100,8 @@ input[type="radio"]{
     height: 15px;
     accent-color: rgb(174, 24, 49);
 }
-.answer{
-    position: absolute;
-    width: 1rem;
-}
 table{
-    border-collapse: separate;
-    border-spacing: 20px;
+    border-spacing: 12px;
     margin-bottom: 2rem;
 }
 .button_mark{

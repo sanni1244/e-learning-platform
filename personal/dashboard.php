@@ -10,6 +10,17 @@
 <body>
 <?php
 include_once("../personal/userdata.php");   
+$check13 = "SELECT * FROM `Dashboard` WHERE `id` = '$save'";
+  $okay = mysqli_query($conn, $check13);
+            $flex1 = mysqli_fetch_array($okay);
+            $flex2 = $flex1['lastTest'];
+            $flex3 = $flex1['testScore'];
+            $ver = "SELECT * from `courses` where `Course Code` = '$flex2'";
+  $okay1 = mysqli_query($conn, $ver);
+  $flex12 = mysqli_fetch_array($okay1);
+  $flex14 = @$flex12['Course Title'];
+
+
 
 ?>
 <div class="container1">
@@ -50,33 +61,58 @@ include_once("../personal/userdata.php");
             ?>
             
         </div>
-<?php 
-$lr = $array1["lastRead"];
-  $query = "SELECT * from `courses` where `Course Code` = '$lr'";
-$lr_run = mysqli_query($conn, $query);
-$ry = mysqli_fetch_assoc($lr_run);
-$code = $ry['Course Code'];
-$level = $ry['level'];
-$title = $ry['Course Title'];
-
-
-?>
-        <div class="dashcontent">
-          <h3 class="lst_read">Last Read</h3>
-          <h5 class="lst_read_content">
-            <img src="../images/read.png" class="read" alt="">
-            <span class="lst_read_content_text">
-              <?php echo "<span><span class='lst_read'>".$code.": ".$title."</span><br/><span class='lst_read'>".$level."</span></span>";?>
+            <?php 
+            $lr = @$flex1["lastRead"];
+              $query = "SELECT * from `courses` where `Course Code` = '$lr'";
+            $lr_run = mysqli_query($conn, $query);
+            $ry = mysqli_fetch_assoc($lr_run);
+            $code = @$ry['Course Code'];
+            $level = @$ry['level'];
+            $title = @$ry['Course Title'];
+            $codeinsmall = strtolower(@$code[0]).strtolower(@$code[1]).strtolower(@$code[2]).@$code[4].@$code[5].@$code[6];
+        if($lr !== ""){
+          echo "
+          <div class='dashcontent'>
+          <h3 class='lst_read'>Last Read</h3>
+          <h5 class='lst_read_content'>
+            <img src='../images/read.png' class='read' alt=''>
+            <span class='lst_read_content_text'><span><span class='ferf'>$code: $title</span><br/><br/><span class='ferf'>$level</span></span>
             </span>
-            <span class="lst_read_content_text">
-asas
+            <span class='lst_read_content_text'><span class='links_to_text'><a href='./link.php?aq=$codeinsmall'>Continue Reading</a><a href='../test/test.php?tst=$code'>Test</a></span></span></span>
+            </h5>
+          </div>";}
+          if($flex2 !== ""){
+            echo "
+            <div class='dashcontent'>
+            <h3 class='lst_read'>Last Test Taken</h3>
+            <h5 class='lst_read_content'>
+              <img src='../images/test.png' class='read' alt=''>
+              <span class='lst_read_content_text'><span><span class='ferf'>$flex2: $flex14</span><br/><br/><span class='ferf'><a  class='ferf' href='../test/test.php?tst=$flex2'>Retake Test</a></span></span>
             </span>
-          </h5>
-      
-    
+              </span>";
+            if($flex3 < 4){
+              echo "<span class='lstq'><span class='gng'>Score: $flex3/10</span><img src='../images/fail.png' class='read' alt=''></span>
+              </h5>
+            </div>";
+            }
+            if($flex3 > 3 && $flex3 < 7){
+              echo "<span class='lstq'><span class='gng'>Score: $flex3/10</span><img src='../images/good.png' class='read' alt=''></span>
+              </h5>
+            </div>";
+            }
+            if($flex3 > 6){
+              echo "<span class='lstq'><span class='gng'>Score: $flex3/10</span><img src='../images/pass.png' class='read' alt=''></span>
+              </h5>
+            </div>";
+            }
+              
+          }
+          
+       
+          ?>              
+            
         
-      
-        </div>
+        
 
 
 

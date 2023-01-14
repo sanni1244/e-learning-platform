@@ -121,8 +121,8 @@ if($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['login'])){
                         $check3 = mysqli_query($conn, $check_mail);
                         $array1 = mysqli_fetch_array($check3);
                         $array2 = mysqli_fetch_array($check2);
-                        $array4 = $array1['id'];
-                            if($array1['id'] == $array2['id']){
+                        $array4 = @$array1['id'];
+                            if(@$array1['id'] == @$array2['id']){
                                 $warning = "Login was successful";
                                     $wemail = $_POST['email'];
                                    $_SESSION['id'] = $array4;

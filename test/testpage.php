@@ -1,5 +1,6 @@
 <?php
 session_start();
+$save = $_SESSION['id'];
   $conn = mysqli_connect("localhost", "root", "", "learning");
   if($conn->connect_error){
     die("Connection failed: " . $conn->connect_error);
@@ -24,7 +25,7 @@ $lll = $row1['ccourse'] ;
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="../style/bootstrap.min.css">
+  <!-- <link rel="stylesheet" href="../style/bootstrap.min.css"> -->
   <link rel="stylesheet" href="../style/style4.css">
   <title>Take Test</title>
 </head>
@@ -76,7 +77,7 @@ echo "<center><h5>Question " .$_SESSION['num'] . "</h5></center>";
       // $row3['answer'];
   }
   else{
-    echo "<div class='answer'><center><h1>Answers</h1></center><div><table border='5px'><tr><td></td> <td>Correct Answer</td><td>Your Answer</td><tr>";
+    echo "<div class='answer'><h1>Answers</h1><div><table><tr><td></td> <td>Correct Answer</td><td>Your Answer</td><tr>";
     $score = 0;
     for($i = 0; $i < $row4; $i++){
       $trt = $_SESSION['attnum'];
@@ -99,36 +100,18 @@ echo "<center><h5>Question " .$_SESSION['num'] . "</h5></center>";
         echo"<a class='button_mark' href='../personal/mycourses.php'><div>End Test</div></a>";
         echo"<a class='button_mark' href='http://localhost/vent/test/test.php?tst=".$testcode ."'><div>Restart Test</div></a></div></div>";
 
+      $testscore = "UPDATE `dashboard` SET `testScore` = '$score', `lastTest` = '$testcode'  where `id` = '$save'";
+      mysqli_query($conn, $testscore);
 
    
   }
 // }?>
 </form>
 </div>
-<?php
-  // if(isset($_POST['submittest'])){
-    // $i++;
-    // $answer = $_POST['q1'];
-    // if($answer == $row1['answer']){
-    //   echo "Correct Stuff man";
-    // }
-    // else{
-    //   echo "Very wrong and very messed up dude!";
-    // }
-  // }
-?>
 </div>
 </body>
 </html>
 
-
-<?php
-   
-?>
-
-<form method='post'>
-
-</form>
 
 
 

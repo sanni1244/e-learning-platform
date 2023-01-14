@@ -37,7 +37,7 @@
                             $f2 = $nnb['Course Code'];
                             $last_read = $word;
             $yr = "SELECT mycourse FROM users WHERE id = $save AND `mycourse` like '%$rtr%'";
-            $lkl = "UPDATE `users` SET `lastRead` = '$last_read' where id = '$save'";
+            $lkl = "UPDATE `dashboard` SET `lastRead` = '$last_read' where id = '$save'";
             mysqli_query($conn, $lkl);
             $yr1 = mysqli_query($conn, $yr);
             $nnbdd= mysqli_fetch_array($yr1);
