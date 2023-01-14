@@ -1,3 +1,5 @@
+
+
 body{
     box-sizing: border-box;
     overflow-x: hidden;
@@ -54,8 +56,7 @@ p{
     align-items: center;
     font-family: 'Times New Roman', Times, serif;
     font-size: 0.9rem;
-
-
+    transition: all 600ms ease-in-out;
 }
 .flex_bttn{
     display: flex;
@@ -110,10 +111,22 @@ p{
 }
 .contact_lasu p{
     margin: 1rem;
-    
     display: flex;
     align-items: center;
     column-gap: 1.6rem;
 }
 
 
+
+
+#calendar {
+  font-size: 20px;
+  font-weight: bold;
+  color: blue;
+  text-align: center;
+}
+#time {
+  font-size: 16px;
+  color: green;
+  text-align: center;
+}

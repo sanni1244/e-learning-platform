@@ -18,6 +18,7 @@
     <div class="one center coursedetails">
     <?php
     session_start();
+    
     $conn = mysqli_connect("localhost", "root", "", "learning");
     $save = $_SESSION['id'];
     if(isset($_GET["aq"])){
@@ -34,7 +35,10 @@
                             <div class=''><h4>{$nnb['Course Title']} ({$nnb['level']})</h4></div></center>              
                             <div class='coursedet1'>{$nnb['materials']}</div>" ;
                             $f2 = $nnb['Course Code'];
+                            $last_read = $word;
             $yr = "SELECT mycourse FROM users WHERE id = $save AND `mycourse` like '%$rtr%'";
+            $lkl = "UPDATE `users` SET `lastRead` = '$last_read' where id = '$save'";
+            mysqli_query($conn, $lkl);
             $yr1 = mysqli_query($conn, $yr);
             $nnbdd= mysqli_fetch_array($yr1);
             function runMyFunction() {
@@ -97,6 +101,7 @@ $.getJSON('./elist.json', function(data) {
 });
 
 });
+
 </script>
 </head>
 
@@ -118,6 +123,7 @@ $.getJSON('./elist.json', function(data) {
     else{
         header("location:/vent/personal/allcourses.php");
     }
+    
 ?><br><br><br>
 </div></div>
 

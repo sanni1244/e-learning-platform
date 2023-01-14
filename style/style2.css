@@ -185,6 +185,8 @@ ul {
   width: 100%;
 }
 .tip2 {
+  font-family: 'Crimson Text', serif;
+
   font-size: 1rem;
 }
 /* all courses section  */
@@ -583,3 +585,20 @@ background-color: #0b5cd6e7;
 color: white;
 border-radius: 12px;
 }
+.flex2{
+ float: right;
+}
+.fac{
+  margin-top: 2rem;
+  font-weight: 300;
+  font-size: 1.4rem;
+  font-family: 'Crimson Text', serif;
+
+}
+
+
+
+
+
+
+
