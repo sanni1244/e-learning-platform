@@ -174,21 +174,6 @@ ul {
   filter: invert(100%) sepia(63%) saturate(0%) hue-rotate(246deg)
     brightness(100%) contrast(156%);
 }
-/* dashboard center */
-.center {
-  padding: 3rem;
-}
-.tip {
-  color: black;
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-  font-size: 2rem;
-  width: 100%;
-}
-.tip2 {
-  font-family: 'Crimson Text', serif;
-
-  font-size: 1rem;
-}
 /* all courses section  */
 .top {
   margin-bottom: 2rem;
@@ -581,23 +566,10 @@ img {
   gap: 0.8rem;
 }
 .selection {
-background-color: #0b5cd6e7;
-color: white;
-border-radius: 12px;
-}
-.flex2{
- float: right;
-}
-.fac{
-  margin-top: 2rem;
-  font-weight: 300;
-  font-size: 1.4rem;
-  font-family: 'Crimson Text', serif;
-
-}
-
-
-
+  background-color: #0b5cd6e7;
+  color: white;
+  border-radius: 12px;
+  }
 
 
 

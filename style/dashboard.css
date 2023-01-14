@@ -1,0 +1,51 @@
+/* dashboard center */
+.center {
+    padding: 3rem;
+  }
+  .tip {
+    color: black;
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    font-size: 2rem;
+    width: 100%;
+  }
+  .tip2 {
+    font-family: 'Crimson Text', serif;
+    font-size: 1rem;
+  }
+    .flex2{
+     float: right;
+    }
+    .fac{
+      margin-top: 1.5rem;
+      font-weight: 300;
+      font-size: 1rem;
+      font-family: 'PT Serif', serif; 
+    }
+    .lst_read{
+        margin-top: 3.3rem;
+        font-size: 1.5rem;
+        font-weight: 400;
+        font-family: 'PT Serif', serif;
+
+    }
+    .lst_read_content{
+        background-color: white;
+        box-shadow: 0 0 0.1rem 10px rgba(94, 94, 94, 0.345);
+        height: 8rem;
+        width: 100%;
+        border-radius: 1rem;
+        padding: 1rem;
+        display: flex;
+        align-self: center;
+
+    }
+    .read{
+        height: 8rem;
+    }
+    .lst_read_content_text{
+        display: flex;
+        align-self: center;
+        margin-left: 1rem;
+    }
+    *{
+    }
