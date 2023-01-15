@@ -22,7 +22,7 @@
     $conn = mysqli_connect("localhost", "root", "", "learning");
     $save = $_SESSION['id'];
     if(isset($_GET["aq"])){
-        if($_GET["aq"]){
+        if($_GET["aq"]){ 
             $rtr = strtolower($_GET["aq"]);
             $word = strtoupper(substr($rtr, 0, 3)) . " ".  substr($rtr, 3, 6) ;
             $sqlquery = "SELECT * FROM `courses` WHERE `Course Code` = '$word'";
