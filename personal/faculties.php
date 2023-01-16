@@ -2,6 +2,8 @@
 $fac = $array1["faculty"];
 $dep = $array1["department"];
 $lev = $array1["level"];
+$mat = $array1["matricNo"];
+
 if ($fac == '01'){
     $fac = "FACULTY OF EDUCATION";
     if($dep == '001'){
@@ -260,5 +262,7 @@ if ($fac == '01'){
     if($fac !== ""){
       echo ("<h2 class='fac'>" .ucfirst(strtolower($fac)) . "</h2>");
     echo ("<h2 class='fac'>" .ucfirst(strtolower($dep)) . " (". $lev ." level) </h2>");
+    echo ("<h2 class='fac'> Matric Number: ". $mat ." </h2>");
+
     }
 ?>

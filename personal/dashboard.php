@@ -36,7 +36,7 @@ $check13 = "SELECT * FROM `Dashboard` WHERE `id` = '$save'";
                 <a href="/vent/personal/logout.php"><li class="left-section Settings"><img src="../icons/logout.svg">Log Out</li></a>
             </ul>
         </div>
-        <div class="one center">
+        <div class="one center overall">
         <div class="flex2">
             
               <?php

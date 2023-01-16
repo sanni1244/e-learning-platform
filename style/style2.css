@@ -574,7 +574,21 @@ img {
   color: white;
   border-radius: 12px;
   }
+  @media (max-width: 800px) {
+    .container2 {
+      display: flex;
+    }
+    .container1 {
+      display: flex;
+    }
+    .right{
+      display: none;
+    }
 
+
+
+
+  }
 
 
 

@@ -13,15 +13,14 @@
      float: right;
     }
     .fac{
-      margin-top: 1.5rem;
-      font-weight: 300;
-      font-size: 1rem;
+      margin-top: 1.2rem;
+      font-weight: 500;
+      font-size: 1.1rem;
       font-family: 'PT Serif', serif; 
-      font-weight: 400;
 
     }
     .lst_read{
-        margin-top: 1.4rem;
+        margin-top: 1.2rem;
         margin-bottom: -0.4rem;
         font-size: 1.5rem;
         font-weight: 400;
@@ -34,16 +33,6 @@
         height: 8rem;
         width: 95%;
         border-radius: 1rem;
-        padding: 1rem;
-        display: grid;
-        grid-template-columns: 20% 60% 20%;
-        align-self: center;
-
-    }
-    .lst_read_content1{
-        background-color: transparent;
-        height: 8rem;
-        width: 100%;
         padding: 1rem;
         display: grid;
         grid-template-columns: 20% 60% 20%;
@@ -77,4 +66,30 @@
       display: flex;
       align-items: center;
       font-size: 1rem;
+    }
+    .overall{
+      overflow: hidden;
+    }
+    @media (max-width: 900px) {
+      .container1 {
+        display: flex;
+      }
+      .right{
+        display: none;
+      }
+    .lst_read_content{
+        width: 100%;
+        grid-template-columns: 25% 45% 30%;
+        padding: 1.3rem;
+
+
+    }
+    .lst_read_content_text{
+      margin-left: 2.5rem;
+    }
+    .ferf{
+      font-size: 0.7rem;
+
+  }
+   
     }
