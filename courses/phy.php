@@ -1,4 +1,5 @@
 <link rel="stylesheet" href="../style/style2.css">
+<link rel="stylesheet" href="/vent/style/allcourses.css">
 <head>
     <?php 
     // include_once '../sections/headers.html'; ?>

@@ -1,5 +1,5 @@
 <link rel="stylesheet" href="/vent/style/style2.css">
-<!-- <link rel="stylesheet" href="/vent/style/bootstrap.min.css"> -->
+<link rel="stylesheet" href="/vent/style/allcourses.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 
 <body>
@@ -7,7 +7,7 @@
 error_reporting(0); 
 include_once("../personal/userdata.php");  
 ?>
- <div class="container1">
+ <div class="container2">
         <div class="one left">
             <a href="/vent/index.html"><div class="brand"><h4 class="h4">YEET KNOWLEDGE</h4></div></a>
             <ul>
@@ -30,7 +30,7 @@ include_once("../personal/userdata.php");
                 <label for="" class="mlm">First Name</label>
                 <label for="" class="mlm">Last Name</label>
                 <label for="" class="mlm" >E-mail</label>
-                <label for="" class="mlm">Matric Number</label>
+                <label for="" class="mlm">Matric No</label>
                 <label for="" class="mlm">Password</label>
                 
             </div>

@@ -328,3 +328,12 @@ input[type = "radio"]{
         padding: 0xp;
     }
 }
+
+@media (max-width: 800px) {
+
+.acct1{
+    margin-top: 1.5rem;
+    margin-left: -5rem;
+    gap: 1rem;
+}
+}

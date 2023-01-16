@@ -286,144 +286,7 @@ a.fixed:visited {
 .section a:hover{
   color: red;
 }
-/* available courses sumbit  */
-.cscsection {
-  /* display: flex; */
-  flex-wrap: wrap;
-  text-align: center;
-}
-.cntn1 label {
-  font-weight: 600;
-  opacity: 70%;
-  margin-bottom: 0.4rem;
-  font-size: 1.1rem;
-}
-/* edit details  */
-.effe{
-  overflow: hidden;
-}
-.head7 {
-  text-align: center;
-  margin-top: 1rem;
-  font-size: 2rem;
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-  color: #0b5cd6e7;
-}
-.mlm {
-  height: 5vh;
-  margin-bottom: 1rem;
-  border-radius: 7px;
-  padding-left: 9px;
-  font-size: 1.1rem;
-}
-input.mlm:focus {
-  color: #212529;
-  background-color: #fff;
-  border-color: #0b5cd6e7;
-  outline: 0;
-  box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
-}
-.mvr1 {
-  display: flex;
-  flex-direction: column;
-  font-weight: 600;
-  line-height: 5vh;
-  margin-right: 1rem;
-}
-.mvr2 {
-  display: flex;
-  flex-direction: column;
-  width: min(40vw, 30rem);
-  font-size: 1rem;
-  font-family: inherit;
-  margin-bottom: 1rem;
-}
-label.mlm {
-  font-size: 1.5rem;
-  font-weight: 500;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-}
-.mvr3 {
-  margin-top: 1rem;
-  gap: 3rem;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-.updateit {
-  display: flex;
-  margin-top: 5rem;
-  justify-content: end;
-}
-.same {
-  background-color: #0b5cd6e7;
-  border: #0b5cd6e7 0.1rem solid;
-  border-radius: 5px;
-  color: white;
-  width: max(10vw, 7rem);
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-  padding: 0.5rem;
-  font-weight: 600;
-}
-.redbttn {
-  background-color: red;
-  border: red 0.1rem solid;
-}
-.mvr3 {
-  display: flex;
-  justify-content: center;
-}
-.editmail {
-  background-color: black;
-  color: white;
-  opacity: 60%;
-  border: 2px solid black;
-  height: 5vh;
-  margin-bottom: 1rem;
-  border-radius: 7px;
-  padding-left: 9px;
-  font-size: 1.1rem;
-}
-/* csc.php  */
-.cscsection2 {
-  margin-top: 1rem;
-  display: grid;
-  grid-template-columns: 25vw 25vw;
-  grid-gap: 6rem;
-  justify-content: center;
-}
-.individual {
-  gap: 10rem;
-  border-radius: 1rem;
-    box-shadow: #0b5cd6e7 0px 0px 0px 3px, white 0px 0px 0px 6px, white 0px 0px 0px 9px, white 0px 0px 0px 12px, #0b5cd6e7 0px 0px 0px 15px;
-  background-color: #ffffffe7;
-  padding: 1rem;
-}
-img {
-  width: 160px;
-  height: 130px;
-}
-.individual * {
-  margin-top: 1rem;
-  font-weight: 500;
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-  font-size: 15px;
-}
-.availableButton button{
-  margin-top: 1rem;
-  background-color: white;
-  color: #0b5cd6e7;
-}
-.row a{
-  color: #0b5cd6e7;
-}
-.row a:hover{
-  color: red;
-}
-.details a{
-  color: #0b5cd6e7;
-}
-.details a:hover{
-  color: red;
-}
+
 /* logout page  */
 .outbody{
   height: 100vh;
@@ -498,7 +361,8 @@ img {
 }
 .enrol{
   text-align: center;
-  margin: 3rem 15rem;
+  width: 40vw;
+  margin: 3rem auto;
   border: #0b5cd6e7 2px solid;
   padding: 3px;
   color:#0b5cd6e7;
@@ -569,6 +433,10 @@ img {
   justify-content: center;
   gap: 0.8rem;
 }
+label.mlm{
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 1.3rem;
+}
 .selection {
   background-color: #0b5cd6e7;
   color: white;
@@ -584,11 +452,17 @@ img {
     .right{
       display: none;
     }
-
-
-
-
-  }
+    .mlm {
+      font-size: 0.9rem;
+    }
+    .mvr3{
+      font-size: 0.1rem;
+    }
+    label.mlm{
+      font-size: 1rem;
+    }
+    
+    }
 
 
 

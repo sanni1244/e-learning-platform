@@ -1,7 +1,7 @@
 
 <link rel="stylesheet" href="/vent/style/style2.css">
 <link rel="stylesheet" href="/vent/style/dashboard.css">
-
+<link rel="stylesheet" href="/vent/style/allcourses.css">
 <!-- <link rel="stylesheet" href="/vent/style/bootstrap.css"> -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -10,11 +10,14 @@
 <body>
 <?php
 include_once("../personal/userdata.php");   
+$check7 = "INSERT IGNORE into `Dashboard`(id) value ('$save')";
 $check13 = "SELECT * FROM `Dashboard` WHERE `id` = '$save'";
+  $okay = mysqli_query($conn, $check7);
   $okay = mysqli_query($conn, $check13);
+
             $flex1 = mysqli_fetch_array($okay);
-            $flex2 = $flex1['lastTest'];
-            $flex3 = $flex1['testScore'];
+            $flex2 = @$flex1['lastTest'];
+            $flex3 = @$flex1['testScore'];
             $ver = "SELECT * from `courses` where `Course Code` = '$flex2'";
   $okay1 = mysqli_query($conn, $ver);
   $flex12 = mysqli_fetch_array($okay1);
