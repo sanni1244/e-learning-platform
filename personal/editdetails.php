@@ -1,10 +1,12 @@
 <link rel="stylesheet" href="/vent/style/style2.css">
 <link rel="stylesheet" href="/vent/style/allcourses.css">
+<link rel="shortcut icon" href="../images/z2.png" type="image/x-icon">
+<title>Edit Details</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 
 <body>
 <?php
-error_reporting(0); 
+// error_reporting(0); 
 include_once("../personal/userdata.php");  
 ?>
  <div class="container2">

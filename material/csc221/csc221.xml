@@ -12,4 +12,14 @@
     <p>Heaps are a data structure that is used to store data in a specific order, such as a max heap where the largest value is always at the top. Heaps are often used in algorithms that require efficient sorting or searching.</p>
     <p>Tries are a data structure that are used to store and retrieve data by dividing it into smaller chunks, similar to a tree structure. Tries are often used in applications such as spelling checkers or autocomplete functionality.</p>
     <p>There are also data structures known as sets and maps, which are used to store and retrieve data based on keys and values. Sets are collections of unique elements, while maps are collections of key-value pairs. Both sets and maps are useful for storing and organizing data in a variety of applications.</p>
+
+
+    <h3>Note 2</h3>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
 </div>

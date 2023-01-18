@@ -139,6 +139,7 @@ a {
   width: 25px;
   height: 25px;
 }
+
 svg {
   fill: red;
 }
@@ -358,6 +359,7 @@ a.fixed:visited {
   margin: auto;
   font-size: 15px;
   opacity: 70%;
+  text-align: justify;
 }
 .enrol{
   text-align: center;
@@ -391,12 +393,13 @@ a.fixed:visited {
   height: 2rem;
 }
 @import url('https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap');
-.none p{
+.none {
   font-size: 16px;
   font-weight: 400;
   font-family: 'Crimson Text', serif;
-  width: 60vw;
+  width: 65vw;
   margin: auto;
+  text-align: justify;
 }
 .container2{
   margin: 0;

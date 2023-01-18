@@ -165,9 +165,9 @@ label{
 .lbl2{
     width: min(40vw, 30rem);
     height: 0.3vh;
-    font-size: 1.2rem;
-    font-family: 'Bree Serif', serif;
-    font-weight: 600;
+    font-size: 1rem;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 400;
     color: red;
 }
 .lbl3{
@@ -306,6 +306,9 @@ input[type = "radio"]{
     padding: 4px;
     border-radius: 7px;
     background-color: #0b5cd6e7;
+}
+.red{
+    color: red;
 }
 @media (max-width: 950px) {
     .loginbody{

@@ -55,7 +55,7 @@ $array1 = mysqli_fetch_array($check3);
         elseif(strstr($file, $lname . "1")){
             $err44 = "<span class='red'>The last name entry made is not allowed</span>";}
         elseif(strlen($matrcc) != 9 && $matrcc != ""){$err44 = "<span class='red'>Check your matric number</span>";}
-        elseif((substr($matrcc, 0, 2) > $year || substr($matrcc, 0, 2) < $late) !== $matrcc && $matrcc !== ""){
+        elseif((substr($matrcc, 0, 2) > $year || substr($matrcc, 0, 2) < $late) && $matrcc !== ""){
             $err44 = "<span class='red'>Check your matric number</span>";}
         elseif(mysqli_num_rows($check1) !== 0 && $matrcc2 !== $matrcc && $matrcc !== ""){ 
             $err44 = "<span class='red'>Check your matric number</span>";}

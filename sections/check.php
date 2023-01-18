@@ -137,7 +137,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['login'])){
                             $check3 = mysqli_query($conn, $check_mat);
                             $array1 = mysqli_fetch_array($check3);
                             $array2 = mysqli_fetch_array($check2);
-                            $array4 = $array1['id'];
+                            $array4 = @$array1['id'];
                         if(isset($array1['id']) && $array2['id'] !== NULL && $array1['id'] == $array2['id']  ){
                             
                             $warning = "Login was successful";

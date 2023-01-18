@@ -20,6 +20,7 @@ $row2 = mysqli_fetch_assoc($result2);
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="../style/bootstrap.min.css">
+  <link rel="shortcut icon" href="../images/z2.png" type="image/x-icon">
   <link rel="stylesheet" href="../style/style4.css">
   <title>Take Test</title>
 </head>

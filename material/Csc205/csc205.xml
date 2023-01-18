@@ -39,6 +39,15 @@ programmer. The programming language Ada® is named after her.
 <p>The Third Generation (1965-1980) ICs and Multiprogramming</p>
 <p>The Fourth Generation (1980-Present) Personal Computers</p>
 
+<h1>Note 2</h1>
+<p>An operating system, or OS, is the software that manages the hardware and software resources of a computer. It acts as an intermediary between the computer's user and the hardware, allowing the user to interact with the computer in a graphical user interface (GUI) rather than having to communicate directly with the hardware.</p><br/>
+<p>There are several types of operating systems, including single-user and multi-user, as well as single-tasking and multi-tasking. Single-user operating systems are designed to be used by one person at a time, while multi-user operating systems allow multiple users to access the computer simultaneously. Single-tasking operating systems can only run one program at a time, while multi-tasking operating systems can run multiple programs simultaneously.</p><br/>
+<p>One of the most popular operating systems is Microsoft Windows. Windows is a multi-user, multi-tasking operating system that is widely used in personal computers, laptops and servers. It is known for its user-friendly interface and its compatibility with a wide range of software and hardware.</p><br/>
+<p>Another popular operating system is Linux. Linux is a multi-user, multi-tasking operating system that is widely used in servers, supercomputers and mobile devices. It is known for its stability, security and flexibility. Linux is also an open-source operating system, meaning that the source code is freely available for users to modify and distribute.</p><br/>
+<p>Apple's macOS is a popular operating system that is designed to run on Apple's Mac computers. It is known for its sleek design and integration with other Apple products, such as the iPhone and iPad.</p><br/>
+<p>The mobile OS like Android and IOS are also widely used. Android is an open-source operating system that is primarily used in mobile devices such as smartphones and tablets. It is known for its customization options and its compatibility with a wide range of apps. IOS is the proprietary operating system that runs on Apple's iPhone and iPad devices. It is known for its tight integration with other Apple products and its emphasis on security and privacy.</p><br/>
+<p>Operating systems also include device drivers, which are software programs that allow the operating system to communicate with specific hardware devices, such as printers and keyboards. This allows the operating system to access the full range of features and capabilities of the hardware.</p><br/>
+<p>In addition to managing hardware and software resources, operating systems also provide a wide range of services, such as file management, memory management, and security. File management allows users to organize and access files stored on the computer, while memory management ensures that the computer's memory is used efficiently. Security features, such as firewalls and virus scanners, help protect the computer from malware and unauthorized access.</p><br/>
 
 
 </div>

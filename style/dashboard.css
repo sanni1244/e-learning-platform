@@ -70,6 +70,9 @@
     .overall{
       overflow: hidden;
     }
+    .dashcontent{
+      margin-top: 4rem;
+    }
     @media (max-width: 900px) {
       .container1 {
         display: flex;

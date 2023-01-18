@@ -2,6 +2,8 @@
 <link rel="stylesheet" href="/vent/style/style3.css">
 
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+<link rel="shortcut icon" href="../images/z2.png" type="image/x-icon">
+<title>My courses</title>
 <body class="b4">
 <?php 
     include_once("../sections/check.php");
@@ -46,9 +48,9 @@
                 <td><?php echo $ttt ?></td>
                 <td><?php echo $htl[2]; ?></td>
                 <td><?php echo $htl[3]; ?></td>
-                <?php echo "<td><a class='stake' href='/vent/personal/link.php?aq=$newop'>Read</a></td>"?>
-                <?php echo "<td><a href='../test/test.php?tst=$ttt'>Take <br/>Test</a></td> ";?>
-                <?php echo "<td><a href='./vet.php?j=$newop'>Remove <br/>Course</a></td> "; ?>
+                <?php echo "<td><a class='stake' href='/vent/personal/link.php?aq=$newop'><img class='sym' title='Read course' src='../icons/menedit.svg'></a></td>"?>
+                <?php echo "<td><a href='../test/test.php?tst=$ttt'><img title='Take a test' class='sym' src='../icons/quiz.svg'></a></td> ";?>
+                <?php echo "<td><a href='./vet.php?j=$newop'><img title='Remove from your course list' class='sym' src='../icons/delete.svg'></a></td> "; ?>
             </tr>
         <?php }?>
         </table>
