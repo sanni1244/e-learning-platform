@@ -78,6 +78,9 @@ $check13 = "SELECT * FROM `Dashboard` WHERE `id` = '$save'";
         if($lr !== ""){
           echo "
           <div class='dashcontent'>
+          
+          Last Read
+
           <h5 class='lst_read_content'>
             <img src='../images/read.png' class='read' alt=''>
             <span class='lst_read_content_text'><span><span class='ferf'>$code: $title</span><br/><br/><span class='ferf'>$level</span></span>
@@ -88,6 +91,8 @@ $check13 = "SELECT * FROM `Dashboard` WHERE `id` = '$save'";
           if($flex2 !== ""){
             echo "
             <div class='dashcontent'>
+          Last Test
+
             <h5 class='lst_read_content'>
               <img src='../images/test.png' class='read' alt=''>
               <span class='lst_read_content_text'><span><span class='ferf'>$flex2: $flex14</span><br/><br/><span class='ferf'><a  class='ferf' href='../test/test.php?tst=$flex2'>Retake Test</a></span></span>
@@ -134,12 +139,6 @@ $check13 = "SELECT * FROM `Dashboard` WHERE `id` = '$save'";
     </div>
 </body>
    
-
-
-
-<!-- <?php  
-
-?> -->
 
 
 

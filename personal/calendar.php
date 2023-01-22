@@ -1,5 +1,19 @@
 <div class="calendar"></div>
-
+<body onload="displayRandomQuote()">
+  <div class="quotes" id="quote-container">
+    <p id="quote-text"></p>
+    <p id="quote-author"></p>
+  </div>
+</body>
+<style>
+.quotes{
+    margin-top: 60vh;
+    padding: 2rem;
+    font-weight: 600;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    opacity: 70%;
+  }
+</style>
 
 <script>
   function CalendarControl() {
@@ -264,6 +278,98 @@
 }
 setInterval(displayDateTime, 1000);
 
+var quotes = [
+      {
+        quote: "The best way to predict the future is to create it.",
+        author: "Abraham Lincoln"
+      },
+      {
+        quote: "I have not failed. I've just found 10,000 ways that won't work.",
+        author: "Thomas Edison"
+      },
+      {
+        quote: "You miss 100% of the shots you don't take.",
+        author: "Wayne Gretzky"
+      },
+      {
+        quote: "Education is not the filling of a pail, but the lighting of a fire.",
+        author: "William Butler Yeats"
+      },
+      {
+        quote: "The best teacher is not the one who knows most but the one who is most capable of reducing knowledge to that simple compound of the obvious and wonderful.",
+        author: "H.L. Mencken"
+      },
+      {
+        quote: "The only way to do great work is to love what you do.",
+        author: "Steve Jobs"
+      },
+      {
+        quote: "An investment in knowledge pays the best interest.",
+        author: "Benjamin Franklin"
+      },
+      {
+        quote: "The purpose of education is to replace an empty mind with an open one.",
+        author: "Malcolm Forbes"
+      },
+      {
+        quote: "It is not that I’m so smart. But I stay with the questions much longer.",
+        author: "Albert Einstein"
+      },
+      {
+        quote: "The only person who is educated is the one who has learned how to learn and change.",
+        author: "Carl Rogers"
+      },
+      {
+        quote: "Learning is not attained by chance, it must be sought for with ardor and attended to with diligence.",
+        author: "Abigail Adams"
+      },
+      {
+        quote: "The more that you read, the more things you will know. The more that you learn, the more places you’ll go.",
+        author: "Dr. Seuss"
+      },
+      {
+        quote: "Education is not the learning of facts, it’s rather the training of the mind to think.",
+        author: "Albert Einstein"
+      },
+      {
+        quote: "The only real limitation on your abilities is the level of your desires. If you want it badly enough, there are no limits.",
+        author: "Brian Tracy"
+      },
+      {
+        quote: "The only thing that interferes with my learning is my education.",
+        author: "Albert Einstein"
+      },
+      {
+        quote: "Education is the most powerful weapon which you can use to change the world.",
+        author: "Nelson Mandela"
+      },
+      {
+        quote: "The best way to predict your future is to create it.",
+        author: "Abraham Lincoln"
+      },
+      {
+        quote: "The more that you study, the more you will learn. The more that you learn, the more places you’ll go.",
+        author: "Dr. Seuss"
+      },
+      {
+        quote: "The greatest glory in living lies not in never falling, but in rising every time we fall.",
+        author: "Nelson Mandela"
+      },
+      {
+        quote: "The function of education is to teach one to think intensively and to think critically. Intelligence plus character – that is the goal of true education.",
+        author: "Martin Luther King Jr."
+      }
+
+    ];
+    function displayRandomQuote() {
+      var randomIndex = Math.floor(Math.random() * quotes.length);
+      var selectedQuote = quotes[randomIndex];
+      var quoteText = document.getElementById("quote-text");
+      var quoteAuthor = document.getElementById("quote-author");
+      quoteText.innerHTML = selectedQuote.quote;
+      quoteAuthor.innerHTML = selectedQuote.author;
+    }
+    setInterval(displayRandomQuote, 20000);
 </script> 
 
 <style>
@@ -289,26 +395,22 @@ setInterval(displayDateTime, 1000);
     right: 0px;
     top: 0rem;
     width: 18vw;
-    background: #0b5cd6e7;
-    color: white;
+    color: black;
     box-sizing: border-box;
     overflow: hidden;
     font-weight: normal;
 }
 .right{
-  background-color: #0D5DD7;
-
+  background-color: #0d5dd724;
 }
 .calendar-inner {
     padding: 1vw;
 }
-
 .calendar .calendar-inner .calendar-body {
     display: grid;
     grid-template-columns: repeat(7, 1fr);
     /* text-align: center; */
 }
-
 .calendar .calendar-inner .calendar-body div {
     padding: 1px;
     min-height: 10px;
@@ -332,7 +434,7 @@ setInterval(displayDateTime, 1000);
 }
 
 .calendar .calendar-inner .calendar-body div>a {
-    color: var(--calendar-font-color);
+    color: black;
     text-decoration: none;
     display: flex;
     justify-content: center;
@@ -392,11 +494,14 @@ setInterval(displayDateTime, 1000);
 
 .calendar .calendar-inner .calendar-body .calendar-today a {
     outline: 2px solid var(--calendar-today-innerborder-color);
+    color: white;
+    background-size: cover;
+
 }
 
 .calendar .calendar-inner .calendar-controls .calendar-next a,
 .calendar .calendar-inner .calendar-controls .calendar-prev a {
-    color: var(--calendar-font-color);
+    color: green;
     font-family: arial, consolas, sans-serif;
     font-size: 26px;
     text-decoration: none;
@@ -414,12 +519,12 @@ setInterval(displayDateTime, 1000);
 
 .calendar .calendar-inner .calendar-controls .calendar-next a svg path,
 .calendar .calendar-inner .calendar-controls .calendar-prev a svg path{
-    fill: var(--next-prev-arrow-color);
+    fill: black;
 }
 
 .calendar .calendar-inner .calendar-body .prev-dates,
 .calendar .calendar-inner .calendar-body .next-dates {
-    color: var(--calendar-prevnext-date-color);
+    color: #9e9494;
 }
 
 .calendar .calendar-inner .calendar-body .prev-dates:hover,
@@ -431,3 +536,7 @@ setInterval(displayDateTime, 1000);
   grid-template-columns: 15vw 67vw 18vw;
 }
 </style>
+
+
+
+
