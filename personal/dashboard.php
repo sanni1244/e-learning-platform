@@ -79,7 +79,7 @@ $check13 = "SELECT * FROM `Dashboard` WHERE `id` = '$save'";
           echo "
           <div class='dashcontent'>
           
-          Last Read
+          
 
           <h5 class='lst_read_content'>
             <img src='../images/read.png' class='read' alt=''>
@@ -91,7 +91,7 @@ $check13 = "SELECT * FROM `Dashboard` WHERE `id` = '$save'";
           if($flex2 !== ""){
             echo "
             <div class='dashcontent'>
-          Last Test
+          
 
             <h5 class='lst_read_content'>
               <img src='../images/test.png' class='read' alt=''>

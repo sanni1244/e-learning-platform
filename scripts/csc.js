@@ -400,6 +400,15 @@ let computerCourses = [
 function computer(){
     var bar1 = ``;
     var sdds = document.getElementsByClassName("allcourse")[0]
+    var ss = document.getElementsByClassName("course")
+    ss[0].style.color = 'black'
+    ss[0].style.background = 'white'
+    ss[1].style.color = 'white'
+    ss[1].style.background = 'inherit'
+    ss[2].style.color = 'white'
+    ss[2].style.background = 'inherit'
+    ss[3].style.color = 'white'
+    ss[3].style.background = 'inherit'
     bar1 += `
     <a class="availableButton" href="/vent/courses/csc.php"><button>View Courses</button></a>
 

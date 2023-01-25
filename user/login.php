@@ -25,8 +25,8 @@
             <h1 class="h1">Login</h1>
             <form class="form" action="" id="form1" method="post">
                 <div class="myoptions">
-                    <a href="/vent/user/login.php?e=1"><div class="button button1">Use E-mail</div></a> <hr>
-                    <a href="/vent/user/login.php?e=0"><div class="button">Use Matric Number</div></a>
+                    <a href="/vent/user/login.php?e=1" id="link1"><div class="button button1">Use E-mail</div></a> <hr>
+                    <a href="/vent/user/login.php?e=0" id="link2"><div class="button">Use Matric Number</div></a>
                 </div>
                 <?php if (!(isset($_GET['e'])) || isset($_GET['e']) && $_GET['e'] != 0){  ?>
 
@@ -77,6 +77,26 @@
     function login1(){
         <?php $log = 1; ?>
     }
+    const links = document.getElementById('link1');
+    const links2 = document.getElementById('link2');
+
+const currentPage = window.location.href;
+
+  if (links.href === currentPage) {
+    console.log(window.location.href)
+    links.classList.add("active");
+  }
+  else{
+    links.classList.add("hold");
+  }
+  if (links2.href === currentPage) {
+    console.log(window.location.href)
+
+    links2.classList.add("active");
+  }
+  
+;
+
 </script>
 </html>
 </form>

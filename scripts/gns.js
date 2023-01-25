@@ -51,6 +51,16 @@ let gnsCourse = [
     }
 ]
 function gns(){
+
+    var ss = document.getElementsByClassName("course")
+    ss[0].style.color = 'white'
+    ss[0].style.background = 'inherit'
+    ss[1].style.color = 'black'
+    ss[1].style.background = 'white'
+    ss[2].style.color = 'white'
+    ss[2].style.background = 'inherit'
+    ss[3].style.color = 'white'
+    ss[3].style.background = 'inherit'
     var bar1 = ``;
     var sdds = document.getElementsByClassName("allcourse")[0]
     bar1 += `

@@ -73,6 +73,15 @@ let mathCourses = [
         // }
 ]
 function math(){
+    var ss = document.getElementsByClassName("course")
+    ss[0].style.color = 'white'
+    ss[0].style.background = 'inherit'
+    ss[2].style.color = 'black'
+    ss[2].style.background = 'white'
+    ss[1].style.color = 'white'
+    ss[1].style.background = 'inherit'
+    ss[3].style.color = 'white'
+    ss[3].style.background = 'inherit'
     var bar1 = ``;
     var sdds = document.getElementsByClassName("allcourse")[0]
     bar1 += `
