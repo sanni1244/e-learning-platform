@@ -1,0 +1,9 @@
+<div class="none">
+    <br/><br/><br/><br/>
+    <center><h2>CSC 454 Short Note</h2></center>
+    <h3>DIGITAL IMAGE PROCESSING</h3>
+    <p>Digital image processing is the use of computer algorithms to perform image processing on digital images. The goal is to improve the quality or enhance the information content of an image. It involves techniques for image acquisition, image enhancement, image restoration, image compression, image segmentation, object recognition, and pattern recognition.</p>
+    <p>Digital image processing is used in various fields such as medical imaging, remote sensing, robotics, computer vision, and security. In medical imaging, digital image processing is used to enhance the contrast and resolution of images, making it easier for doctors to detect abnormalities in the body. In remote sensing, digital image processing is used to extract useful information from satellite and aerial images, such as land cover and land use patterns.</p>
+    <p>Image enhancement is one of the most widely used techniques in digital image processing. It involves adjusting the brightness, contrast, and color balance of an image to improve its visual quality. Image restoration is used to remove noise or other artifacts from an image to restore its original quality. Image segmentation involves dividing an image into different regions based on their characteristics, such as color or texture. Object recognition is used to identify and classify objects within an image, while pattern recognition is used to detect and recognize patterns within an image.</p>
+   
+    </div>

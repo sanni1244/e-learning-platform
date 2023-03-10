@@ -19,6 +19,11 @@ $row4 = mysqli_num_rows($result1);
 $options = explode(",", $row1['options']);
 $lll = $row1['ccourse'] ;
 ?>
+<?php 
+      if($row1['ccourse'] == null){
+          header('Location: ./notest.php');
+          $testcode = 'CSC 111';
+      } ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -31,21 +36,18 @@ $lll = $row1['ccourse'] ;
 </head>
 <body>
     <div class="areanone ">
-    <div class="area1">
-<?php echo "<form action='#' method='POST'>" ;
-
-if (!isset($_POST['add'])) {
-    $_SESSION['attnum'] = $row1['questionid']; 
-    $_SESSION['num'] = 1;
-    $_SESSION['incr'] = [];
-    $_SESSION['answw'] = [];
-
-}
-if (isset($_POST['q1'])) {
-  $_SESSION['incr'][] = $_POST['q1'];
-}
-if($_SESSION['num'] <= $row4){
-echo "<center><h5>Question " .$_SESSION['num'] . "</h5></center>";
+      <div class="area1">
+        <?php echo "<form action='#' method='POST'>" ;
+      if (!isset($_POST['add'])) {
+        $_SESSION['attnum'] = $row1['questionid']; 
+        $_SESSION['num'] = 1;
+        $_SESSION['incr'] = [];
+        $_SESSION['answw'] = [];}
+      if (isset($_POST['q1'])) {
+        $_SESSION['incr'][] = $_POST['q1'];
+      }
+      if($_SESSION['num'] <= $row4){
+      echo "<center><h5>Question " .$_SESSION['num'] . "</h5></center>";
 // if(isset($_POST['submittest'])){
   if($_SESSION['attnum']){
     $trt = $_SESSION['attnum'];
@@ -77,7 +79,7 @@ echo "<center><h5>Question " .$_SESSION['num'] . "</h5></center>";
       // $row3['answer'];
   }
   else{
-    echo "<div class='answer'><h1>Answers</h1><div><table><tr><td></td> <td>Correct Answer</td><td>Your Answer</td><tr>";
+    echo "<table><tr><td></td> <th>Correct Answer</th><th>Your Answer</th><tr>";
     $score = 0;
     for($i = 0; $i < $row4; $i++){
       $trt = $_SESSION['attnum'];

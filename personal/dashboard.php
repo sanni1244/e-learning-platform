@@ -22,14 +22,10 @@ $check13 = "SELECT * FROM `Dashboard` WHERE `id` = '$save'";
   $okay1 = mysqli_query($conn, $ver);
   $flex12 = mysqli_fetch_array($okay1);
   $flex14 = @$flex12['Course Title'];
-
-
-
 ?>
 <div class="container1">
         <div class="one left">
             <a href="/vent/index.html"><div class="brand"><h4 class="h4">YEET KNOWLEDGE</h4></div></a>
-
             <ul>
                 <a href="/vent/personal/dashboard.php"><li class="left-section selection"><img class="blue" src="../icons/home.svg">Dashboard</li></a>
                 <a href="/vent/personal/mycourses.php"><li class="left-section"><img src="../icons/menubook.svg">My Courses</li></a>
@@ -53,18 +49,14 @@ $check13 = "SELECT * FROM `Dashboard` WHERE `id` = '$save'";
                     elseif(date("H") > 16){
                       echo " <img class='logo2' src='../images/moon.png'><h1 class='greet'>Good Evening</h1>";    
                     }
-    
                   ?>
                </div>
-    
-               <div class="tip">Hello, <?php echo $array1["first name"];?>!!
+              <div class="tip">Hello, <?php echo $array1["first name"];?>!!
                 <div class="tip2">Welcome to yeet knowledge, it's time to learn.</div>
-                
                 <?php
                   include('./faculties.php');
                 ?>
         </div>
-            
         </div>
             <?php 
             $lr = @$flex1["lastRead"];
@@ -78,10 +70,7 @@ $check13 = "SELECT * FROM `Dashboard` WHERE `id` = '$save'";
         if($lr !== ""){
           echo "
           <div class='dashcontent'>
-          
-          
-
-          <h5 class='lst_read_content'>
+            <h5 class='lst_read_content'>
             <img src='../images/read.png' class='read' alt=''>
             <span class='lst_read_content_text'><span><span class='ferf'>$code: $title</span><br/><br/><span class='ferf'>$level</span></span>
             </span>
@@ -112,16 +101,12 @@ $check13 = "SELECT * FROM `Dashboard` WHERE `id` = '$save'";
               echo "<span class='lstq'><span class='gng'>Score: $flex3/10</span><img src='../images/pass.png' class='read' alt=''></span>
               </h5>
             </div>";
-            }
-              
+            }    
           }
-          
-       
-          ?>              
+        ?>              
         </div>
         <div class="one right">
           <?php include_once('calendar.php');?>
-
         </div>
 
 

@@ -1,0 +1,17 @@
+<div class="none">
+    <br/><br/><br/><br/>
+    <center><h2>CSC 339 Short Note</h2></center>
+    <h3>SYSTEMS ANALYSIS AND DESIGN</h3>
+    <p>Systems Analysis is a process of collecting and interpreting facts, identifying the problems, and decomposition of a system into its components.</p><br/>
+    <p>System analysis is conducted for the purpose of studying a system or its parts in order to identify its objectives. It is a problem solving technique that improves the system and ensures that all the components of the system work efficiently to accomplish their purpose.</p><br/>
+    <p>Systems Design is a process of planning a new business system or replacing an existing system by defining its components or modules to satisfy the specific requirements. Before planning, you need to understand the old system thoroughly and determine how computers can best be used in order to operate efficiently.</p><br/>
+    <p>Constraints of a System <br/>
+A system must have three basic constraints:
+<br/>
+A system must have some structure and behavior which is designed to achieve a predefined objective.
+<br/>
+Interconnectivity and interdependence must exist among the system components.
+<br/>
+The objectives of the organization have a higher priority than the objectives of its subsystems.</p><br/>
+    <p>Overall, formal language and automata theory provide a foundation for understanding the principles of computation and the design of efficient algorithms and systems for processing and manipulating structured data.</p><br/>
+    </div>

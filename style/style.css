@@ -329,18 +329,24 @@ input[type = "radio"]{
 }
 
 @media (max-width: 800px) {
-
+    
 .acct1{
     margin-top: 1.5rem;
     margin-left: -5rem;
     gap: 1rem;
 }
 }
-.myoptions a:hover{
-    color: rgb(189, 164, 187);
-}
+
 .active {
-    background-color: rgba(0, 0, 0, 0.508);
+    background-color: #0b5cd6e7;
+}
+.button{
+    font-size: 1.1rem;
+    font-weight: 500;
+
+}
+.myoptions .button:hover{
+    font-weight: 900;
 }
 .hold{
     background-color: white;

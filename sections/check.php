@@ -12,7 +12,6 @@ $conn = mysqli_connect("localhost","root", "", "learning") or die('Connection Fa
 $file2 = file_get_contents($filename2);
 $noinput = "This field cannot be left blank!";
 //sign up
-
 if($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['signup'])){
     if(isset($_POST['firstname']) && isset($_POST['lastname'])  && isset($_POST['email'])  && isset($_POST['password']) ){
         $firstname = strtolower($_POST['firstname']);
@@ -130,21 +129,18 @@ if($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['login'])){
                             }
                             else{
                                     $warning = "Incorrect details";                      
-                            }
-                    }
+                        }}
                         elseif(isset($matric) && $matric != NULL){
                             $check_mat = "SELECT * FROM `users` WHERE `matricNo` = '$matric'";
                             $check3 = mysqli_query($conn, $check_mat);
                             $array1 = mysqli_fetch_array($check3);
                             $array2 = mysqli_fetch_array($check2);
                             $array4 = @$array1['id'];
-                        if(isset($array1['id']) && $array2['id'] !== NULL && $array1['id'] == $array2['id']  ){
-                            
+                        if(isset($array1['id']) && $array2['id'] !== NULL && $array1['id'] == $array2['id']){
                             $warning = "Login was successful";
                             $matric1 = $_POST['matric'];
                             // echo "<script>localStorage.setItem('sd12133', '$matric1');</script>";
                             $_SESSION['id'] = $array4;
-
                             header("refresh: 2; url=../personal/dashboard.php");
                         }
                         else{

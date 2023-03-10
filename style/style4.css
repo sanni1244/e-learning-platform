@@ -1,17 +1,17 @@
-body::before{
+/* body::before{
     content: " ";
     width: 1rem;
-    background: linear-gradient(white, hwb(216 16% 28% / 0.906), hwb(216 16% 28% / 0.906), white, hwb(216 16% 28% / 0.906), hwb(216 16% 28% / 0.906), white);
+    background: linear-gradient(white, blueviolet, blueviolet, white, blueviolet, blueviolet, white);
     border-top-right-radius: 15rem;
     border-bottom-right-radius: 12rem;
 }
 body::after{
     content: "";
     width: 1rem;
-    background: linear-gradient(white, hwb(216 16% 28% / 0.906), white, hwb(216 16% 28% / 0.906), white);
+    background: linear-gradient(white, blueviolet, white, blueviolet, white);
     border-top-left-radius: 12rem;
     border-bottom-left-radius: 12rem;
-}
+} */
 h5{
     font-size: 2.5rem;
     opacity: 70%;
@@ -19,26 +19,34 @@ h5{
 }
 body{
     display: flex;
-    background-color: hwb(216 16% 28% / 0.906);
-    height: 100vh;
-    width: 100vw;
+    justify-content: center;
+    align-items: center;
+    background-color: blueviolet;
+    height: 95vh;
 }
 /* test intro page  */
 .areanone{
-    position: relative;
+    /* position: relative; */
     background-color: white;
-    height: 75vh;
-    width: 76vw;
-    margin: auto;
+    width: 55vw;
+    height: 30rem;
     border-radius: 20px;
-    padding: 1rem;
-    box-shadow: 0px 0px 10px 10px;
+    padding: 2rem;
 }
-hr{
+.area1{
+    position: relative;
+    height: 100%;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    overflow: scroll;
+    scroll-behavior: smooth;
+}
+hr{ 
     display: flex;
     margin: auto;
     width: 90%;
-    background-color: hwb(216 16% 28% / 0.906);
+    background-color: blueviolet;
 }
 .instructions{
     width: 90%;
@@ -47,7 +55,7 @@ hr{
 }
 .test_button{
     /* padding: 0.5rem; */
-    background: linear-gradient(to right, white, white, hwb(216 16% 28% / 0.906), hwb(216 16% 28% / 0.906), white, white);
+    background: linear-gradient(to right, white, white, blueviolet, blueviolet, white, white);
     width: 50%;
     border: none;
     color: black;
@@ -62,16 +70,9 @@ hr{
 ::-webkit-scrollbar{
     display: none;
 }
-.area1{
-    position: relative;
-    height: 100%;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
-    overflow: scroll;
-}
+
 form{
-    width: 95%;
+    /* width: 95%; */
 } 
 li{
     list-style-type: lower-alpha;
@@ -81,7 +82,7 @@ label{
     margin-left: 1rem;
 }
 input[type='submit']{
-    background-color: hwb(216 16% 28% / 0.906);
+    background-color: blueviolet;
     color: white;
     font-weight: 900;
     position: absolute;

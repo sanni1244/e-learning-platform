@@ -1,6 +1,6 @@
 let mathCourses = [
     {
-        img: "/vent//material/mat101/mat101.jpg",
+        img: "/vent/material/mat101/mat101.jpg",
         courseCode: "MAT 101",
         name: "ALGEBRA",
         level: "100 Level",

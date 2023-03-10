@@ -23,14 +23,15 @@
     </div>
     <div class="one center centrb">
         <?php
-        echo "<table class='table1'>
-                <tr  class='tr1'>
-                    <td>COURSE CODE</td>
-                    <td>COURSE TITLE</td>
-                    <td>LEVEL</td>
-                    <td colspan='3'><center>ACTIVITIES</center></td>
-                </tr>";
-            $conn = mysqli_connect("localhost", "root", "", "learning");
+        
+            echo "<table class='table1'>
+                    <tr  class='tr1'>
+                        <td>COURSE CODE</td>
+                        <td>COURSE TITLE</td>
+                        <td>LEVEL</td>
+                        <td colspan='3'><center>ACTIVITIES</center></td>
+                    </tr>";
+        $conn = mysqli_connect("localhost", "root", "", "learning");
             $save = $_SESSION['id'];
             $qwery = "SELECT mycourse FROM users WHERE id = $save ";
             $q1 = mysqli_query($conn, $qwery);
@@ -38,21 +39,29 @@
             $q3 = implode($q2);
             $array = str_split($q3, 8);
             foreach($array as $val){
-                $ttt = strtoupper($val[2]).strtoupper($val[3]).strtoupper($val[4])." ".$val[5]. $val[6] . $val[7];
+                @$ttt = strtoupper($val[2]).strtoupper($val[3]).strtoupper($val[4])." ".$val[5]. $val[6] . $val[7];
                 $hrr = "SELECT * FROM `courses` WHERE `Course Code` = '$ttt'";
                 $hty = mysqli_query($conn, $hrr);
                 $htl = mysqli_fetch_row($hty);
-                $newop = $val[2].$val[3].$val[4].$val[5].$val[6].$val[7];     
+                @$newop = $val[2].$val[3].$val[4].$val[5].$val[6].$val[7];
+        if(isset($newop) && $ttt !== " "){              
                 ?>
             <tr class='tr1'>
                 <td><?php echo $ttt ?></td>
                 <td><?php echo $htl[2]; ?></td>
                 <td><?php echo $htl[3]; ?></td>
-                <?php echo "<td><a class='stake' href='/vent/personal/link.php?aq=$newop'><img class='sym' title='Read course' src='../icons/menedit.svg'></a></td>"?>
+                <?php 
+                
+                echo "<td><a class='stake' href='/vent/personal/link.php?aq=$newop'><img class='sym' title='Read course' src='../icons/menedit.svg'></a></td>"?>
                 <?php echo "<td><a href='../test/test.php?tst=$ttt'><img title='Take a test' class='sym' src='../icons/quiz.svg'></a></td> ";?>
                 <?php echo "<td><a href='./vet.php?j=$newop'><img title='Remove from your course list' class='sym' src='../icons/delete.svg'></a></td> "; ?>
             </tr>
-        <?php }?>
+        <?php }
+        else{
+            echo "<h3>You have not yet enrolled for a course</h3>";
+        }}
+        
+        ?>
         </table>
     </div>
 </div>

@@ -6,6 +6,12 @@ session_start();
 } 
 $testcode = $_GET['tst'];
 $query1 = "SELECT * FROM test WHERE `ccourse` = '$testcode'";
+$arrtest = ['csc 392', 'csc 394', 'csc 396', 'csc 398'];
+if (in_array(strtolower($testcode), array_map('strtolower', $arrtest))) {
+  header('Location: ./notest.php');
+}
+
+
 $query2 = "SELECT * FROM courses WHERE `Course Code` = '$testcode'";
 $result1 = mysqli_query($conn, $query1);
 $result2 = mysqli_query($conn, $query2);
@@ -27,6 +33,10 @@ $row2 = mysqli_fetch_assoc($result2);
 
 <body>
     <div class="areanone">
+    <?php 
+      if($row1['ccourse'] == null){
+          header('Location: ./notest.php');
+      } ?>
       <center><h3><?php echo $row1['ccourse']." "; ?>TEST</h3></center>
     <hr><hr><hr><hr> <br>
     <center><h5><?php echo ucfirst(strtolower($row2['Course Title'])) ?></h5></center>

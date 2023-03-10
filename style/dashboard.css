@@ -94,10 +94,29 @@
       font-size: 0.7rem;
 
   }
+
    
     }
     .flair{
       color: green;
       font-size: 2rem;
       font-family: 'Times New Roman', Times, serif;
+    }
+
+    @media (max-width: 700px) {
+      .left {
+        padding: 0rem;
+
+      }
+      .dashcontent{
+        gap: 3rem;
+      }
+      .lst_read_content img{
+        display: none;
+      }
+      .lst_read_content{
+        display: block;
+
+      }
+      
     }

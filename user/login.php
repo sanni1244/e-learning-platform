@@ -1,5 +1,4 @@
-<?php include '../sections/check.php'; 
-?>
+<?php include '../sections/check.php';?>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet">
@@ -25,8 +24,8 @@
             <h1 class="h1">Login</h1>
             <form class="form" action="" id="form1" method="post">
                 <div class="myoptions">
-                    <a href="/vent/user/login.php?e=1" id="link1"><div class="button button1">Use E-mail</div></a> <hr>
-                    <a href="/vent/user/login.php?e=0" id="link2"><div class="button">Use Matric Number</div></a>
+                    <a href="/vent/user/login.php?e=1" id="link1"><div class="button button1">E-mail</div></a> 
+                    <a href="/vent/user/login.php?e=0" id="link2"><div class="button">Matric No.</div></a>
                 </div>
                 <?php if (!(isset($_GET['e'])) || isset($_GET['e']) && $_GET['e'] != 0){  ?>
 

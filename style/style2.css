@@ -416,7 +416,7 @@ a.fixed:visited {
 .left{
   margin: 0;
   background-color: rgb(255, 255, 255);
-  padding: 2rem;
+  /* padding: 2rem; */
   box-sizing: border-box;
   box-shadow: 7px 130px rgb(247, 247, 247);
 }
