@@ -1,6 +1,5 @@
-<link rel="stylesheet" href="/vent/style/style2.css">
-<link rel="stylesheet" href="/vent/style/style3.css">
-
+<link rel="stylesheet" href="/vent/style/mycourse.css">
+<link rel="stylesheet" href="/vent/style/leftnav.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 <link rel="shortcut icon" href="../images/z2.png" type="image/x-icon">
 <title>My courses</title>
@@ -9,7 +8,7 @@
     include_once("../sections/check.php");
     include_once("../personal/userdata.php");   
 ?>
-<div class="container1">
+<div class="container2">
     <div class="one left">
         <a href="/vent/index.html"><div class="brand"><h4 class="h4">YEET KNOWLEDGE</h4></div></a>
             <ul>
@@ -21,7 +20,8 @@
                 <a href="/vent/personal/logout.php"><li class="left-section Settings"><img src="../icons/logout.svg">Log Out</li></a>   
             </ul>
     </div>
-    <div class="one center centrb">
+    <div class="one center">
+        <div class="tax">
         <?php
         
             echo "<table class='table1'>
@@ -53,17 +53,19 @@
                 <?php 
                 
                 echo "<td><a class='stake' href='/vent/personal/link.php?aq=$newop'><img class='sym' title='Read course' src='../icons/menedit.svg'></a></td>"?>
-                <?php echo "<td><a href='../test/test.php?tst=$ttt'><img title='Take a test' class='sym' src='../icons/quiz.svg'></a></td> ";?>
-                <?php echo "<td><a href='./vet.php?j=$newop'><img title='Remove from your course list' class='sym' src='../icons/delete.svg'></a></td> "; ?>
+                <?php echo "<td><a class='stake' href='../test/test.php?tst=$ttt'><img title='Take a test' class='sym' src='../icons/quiz.svg'></a></td> ";?>
+                <?php echo "<td><a class='stake' href='./vet.php?j=$newop'><img title='Remove from your course list' class='sym' src='../icons/delete.svg'></a></td> "; ?>
             </tr>
         <?php }
         else{
-            echo "<h3>You have not yet enrolled for a course</h3>";
+            echo "<h3 class='noterrolled'>You have not yet enrolled for a course</h3>";
         }}
         
         ?>
+
         </table>
     </div>
+</div>
 </div>
 </body>
 <script src="../scripts/jquery-3.6.3.min.js"></script>

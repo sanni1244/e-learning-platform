@@ -1,0 +1,108 @@
+/* dashboard left */
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap');
+body{
+    overflow-x: hidden;
+    padding: 0;
+    margin: 0;
+  }
+  * {
+    list-style-type: none;
+    text-decoration: none;
+  }
+  .left{
+    width: 12rem;
+    box-sizing: border-box;
+    box-shadow: 3px 120px rgb(126, 123, 123);
+    padding: 2rem 1.4rem;
+    background-color: white;
+
+
+  }
+  .left-section {
+    padding: 10px 0rem;
+    text-align: center;
+    background-color: transparent;
+    margin-block-start: 1.2rem;
+    color: rgb(7, 7, 7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.8rem;
+    font-size: 1.1rem;
+  }
+  .left-section:hover{
+    color: #0b5cd6e7;
+  }
+  .left-section img,
+  .l img {
+    width: 25px;
+    height: 25px;
+  }
+  .center {
+    padding: 3rem;
+  }
+  h1 {
+    font-size: 24px;
+  }
+  h2 {
+    font-size: 20px;
+    margin: 1rem 0rem;
+  } 
+  .container1 {
+    display: grid;
+    grid-template-columns: 15vw 70vw 15vw;
+    height: 100%;
+    position: relative;
+  }
+
+  
+  .settings {
+    margin-top: min(13rem, 5vh);
+  }
+ 
+  .selection {
+    background-color: #0b5cd6e7;
+    color: white;
+    border-radius: 1rem;
+    }
+  .selection:hover{
+    background-color: #1472ffe7;
+    color: white;
+  }
+.one {
+    position: relative;
+}
+.h4 {
+    font-size: 1.3rem;
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-family: "Courier New", Courier, monospace;
+    color: #0b5cd6e7;
+}
+.h4small{
+    margin-top: 3.3rem;
+    text-align: left;
+    font-size: 1rem;
+}
+ul {
+    margin-block-start: 2rem;
+    padding-inline-start: 0px;
+  }
+.ul li {
+    margin: 2rem 0rem;
+    font-size: 1rem;
+  }
+  .ul a {
+    color: rgb(39, 48, 39);
+    font-size: 0.9rem;
+  }
+  
+  .blue {
+    filter: invert(100%) sepia(63%) saturate(0%) hue-rotate(246deg)
+      brightness(100%) contrast(156%);
+  }
+  @media (max-width:1200px) {
+    .left{
+        box-shadow: none;
+    }}

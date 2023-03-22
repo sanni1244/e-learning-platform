@@ -1,0 +1,64 @@
+
+/* Set some basic styles for the page */
+.container2 {
+    display: grid;
+    padding: 0px;
+    margin: 0px;
+    grid-template-columns: 12rem 80vw;
+    height: 100%;
+    position: relative;
+  }
+body {
+    
+    margin: 0;
+    padding: 0;
+}
+/* Style the table */
+.table1 {
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 20px;
+    text-align: center;
+}
+.tr1:nth-child(even) {
+    background-color: rgb(197, 204, 209);
+}
+.stake{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(255, 255, 255);
+    padding: 15px;
+    border-radius: 1rem;
+    text-decoration: none;
+}
+.stake:hover, a:hover {
+    background-color: rgba(241, 227, 28, 0.347);
+}
+.sym {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+}
+.noterrolled {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 24px;
+    color: #555;
+}
+.tr1:first-of-type{
+    font-size: 1.5rem;
+    text-align: center;
+}
+.tr1 + .tr1{
+    padding: 2rem;
+    margin-top: 1rem;
+    font-size: 1.1rem;
+}
+td{
+    padding: 0.5rem;
+}
+.tr1 + .tr1:hover{
+    background-color: rgba(238, 223, 9, 0.607); 
+    filter: invert(100%);
+} 

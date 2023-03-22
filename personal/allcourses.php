@@ -1,5 +1,8 @@
-<link rel="stylesheet" href="/vent/style/style2.css">
-<link rel="stylesheet" href="/vent/style/allcourses.css">
+<!-- <link rel="stylesheet" href="/vent/style/style2.css"> -->
+<link rel="stylesheet" href="/vent/style/leftnav.css">
+<link rel="stylesheet" href="/vent/style/allcourse.css">
+
+
 
 <!-- <link rel="stylesheet" href="/vent/style/bootstrap.css"> -->
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
@@ -14,7 +17,7 @@
     // error_reporting(0);
     ?>
 
-    <div class="container1 container2">
+    <div class="container2">
         <div class="one left">
             <a href="/vent/personal/allcourses.php">
                 <div class="brand">

@@ -1,0 +1,74 @@
+.container2 {
+    display: grid;
+    padding: 0px;
+    margin: 0px;
+    grid-template-columns: 12.2rem 88vw;
+    height: 100%;
+    position: relative;
+}
+ 
+  h4 {
+    color: rgb(150, 163, 175);
+  }
+  a {
+    font-size: 16px;
+  }
+  .brand {
+    display: flex;
+  }
+.center{
+  background-color: aquamarine;
+}
+
+ 
+
+/* csc.php  */
+.cscsection2 {
+    margin-top: 1rem;
+    display: grid;
+    grid-template-columns: 25vw 25vw;
+    grid-gap: 6rem;
+    justify-content: center;
+  }
+  .individual {
+    border-radius: 4rem;
+    box-shadow: #0b5cd6e7 0px 0px 0px 3px, #0b5cd6e7 0px 0px 0px 6px, #0b5cd6e7 0px 0px 0px 9px, #0b5cd6e7 0px 0px 0px 12px, #0b5cd6e7 0px 0px 0px 15px;
+    background-color: #efefef9f;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 600;
+    text-align: center;
+    gap: 1rem;
+  }
+  
+  img {
+    width: 160px;
+    height: 130px;
+  }
+  .individual * {
+    margin-top: 1rem;
+  }
+  .details a{
+    color: blueviolet;
+  }
+  .details a:hover{
+    color: rgba(137, 43, 226, 0.497);
+  }
+
+  
+  @media (max-width: 800px) {
+    .container2 {
+      display: flex;
+    }
+      .cscsection2 {
+        grid-gap: 3rem;
+      }
+      .individual {
+          box-shadow: 0 0 0.5rem 0.2rem #0b5cd6e7;
+      }
+
+  }

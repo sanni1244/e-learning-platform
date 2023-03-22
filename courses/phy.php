@@ -1,5 +1,5 @@
-<link rel="stylesheet" href="../style/style2.css">
-<link rel="stylesheet" href="/vent/style/allcourses.css">
+<link rel="stylesheet" href="/vent/style/leftnav.css">
+<link rel="stylesheet" href="../style/individual.css">
 <head>
     <?php 
     // include_once '../sections/headers.html'; ?>
@@ -23,7 +23,7 @@
 <div class="one center ">
     <div class="content1">
         <div class="sect2">
-            <div class="cscsection cscsection2">
+            <div class="cscsection2">
                 
             </div>
         </div>  
@@ -32,7 +32,7 @@
 </script>
 <script>    
     let html = ``;
-    section = document.getElementsByClassName("cscsection")[0];
+    section = document.getElementsByClassName("cscsection2")[0];
     for(let i = 0; i < physicsCourses.length; i++){
         html += `
                 <div class="individual">

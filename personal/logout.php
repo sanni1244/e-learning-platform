@@ -1,7 +1,9 @@
 <?php
     require_once('userdata.php');
 ?>
-<link rel="stylesheet" href="../style/style2.css">
+<link rel="stylesheet" href="../style/logout.css">
+<link rel="stylesheet" href="../style/leftnav.css">
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -20,14 +22,10 @@
 <div class="vrt1"><a class="vrt" href="../index.html">Go Home</a></div>
 </div>
 
-<!-- <div class="nmm">
-<img class="lkk" src="../images/z8.jpg" alt="">
-<img class="lkl" src="../images/z8.jpg" alt="">
-</div> -->
 <?php
     session_destroy();
     mysqli_close($conn);
-    echo '<meta http-equiv="refresh" content="5 url=../index.html">';
+    echo '<meta http-equiv="refresh" content="3 url=../index.html">';
     ?>
 </body>
 </html>

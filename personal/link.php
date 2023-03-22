@@ -1,11 +1,14 @@
+<link rel="stylesheet" href="../style/link.css">
 
-<link rel="stylesheet" href="../style/style2.css">
+<link rel="stylesheet" href="../style/leftnav.css">
+
 <link rel="shortcut icon" href="../images/z2.png" type="image/x-icon">
 <title>Material</title>
-<div class="container2">
-    
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js">
  </script>
+<div class="container2">
+    
+
 
 <div class="one left">
             <a href="/vent/personal/allcourses.php"><div class="brand"><h4 class="h4">YEET KNOWLEDGE</h4></div></a>
@@ -109,7 +112,6 @@ $.getJSON('./elist.json', function(data) {
 </script>
 </head>
 
-<body>
 <div class="wrapper">
 <div class="profile">
 <div id= "userdata" border="2">

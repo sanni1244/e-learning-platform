@@ -21,6 +21,12 @@ $array1 = mysqli_fetch_array($check3);
     $matrcc2 = $array1['matricNo'];
     $password2 = $array1['password'];  
     $id = $array1['id'];  
+    $facty = $array1['faculty'];  
+    $depart = $array1['department'];  
+    $lev = $array1['level'];  
+
+
+
 
 
 
@@ -38,6 +44,9 @@ $array1 = mysqli_fetch_array($check3);
         if ($_SERVER["REQUEST_METHOD"] == "POST"){
             $fname = ucfirst($_POST['fname']);
             $lname = ucfirst($_POST['lname']);
+            $faccc = $_POST['facrrr'];
+            $dtrrr = $_POST['dtment'];
+
             $matrcc = ucfirst($_POST['matrcc1']);
             $password = ucfirst($_POST['password']);
 
@@ -46,6 +55,7 @@ $array1 = mysqli_fetch_array($check3);
             $array1 = mysqli_fetch_array($check1);
             $year = date("y");
             $late = 15;
+            
         if(empty($fname)){
             $err44 = "<span class='red'>First name cannot be empty</span>";}
         elseif(strstr($file, $fname . "1")){
@@ -68,8 +78,9 @@ $array1 = mysqli_fetch_array($check3);
             $err44 = "<span class='red'>Password is easily predictable, try adding numbers!</span>";
         }
         else{
-        $sql = "UPDATE `users` SET `first name` = '$fname', `last name` = '$lname', `matricNo` = '$matrcc', `password` = '$password' WHERE `Email` = '$email'"; 
+        $sql = "UPDATE `users` SET `first name` = '$fname', `last name` = '$lname', `matricNo` = '$matrcc', `password` = '$password', `faculty` = '$faccc', `department` = '$dtrrr' WHERE `Email` = '$email'"; 
             $rs = mysqli_query($conn, $sql);
+
             $err44 = "<span class='red'>Updated!</span>";
             echo "<meta http-equiv='refresh' content='1.5; url=dashboard.php'>";      
 }}}  

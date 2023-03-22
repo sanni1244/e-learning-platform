@@ -1,0 +1,147 @@
+.container2{
+    display: grid;
+    padding: 0px;
+    margin: 0px;
+    grid-template-columns: 15vw 85vw;
+    height: 100%;
+}
+.top {
+    text-align: center;
+    width: 75vw;
+    text-transform: uppercase;
+    letter-spacing: 1.56px;
+  }
+  main {
+    position: relative;
+  }
+  .courselist {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    font-size: 1rem;
+    background-color: #0b5cd6e7;
+    font-family: "Courier New", Courier, monospace;
+    width: 75vw;
+    color: white;
+    height: 35px;
+}
+  main .courselist li {
+    border: 1px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 600ms ease-in-out;
+    font-weight: 600;
+  }
+  main .courselist li:hover {
+    font-size: 20px;
+    background-color: white;
+    color: black;
+  }
+  .content {
+  }
+  .sect {
+    display: grid;
+    text-align: center;
+    margin-left: -1rem;
+    margin-top: 1rem;
+    grid-template-columns: calc(82vw / 3) calc(82vw / 3) calc(82vw / 3);
+  }
+  .section {
+    padding: 1rem;
+    box-sizing: border-box;
+    height: 18rem;
+  }
+  .l .fixed {
+    font-size: 1.7rem;
+    position: absolute;
+    top: 8rem;
+    left: -1rem;
+  }
+  .sect .section img {
+    width: 200px;
+    height: 10rem;
+  }
+  .section div {
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  }
+  
+  /* available courses sumbit  */
+  .allcourse {
+    display: flex;
+    justify-content: center;
+    color: black;
+  }
+  .allcourse button {
+    background-color: #0b5cd6e7;
+    padding: 0.4rem;
+    justify-content: center;
+    width: 15rem;
+    color: white;
+    border: none;
+    font-weight: 700;
+
+  }
+
+@media (max-width: 900px) {
+    .l{
+        display: none;
+    }
+    .sect .section img {
+        width: 100px;
+        height: 7rem;
+      } 
+      
+
+}
+@media (max-width: 780px) {
+
+    .sect {
+        margin-left: 1rem;
+        grid-template-columns: calc(82vw / 3) calc(82vw / 3);
+      }
+
+    }
+.row a, a:visited{
+  color: blueviolet;
+
+}
+.row a:hover{
+  color: #a643cdba;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  .section div:first-of-type {
+    /* margin-top: 1.2rem; */
+  }
+  .section div:last-of-type {
+    /* margin-top: 0.4rem;
+    margin-bottom: 1.2rem; */
+  }
+  /* .availableButton {
+    color: white;
+    font-family: "Courier New", Courier, monospace;
+    font-weight: 600;
+  }
+  .section a{
+    color: #0b5cd6e7;
+  }
+  .section a:hover{
+    color: red;
+  } */
+  

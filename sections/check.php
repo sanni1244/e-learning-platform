@@ -1,7 +1,7 @@
 <?php
 session_start();
 if(!isset($fname) && !isset($lname) && !isset($wemail) && !isset($matric1)){
-    $lname = $wemail =  $matric1 =  $fname = "";
+$lname = $wemail =  $matric1 =  $fname = "";
 }
 $blankfname = $matt = $blanklname = $blankemail = $blankpass = $warning = " ";
 $mypass = "";
@@ -39,12 +39,15 @@ if($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['signup'])){
                     else{
                         $lname =  ($_POST['lastname']);
                         if($email == ""){
-                            $blankemail = $noinput;}
+                            $blankemail = $noinput;
+                        }
                         else{
                             $check_mail = "SELECT * FROM `users` WHERE `email` = '$email'";
+                            
                             $check = mysqli_query($conn, $check_mail);
                             if(mysqli_num_rows($check) !== 0){
-                                $blankemail = "Already registered!";                         
+                                $blankemail = "Already registered!";        
+                                                 
                             }
                             else{
                             $wemail =  ($_POST['email']);
@@ -141,16 +144,19 @@ if($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['login'])){
                             $matric1 = $_POST['matric'];
                             // echo "<script>localStorage.setItem('sd12133', '$matric1');</script>";
                             $_SESSION['id'] = $array4;
-                            header("refresh: 2; url=../personal/dashboard.php");
+                            header("refresh: 1; url=../personal/dashboard.php");
                         }
                         else{
-                                $warning = "Incorrect details";                      
-                        }
-                    }
+                            $warning = "Incorrect details";                      
+                        }}
                     else{
                         $warning = "Incorrect details";                      
-                }
-                }}}
+                }}}}
         // $wemail = "";
 
+           $_SESSION['fname'] = @$fname;
+    
 ?>
+
+
+

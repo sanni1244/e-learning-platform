@@ -1,0 +1,128 @@
+.container2 {
+    display: grid;
+    padding: 0px;
+    margin: 0px;
+    grid-template-columns: 15vw 85vw;
+    height: 100%;
+    position: relative;
+  }
+  .acct {
+    margin-right: 3rem;
+    font-family: "Bree Serif", serif;
+    gap: 200rem;
+  }
+  .acct a {
+    color: black;
+  }
+  .acct a:nth-child(2) {
+    color: rgb(24, 88, 172);
+    font-size: 1.3rem;
+    margin-left: 1rem;
+  }
+  .acct a:nth-child(1) {
+    border: black solid 0.1rem;
+    padding: 10px;
+  }
+  .navsaw {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 10vh;
+  }
+  .navsaw a {
+    text-decoration: none;
+    color: black;
+  }
+  .coursedetails{
+    font-size: 17px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 1rem;
+  }
+  .coursedet1{
+    margin: auto;
+    font-size: 15px;
+    opacity: 70%;
+    text-align: justify;
+  }
+  .enrol{
+    text-align: center;
+    width: min(40vw, 30rem);
+    margin: 3rem auto;
+    border: #0b5cd6e7 6px groove;
+    padding: 3px;
+    color:black;
+    border-radius: 1rem;
+  }
+  .enrol:hover{
+    background-color: #0b5cd6e7;
+  }
+  .enrolled{
+    color:white;
+    background-color: #0b5cd6e7;
+  }
+  .yyy{
+    position: relative;
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    justify-content: space-between;
+    padding: 0.5rem 3rem;
+    border-radius: 1rem;
+  }
+  .yyy:nth-child(odd){
+    background-color: #9cb6dde7;
+  }
+  .yyy:nth-child(even){
+    background-color: #869dbea2;
+  }
+  .yyy:hover{
+    background-color: #9cb6dd7e;
+
+  }
+  .dwl{
+    padding: 0.5rem;
+    background-color: gree;
+    width: 2rem;
+    height: 2rem;
+  }
+  
+  .none {
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Crimson Text', serif;
+    margin: auto;
+    text-align: justify;
+    padding-right: 10rem;
+
+  }
+  @media (max-width: 1200px) {
+  .none {
+    padding-right: 1rem;
+
+  }
+  }
+  .none h2{
+    font-size: 2rem;
+    text-decoration: underline;
+    font-weight: 700;
+    color: grey;
+    text-transform: uppercase;
+    font-family: 'Crimson Text', serif;
+  }
+  .none h3{
+    font-size: 1.5rem;
+    color: rgba(101, 27, 27, 0.742);
+    font-weight: 900;
+    text-transform: capitalize;
+  }
+  .none p{
+    font-size: 1.2rem;
+    font-family: 'Crimson Text', serif;
+  }
+h4{
+  font-size: 1.4rem;
+}
+  
+  
+  
+  

@@ -1,4 +1,4 @@
-/* body::before{
+body::before{
     content: " ";
     width: 1rem;
     background: linear-gradient(white, blueviolet, blueviolet, white, blueviolet, blueviolet, white);
@@ -11,7 +11,7 @@ body::after{
     background: linear-gradient(white, blueviolet, white, blueviolet, white);
     border-top-left-radius: 12rem;
     border-bottom-left-radius: 12rem;
-} */
+}
 h5{
     font-size: 2.5rem;
     opacity: 70%;
@@ -29,9 +29,9 @@ body{
     /* position: relative; */
     background-color: white;
     width: 55vw;
-    height: 30rem;
+    height: 31rem;
     border-radius: 20px;
-    padding: 2rem;
+    padding: 1rem;
 }
 .area1{
     position: relative;

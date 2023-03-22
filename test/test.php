@@ -6,10 +6,10 @@ session_start();
 } 
 $testcode = $_GET['tst'];
 $query1 = "SELECT * FROM test WHERE `ccourse` = '$testcode'";
-$arrtest = ['csc 392', 'csc 394', 'csc 396', 'csc 398'];
-if (in_array(strtolower($testcode), array_map('strtolower', $arrtest))) {
-  header('Location: ./notest.php');
-}
+// $arrtest = ['csc 392', 'csc 394', 'csc 396', 'csc 398'];
+// if (in_array(strtolower($testcode), array_map('strtolower', $arrtest))) {
+//   header('Location: ./notest.php');
+// }
 
 
 $query2 = "SELECT * FROM courses WHERE `Course Code` = '$testcode'";

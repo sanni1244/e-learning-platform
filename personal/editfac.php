@@ -1,42 +1,62 @@
-<link rel="stylesheet" href="/vent/style/style.css">
-<?php 
-if(isset($_POST["facrrr"]) && $_POST["facrrr"] != null){
-if(!isset($sssrrt)){
-    $sssrrt = $_POST["facrrr"];
-    }}
-    else{
-        $sssrrt = 18;}
-        ?>            
-<div class="signup-section">
+<?php
+?>
 
-    <div class="cntn1">
-            <label for="">Faculty</label>
-			<select name="facrrr" onchange="facchange2()" id="fac" class="lbl1" required="">
-                <option <?php if($sssrrt == "01"){?> selected <?php } ?> selected value="01">FACULTY OF EDUCATION</option>
-                <option <?php if($sssrrt == "02"){?> selected <?php } ?>  value="02">FACULTY OF ENGINEERING</option>
-                <option <?php if($sssrrt == "03"){?> selected <?php } ?>  value="03">FACULTY OF ARTS</option>
-                <option <?php if($sssrrt == "04"){?> selected <?php } ?>  value="04">FACULTY OF LAW</option>
-                <option <?php if($sssrrt == "05"){?> selected <?php } ?>  value="05">FACULTY OF SCIENCE</option>
-                <option <?php if($sssrrt == "06"){?> selected <?php } ?>  value="06">FACULTY OF SOCIAL SCIENCE</option>
-                <option <?php if($sssrrt == "07"){?> selected <?php } ?>  value="07">FACULTY OF CLINICAL SCIENCES</option>
-                <option <?php if($sssrrt == "08"){?> selected <?php } ?>  value="08">FACULTY OF MANAGEMENT SCIENCE</option>
-                <option <?php if($sssrrt == "09"){?> selected <?php } ?>  value="09">SCHOOL OF COMMUNICATION</option>
-                <option <?php if($sssrrt == "10"){?> selected <?php } ?>  value="10">SCHOOL OF TRANSPORT AND LOGISTICS</option>
-                <option <?php if($sssrrt == "11"){?> selected <?php } ?>  value="11">FACULTY OF BASIC MEDICAL SCIENCES</option>
-                <option <?php if($sssrrt == "12"){?> selected <?php } ?>  value="12">FACULTY OF DENTISTRY</option>
-                <option <?php if($sssrrt == "13"){?> selected <?php } ?>  value="13">SCHOOL OF AGRICULTURE</option>
-                <option <?php if($sssrrt == "14"){?> selected <?php } ?>  value="14">FACULTY OF BASIC CLINICAL SCIENCES</option>
-                <option <?php if($sssrrt == "15"){?> selected <?php } ?>  value="15">SCHOOL OF LIBRARY, ARCHIVAL AND INFORMATION SCIENCE</option>
-                <option <?php if($sssrrt == "16"){?> selected <?php } ?>  value="16">FACULTY OF PHARMACY</option>
-                <option <?php if($sssrrt == "17"){?> selected <?php } ?>  value="17">FACULTY OF ALLIED HEALTH SCIENCES</option>
-                <option <?php if($sssrrt == "18"){?> selected <?php } ?>  value="" hidden>CHOOSE YOUR FACULTY</option>
+<select name="facrrr" onchange="facchange2()" id="fac" class="mlm nrer">
+                <option  <?php if(isset($_POST['facrrr']) && $_POST['facrrr'] == "01"){?> selected="selected" <?php }?> value="01">FACULTY OF EDUCATION</option>
+
+
+                <option <?php if(isset($_POST['facrrr']) && $_POST['facrrr'] == "02"){?> selected="selected" <?php }?> value="02">FACULTY OF ENGINEERING</option>
+
+
+                <option <?php if(isset($_POST['facrrr']) && $_POST['facrrr'] == "03"){?> selected="selected" <?php }?> value="03">FACULTY OF ARTS</option>
+    
+    
+                <option <?php if(isset($_POST['facrrr']) && $_POST['facrrr'] == "04"){?> selected="selected" <?php }?> value="04">FACULTY OF LAW</option>
+     
+     
+                <option <?php if(isset($_POST['facrrr']) && $_POST['facrrr'] == "05"){?> selected="selected" <?php }?> value="05">FACULTY OF SCIENCE</option>
+ 
+ 
+                <option <?php if(isset($_POST['facrrr']) && $_POST['facrrr'] == "06"){?> selected="selected" <?php }?> value="06">FACULTY OF SOCIAL SCIENCE</option>
+
+
+                <option <?php if(isset($_POST['facrrr']) && $_POST['facrrr'] == "071"){?> selected="selected" <?php }?> value="07">FACULTY OF CLINICAL SCIENCES</option>
+
+                <option <?php if(isset($_POST['facrrr']) && $_POST['facrrr'] == "08"){?> selected="selected" <?php }?> value="08">FACULTY OF MANAGEMENT SCIENCE</option>
+
+
+                <option <?php if(isset($_POST['facrrr']) && $_POST['facrrr'] == "09"){?> selected="selected" <?php }?> value="09">SCHOOL OF COMMUNICATION</option>
+
+
+                <option <?php if(isset($_POST['facrrr']) && $_POST['facrrr'] == "010"){?> selected="selected" <?php }?> value="10">SCHOOL OF TRANSPORT AND LOGIS
+                
+                TICS</option>
+                <option <?php if(isset($_POST['facrrr']) && $_POST['facrrr'] == "011"){?> selected="selected" <?php }?> value="11">FACULTY OF BASIC MEDICAL SCIENCES</option>
+
+
+                <option <?php if(isset($_POST['facrrr']) && $_POST['facrrr'] == "012"){?> selected="selected" <?php }?> value="12">FACULTY OF DENTISTRY</option>
+
+
+                <option <?php if(isset($_POST['facrrr']) && $_POST['facrrr'] == "013"){?> selected="selected" <?php }?> value="13">SCHOOL OF AGRICULTURE</option>
+
+
+                <option <?php if(isset($_POST['facrrr']) && $_POST['facrrr'] == "014"){?> selected="selected" <?php }?> value="14">FACULTY OF BASIC CLINICAL SCIENCES</option>
+
+
+                <option <?php if(isset($_POST['facrrr']) && $_POST['facrrr'] == "015"){?> selected="selected" <?php }?> value="15">SCHOOL OF LIBRARY, ARCHIVAL AND INFORMATION SCIENCE</option>
+
+
+                <option <?php if(isset($_POST['facrrr']) && $_POST['facrrr'] == "016"){?> selected="selected" <?php }?> value="16">FACULTY OF PHARMACY</option>
+
+
+                <option <?php if(isset($_POST['facrrr']) && $_POST['facrrr'] == "017"){?> selected="selected" <?php }?> value="17">FACULTY OF ALLIED HEALTH SCIENCES</option>
+
+
+                <option <?php if(isset($_POST['facrrr']) && $_POST['facrrr'] == "018"){?> selected="selected" <?php }?> value="" hidden>CHOOSE YOUR FACULTY</option>
 
             </select>
-        </div>
-    <div class="cntn1">
 
-        <label for="">Department</label>
-            <select class="lbl1" name="dtment" id="deptt">
+            <select class="mlm nrer" name="dtment" id="deptt">
                 <option class="dwwdllll" 
                 <?php if(isset($_POST['dtment']) && $_POST['dtment'] == "001"){?> selected="selected" <?php }?>
                 name="thesame" value="001"></option>
@@ -66,13 +86,21 @@ if(!isset($sssrrt)){
                 <option class="dwwdllll" name="thesame" <?php if(isset($_POST['dtment']) && $_POST['dtment'] == "025"){?> selected="selected" <?php }?> value="025"></option>
                 <option class="dwwdllll" name="thesame" <?php if(isset($_POST['dtment']) && $_POST['dtment'] == "026"){?> selected="selected" <?php }?> value="026"></option>
             </select>
-    </div>
-</div>
-</body>
+
+
+
+
+
+
+
+
+
 <script>
+    
            function facchange2(){
-            var rrr = document.forms["thediv"];
-        rrr.submit();}
+            var r2r = document.forms["sdiv"];
+            r2r.submit();
+    }
         <?php if(isset($_POST["facrrr"]) && $_POST["facrrr"] == "01"){?>
             document.getElementsByClassName("dwwdllll")[0].innerHTML = 'EDUCATIONAL MANAGEMENT (ACCOUNTING EDUCATION)';
             document.getElementsByClassName("dwwdllll")[1].innerHTML = 'ARABIC EDUCATION';
@@ -226,10 +254,12 @@ if(!isset($sssrrt)){
             document.getElementsByClassName("dwwdllll")[0].innerHTML = 'PHYSIOTERAPHY';
             document.getElementsByClassName("dwwdllll")[1].innerHTML = 'RADIOGRAPHY';
             document.getElementsByClassName("dwwdllll")[2].innerHTML = 'MEDICAL LABORATORY SCIENCE';
-<?php $sssrrt = $_POST["facrrr"];} 
+            <?php $sssrrt = $_POST["facrrr"];} 
 
 ?>  
 
-
 </script>
-</html>
+
+<?php 
+    $_SESSION['holdfac'] = @$_POST["facrrr"];
+?>

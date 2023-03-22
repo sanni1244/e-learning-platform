@@ -1,8 +1,9 @@
 <?php 
     $r = 0;
-    error_reporting(1); 
+    // error_reporting(1); 
 ?>
-<link rel="stylesheet" href="/vent/style/style2.css">
+<link rel="stylesheet" href="/vent/style/leftnav.css">
+<link rel="stylesheet" href="/vent/style/search.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 <link rel="shortcut icon" href="../images/z2.png" type="image/x-icon">
 <title>Search</title>
@@ -10,7 +11,6 @@
 <?php
     include_once("../sections/check.php");
     include_once("../personal/userdata.php");   
-
     $save = $_SESSION['id'];
     $check_mail = "SELECT * FROM `users` WHERE `id` = '$save'";
     $check3 = mysqli_query($conn, $check_mail);
@@ -25,7 +25,7 @@
                 <a href="/vent/personal/allcourses.php"><li class="left-section"><img src="../icons/librarybooks.svg">All Courses</li></a>
                 <a href="/vent/personal/search.php"><li class="left-section selection"><img  class="blue" src="../icons/search.svg">Search List</li></a>
                 <a href="/vent/personal/editdetails.php"><li class="left-section"><img src="../icons/editn.svg">Edit Profile</li></a>
-                <a href="/vent/personal/logout.php"><li class="left-section Settings"><img src="../icons/logout.svg">Log Out</li></a>
+                <a href="/vent/personal/logout.php"><li class="left-section settings"><img src="../icons/logout.svg">Log Out</li></a>
 
             </ul>
         </div>
@@ -34,7 +34,7 @@
     <form action="./search.php" method="get" class="frm">
             <input type="search" class="search" placeholder="Search..." name="q" id="">
         </form>
-</form>
+<small class="vsmalltxt">Leave space when searching for course code. ex. csc 111</small>
     <?php   
 
     if(isset($_GET['q'])){
@@ -59,7 +59,7 @@
         ?> 
         
     <?php 
-    echo '<div class="searchspace"><h2>' . $code . '</h2> ' ."<i class='features'>" . ucfirst(strtolower($title)) . "<br/>". $level . "<br/>" . "<i><a href='$link'>Read Material</a>" ."</div>";
+    echo '<div class="searchspace"><h2>' . $code . '</h2> ' ."<i class='features'>" . ucfirst(strtolower($title)) . "<br/>". $level . "<br/>" . "</i><a href='$link'>Read Material</a>" ."</div>";
     }}
     else{
         header("location:search.php");
@@ -70,16 +70,16 @@
     </div>
         </div>
         <div class="one right-search">
-        <div class=""><h4>LEARN MORE
+        <div><h4 class="h4 h4small">LEARN MORE</h4>
             <ul class="ul">
                 <li><a href="https://www.pdfdrive.com/computer-science-books.html">PDF DRIVE</a></li>
-                <li><a href="https://freecomputerbooks.com/compscCategory.html">Free Computer Books</a></li>
+                <li><a href="https://freecomputerbooks.com/compscCategory.html">Free Computer <br> Books</a></li>
                 <li><a href="https://www.freetechbooks.com/introduction-to-computer-science-f10.html">Free tech books</a></li>
                 <li><a href="https://roadmap.sh/computer-science">Roadmap</a></li>
 
 
             </ul>
-        </h4></div>
+        </div>
 
     </div>
 </body>
