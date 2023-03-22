@@ -48,17 +48,17 @@
     text-align: center;
     width: min(40vw, 30rem);
     margin: 3rem auto;
-    border: #0b5cd6e7 6px groove;
+    border: #9cb6dde7 6px groove;
     padding: 3px;
     color:black;
     border-radius: 1rem;
   }
   .enrol:hover{
-    background-color: #0b5cd6e7;
+    background-color: #9cb6dde7;
   }
   .enrolled{
     color:white;
-    background-color: #0b5cd6e7;
+    background-color: #9cb6dde7;
   }
   .yyy{
     position: relative;
@@ -75,9 +75,9 @@
   .yyy:nth-child(even){
     background-color: #869dbea2;
   }
-  .yyy:hover{
-    background-color: #9cb6dd7e;
-
+  .yyy a:hover{
+    border-radius: 1rem;
+    background-color: #ccd2db7e;
   }
   .dwl{
     padding: 0.5rem;
@@ -103,7 +103,6 @@
   }
   .none h2{
     font-size: 2rem;
-    text-decoration: underline;
     font-weight: 700;
     color: grey;
     text-transform: uppercase;
@@ -112,6 +111,7 @@
   .none h3{
     font-size: 1.5rem;
     color: rgba(101, 27, 27, 0.742);
+    text-decoration: underline;
     font-weight: 900;
     text-transform: capitalize;
   }
@@ -121,6 +121,7 @@
   }
 h4{
   font-size: 1.4rem;
+  color: #9cb6dde7;
 }
   
   

@@ -571,20 +571,8 @@
     "ent302":
     [
         {
-            "materialname": "ENT 302  WEEK 1 docx",
-            "link": "/vent/material/ent302/ENT 302  WEEK 1.docx"
-        },
-        {
-            "materialname": "ENT 302  WEEK 2 docx",
-            "link": "/vent/material/ent302/ENT 302  WEEK 2.docx"
-        },
-        {
-            "materialname": "ENT 302  WEEK 3 docx",
-            "link": "/vent/material/ent302/ENT 302  WEEK 3.docx"
-        },
-        {
-            "materialname": "ENT 302  WEEK 4 docx",
-            "link": "/vent/material/ent302/ENT 302  WEEK 4.docx"
+            "materialname": "",
+            "link": "/vent/material/ent302/"
         }
     ],
     "gns101":

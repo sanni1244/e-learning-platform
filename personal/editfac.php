@@ -1,6 +1,3 @@
-<?php
-?>
-
 <select name="facrrr" onchange="facchange2()" id="fac" class="mlm nrer">
                 <option  <?php if(isset($_POST['facrrr']) && $_POST['facrrr'] == "01"){?> selected="selected" <?php }?> value="01">FACULTY OF EDUCATION</option>
 

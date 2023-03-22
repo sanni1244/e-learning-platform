@@ -149,7 +149,7 @@ if ($fac == '01'){
   if ($fac == '07'){
     $fac = "FACULTY OF CLINICAL SCIENCES";
     if($dep == '001'){
-      $fac = 'MEDICINE AND SURGERY';
+      $dep = 'MEDICINE AND SURGERY';
     }if($dep == '002'){
       $dep = 'NURSING';
     }}
@@ -259,10 +259,4 @@ if ($fac == '01'){
       $dep = 'MEDICAL LABORATORY SCIENCE';
     }
   }
-    if($fac !== ""){
-      echo ("<h2 class='fac'>" .ucfirst(strtolower($fac)) . "</h2>");
-    echo ("<h2 class='fac'>" .ucfirst(strtolower($dep)) . " (". $lev ." level) </h2>");
-    echo ("<h2 class='fac'> Matric Number: ". $mat ." </h2>");
-
-    }
 ?>

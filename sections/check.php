@@ -13,7 +13,7 @@ $file2 = file_get_contents($filename2);
 $noinput = "This field cannot be left blank!";
 //sign up
 if($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['signup'])){
-    if(isset($_POST['firstname']) && isset($_POST['lastname'])  && isset($_POST['email'])  && isset($_POST['password']) ){
+    if(isset($_POST['firstname']) && isset($_POST['lastname'])  && isset($_POST['email'])  && isset($_POST['password'])){
         $firstname = strtolower($_POST['firstname']);
         $lastname = strtolower($_POST['lastname']);
         $email = strtolower($_POST['email']);

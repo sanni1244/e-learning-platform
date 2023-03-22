@@ -67,6 +67,9 @@ body{
     font-size: 1.3rem;
     margin-left: 1rem;
 }
+.acct a:hover{
+    background-color: rgba(136, 136, 136, 0.319)
+}
 .header1{
     font-size: 3.1rem;
     padding: 0rem 0rem 0rem 0rem;

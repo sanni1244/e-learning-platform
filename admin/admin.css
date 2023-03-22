@@ -1,0 +1,178 @@
+.container2{
+    display: grid;
+    padding: 0px;
+    margin: 0px;
+    grid-template-columns: 15vw 85vw;
+    height: 100%;
+}
+body{
+    display: flex;
+    width: 100vw;
+    justify-content: center;
+    font-weight: 700;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.center{
+    padding-left: 4rem;
+}
+h1{
+    font-size: 1.6rem;
+    color: grey;
+    font: 900;
+    text-transform: uppercase;
+}
+h2{
+    font-size: 1.3rem;
+    text-transform: capitalize;
+    font-weight: 600;
+    color: #999;
+}
+a{
+    color: green;
+    font-size: 1.08rem;
+    background-color: transparent;
+    width: 15rem;
+    margin-bottom: 1rem;
+}
+.allstudentdata{
+    text-align: center;
+    width: 75vw;
+
+}
+.userdata td:last-child{
+    /* background-color: rgb(164, 25, 99); */
+
+
+}
+.userdata td:last-child:hover{
+    background-color: rgba(164, 25, 99, 0.748);
+
+}
+.removeuser{
+    color: black;
+
+}
+
+
+
+
+
+/* add course */
+label{
+    display: block;
+    margin-top: 1.3rem;
+
+}
+input, select, .clstitle, .cldesc{
+    display: block;
+    width: 30rem;
+    height: 2.33rem;
+    border-radius: 0.3rem;
+    border:  black 2px solid;
+    padding: 5px 10px;
+    font-size: 1rem;
+    font-weight: 600;
+    margin-top: 0.28rem;
+}
+.clstitle{
+    height: 4rem;
+    resize: none;
+}
+.cldesc{
+    height: 8rem;
+    resize: none;
+
+}
+.addcoursebutton{
+    background-color: black;
+    color: #fff;
+    border-radius: 0.4rem;
+    height: 2rem;
+    width: 9rem;
+    margin-top: 1.3rem;
+}
+.abttoremove{
+    margin-top: 5.3rem;
+    border: 2px solid black;
+    padding: 1rem;
+}
+.toremove1{
+    color: red;
+}
+
+.toremove1:hover{
+    color: rgba(255, 0, 0, 0.421);
+}
+
+
+
+
+
+
+
+
+
+/* remmaterial */
+.thebttn{
+    background-color: #0b5cd6c7;
+    color: rgb(255, 255, 255);
+    font-weight: 800;
+    padding: 0.6rem;
+    border-radius: 6px;
+    width: 10rem;
+    margin-top: 1rem;
+}
+.thebttn:hover{
+    background-color: #0b5cd670;
+
+}
+.someclass{
+    text-transform: uppercase;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+.someclass1{
+    background-color: white;
+}
+.someclass1:nth-child(even){
+    background-color: rgb(205, 205, 205);
+}
+.header2{
+    margin-bottom: -1rem;
+    text-align: center;
+    margin-top: 3rem;
+}
+.theunorder{
+    border: 2px solid black;
+    padding: 1rem;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    width: 60vw;
+    position: relative;
+}
+.ancor a{
+    color: blueviolet;
+}
+.thebttn1{
+    color: red;
+    background-color: transparent;
+    border: none;
+    font-size: 0.9rem;
+}
+.thebttn1:hover{
+    color: rgba(255, 0, 0, 0.51);
+}
+.absolute{
+    position: absolute;
+    color: rgb(196, 196, 196);
+    right: 20px;
+    top:  28px;
+}
+.goback{
+    position: absolute;
+    top: 30px;
+    left: 30px;
+}
+.goback img{
+    width: 30px;
+}

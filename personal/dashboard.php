@@ -31,6 +31,11 @@ $check13 = "SELECT * FROM `Dashboard` WHERE `id` = '$save'";
                 <a href="/vent/personal/allcourses.php"><li class="left-section"><img src="../icons/librarybooks.svg">All Courses</li></a>
                 <a href="/vent/personal/search.php"><li class="left-section"><img src="../icons/search.svg">Search List</li></a>
                 <a href="/vent/personal/editdetails.php"><li class="left-section"><img src="../icons/editn.svg">Edit Profile</li></a>
+                <?php if($array1['admin'] == "1"){
+                  echo '<a href="/vent/admin/admin.php"><li class="left-section Settings"><img src="../icons/logout.svg">Admin User</li></a>
+                '; }
+                
+  ?>
                 <a href="/vent/personal/logout.php"><li class="left-section Settings"><img src="../icons/logout.svg">Log Out</li></a>
             </ul>
         </div>
@@ -59,6 +64,12 @@ $check13 = "SELECT * FROM `Dashboard` WHERE `id` = '$save'";
                 <div class="tip2">Welcome to yeet knowledge, it's time to learn.</div>
                 <?php
                   include('./faculties.php');
+                  if($fac !== ""){
+                    echo ("<h2 class='fac'>" .ucfirst(strtolower($fac)) . "</h2>");
+                  echo ("<h2 class='fac'>" .ucfirst(strtolower($dep)) . " (". $lev ." level) </h2>");
+                  echo ("<h2 class='fac'> Matric Number: ". $mat ." </h2>");
+              
+                  }
                 ?>
         </div>
         </div>
@@ -90,14 +101,10 @@ $check13 = "SELECT * FROM `Dashboard` WHERE `id` = '$save'";
             </span>
               </span>";
             if($flex3 < 4){
-              echo "<span class='lstq'><span class='gng'>Score: $flex3/10</span><img src='../images/fail.png' class='read' alt=''></span>
-              </h5>
-            </div>";
+              echo "<span class='lstq'><span class='gng'>Score: $flex3/10</span><img src='../images/fail.png' class='read' alt=''></span>";
             }
             if($flex3 > 3 && $flex3 < 7){
-              echo "<span class='lstq'><span class='gng'>Score: $flex3/10</span><img src='../images/good.png' class='read' alt=''></span>
-              </h5>
-            </div>";
+              echo "<span class='lstq'><span class='gng'>Score: $flex3/10</span><img src='../images/good.png' class='read' alt=''></span>";
             }
             if($flex3 > 6){
               echo "<span class='lstq'><span class='gng'>Score: $flex3/10</span><img src='../images/pass.png' class='read' alt=''></span>
@@ -217,19 +224,6 @@ var quotes = [
     setInterval(displayRandomQuote, 20000);
 </script> 
         </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
     </div>
 </body>
    

@@ -93,7 +93,7 @@
         elseif (isset($_GET['enr']) && $_GET['enr'] == 'no'){
             runMyFunction();
         }    
-        echo "<div class=''>Download Materials</div>"; 
+        echo "<h4 class=''>Download Materials</h4>"; 
         ?>
             
 <script>
@@ -119,12 +119,16 @@ $.getJSON('./elist.json', function(data) {
 </div>
 <?php 
     $fil = '../material/' .$rtr .'/' .$rtr .'.xml';
-    $filename = fopen($fil, 'r') or die ("weakness" );
-    while(!feof($filename)){
-        $line = fgets($filename);
-        echo $line;
-    }
+    if (file_exists($fil)) {
+        $filename = fopen($fil, 'r') or die ("weakness" );
+        while(!feof($filename)){
+            $line = fgets($filename);
+            echo $line;
+        }
     fclose($filename);
+    } 
+    else {
+    }
 }}
     else{
         header("location:/vent/personal/allcourses.php");
