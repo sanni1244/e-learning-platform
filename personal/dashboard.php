@@ -33,9 +33,7 @@ $check13 = "SELECT * FROM `Dashboard` WHERE `id` = '$save'";
                 <a href="/vent/personal/editdetails.php"><li class="left-section"><img src="../icons/editn.svg">Edit Profile</li></a>
                 <?php if($array1['admin'] == "1"){
                   echo '<a href="/vent/admin/admin.php"><li class="left-section Settings"><img src="../icons/logout.svg">Admin User</li></a>
-                '; }
-                
-  ?>
+                '; }?>
                 <a href="/vent/personal/logout.php"><li class="left-section Settings"><img src="../icons/logout.svg">Log Out</li></a>
             </ul>
         </div>

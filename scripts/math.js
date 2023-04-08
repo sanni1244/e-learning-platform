@@ -4,52 +4,39 @@ let mathCourses = [
         courseCode: "MAT 101",
         name: "ALGEBRA",
         level: "100 Level",
-        material_no: "1",
         location: "/vent/material/mat101/1.pdf",
         mylink: "/vent/personal/link.php?aq=mat101"
     },
-    // {
-    //     img: "/vent/material/mat111/mat111.png",
-    //     courseCode: "MAT 111",
-    //     name: "TRIGONOMETRY",
-    //     level: "100 Level",
-    //     material_no: "1",
-    //     location: "/vent/material/mat111/1.pdf",
-    //     mylink: "/vent/personal/link.php?aq=ent302"
-    // },
-    // {
-    //     img: "/vent/material/mat112/mat112.png",
-    //     courseCode: "MAT 112",
-    //     name: "CALCULUS",
-    //     level: "100 Level",
-    //     material_no: "1",
-    //     location: "/vent/material/mat112/1.pdf",
-    //     mylink: "/vent/personal/link.php?aq=ent302"
-    // },
-    // {
-    //     img: "/vent/material/MAT141/MAT141.png",
-    //     courseCode: "MAT 141",
-    //     name: "COORDINATE GEOMETRY I",
-    //     level: "100 Level",
-    //     material_no: "1",
-    //     location: "/vent/material/MAT141/1.pdf",
-    //     mylink: "/vent/personal/link.php?aq=ent302"
-    // },
-    // {
-    //     img: "/vent/material/mat142/mat142.png",
-    //     courseCode: "MAT 142",
-    //     name: "COORDINATE GEOMETRY II",
-    //     level: "100 Level",
-    //     material_no: "1",
-    //     location: "/vent/material/mat142/1.pdf",
-    //     mylink: "/vent/personal/link.php?aq=ent302"
-    // },
+    {
+        img: "/vent/material/mat111/mat111.jpg",
+        courseCode: "MAT 111",
+        name: "TRIGONOMETRY",
+        level: "100 Level",
+        location: "/vent/material/mat111/Introductory_trigonometry.pdf",
+        mylink: "/vent/personal/link.php?aq=mat111"
+    },
+    {
+        img: "/vent/material/mat112/mat112.png",
+        courseCode: "MAT 112",
+        name: "CALCULUS",
+        level: "100 Level",
+        location: "/vent/material/mat112/Calculus-Presentation1.pdf",
+        mylink: "/vent/personal/link.php?aq=mat112"
+    },
+    {
+        img: "/vent/material/MAT141/mat141.png",
+        courseCode: "MAT 141",
+        name: "COORDINATE GEOMETRY I",
+        level: "100 Level",
+        location: "/vent/material/MAT141/jeep207.pdf",
+        mylink: "/vent/personal/link.php?aq=mat141"
+    },
     // {
     //     img: "/vent/material/mat162/mat162.png",
     //     courseCode: "MAT 162",
     //     name: "	INTRODUCTORY STATISTICS",
     //     level: "100 Level",
-    //     material_no: "1",
+    //  
     //     location: "/vent/material/mat162/1.pdf",
     //     mylink: "/vent/personal/link.php?aq=ent302"
     // },
@@ -58,19 +45,9 @@ let mathCourses = [
         courseCode: "MAT 251",
         name: "MATHEMATICAL METHODS I",
         level: "200 Level",
-        material_no: "1",
         location: "/vent/material/mat251/1.pdf",
         mylink: "/vent/personal/link.php?aq=mat251"
-    },
-    // {
-        //     img: "/vent/material/mat261/mat261.png",
-        //     courseCode: "MAT 261",
-        //     name: "PROBABILITY THEORY AND DISTRIBUTIONS",
-        //     level: "200 Level",
-        //     material_no: "1",
-        //     location: "/vent/material/mat261/1.pdf",
-        //     mylink: "/vent/personal/link.php?aq=ent302"
-        // }
+    }
 ]
 function math(){
     var ss = document.getElementsByClassName("course")

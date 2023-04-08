@@ -19,13 +19,15 @@
                 <a href="/vent/personal/allcourses.php"><li class="left-section selection"><img class="blue" src="../icons/librarybooks.svg">All Courses</li></a>
                 <a href="/vent/personal/search.php"><li class="left-section"><img src="../icons/search.svg">Search List</li></a>
                 <a href="/vent/personal/editdetails.php"><li class="left-section"><img src="../icons/editn.svg">Edit Profile</li></a>
+                <?php include_once('userdata.php');
+                if($array1['admin'] == "1"){
+                  echo '<a href="/vent/admin/admin.php"><li class="left-section Settings"><img src="../icons/logout.svg">Admin User</li></a>
+                '; }?>
                 <a href="/vent/personal/logout.php"><li class="left-section Settings"><img src="../icons/logout.svg">Log Out</li></a>
             </ul>
         </div>
     <div class="one center coursedetails">
     <?php
-    session_start();
-    
     $conn = mysqli_connect("localhost", "root", "", "learning");
     $save = $_SESSION['id'];
     if(isset($_GET["aq"])){
@@ -83,9 +85,9 @@
                     return 0;
                 }}  
     if(mysqli_num_rows($yr1) !== 0){
-        echo "<a href='/vent/personal/link.php?aq={$rtr}&enr=yes'><div class='enrol enrolled'>Enrolled</div></a>";}
+        echo "<a href='/vent/personal/link.php?aq={$rtr}&enr=yes'><div class='enrol enrolled'><b>Add To My Courses</b></div></a>";}
     else{
-        echo "<a href='/vent/personal/link.php?aq={$rtr}&enr=no'><div class='enrol'>Enrol for this course</div></a>";
+        echo "<a href='/vent/personal/link.php?aq={$rtr}&enr=no'><div class='enrol'><b>Added</b></div></a>";
         }      
         if(isset($_GET['enr']) && $_GET['enr'] == 'yes') {
             runMyFunction1();

@@ -70,7 +70,6 @@ $data = json_decode($json, true);
             <button class="thebttn1" type="submit">Delete</button>
           </form>
           <?php echo "<h2 class='absolute'>". strtoupper($class2) . "</h2>"; ?>
-
         </li>
       <?php endforeach; ?>
       

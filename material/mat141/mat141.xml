@@ -1,0 +1,11 @@
+<div class="none">
+    <br/><br/><br/><br/>
+    <center><h2>MAT 141 Short Note</h2></center>
+    <h3>COORDINATE GEOMETRY</h3>
+    <p>Coordinate geometry is a branch of mathematics that deals with the study of geometry using the Cartesian coordinate system. The Cartesian coordinate system is a system of coordinates that uses two or three numbers or variables to locate points on a plane or in space. The two variables used in the Cartesian coordinate system are x and y, and they represent the horizontal and vertical distances, respectively. The three variables used in space are x, y, and z.</p>
+
+    <p>In coordinate geometry, geometric figures such as points, lines, and curves are represented using algebraic equations. For instance, the equation of a straight line on a plane is given by y = mx + c, where m is the slope of the line and c is the y-intercept. The equation of a circle with center (a,b) and radius r is given by (x-a)^2 + (y-b)^2 = r^2. These equations enable us to solve problems involving geometric figures.</p>
+    <p>Coordinate geometry is used in various fields of mathematics and science, including physics, engineering, and computer graphics. In physics, coordinate geometry is used to study the motion of objects in space. In engineering, it is used to design and analyze mechanical systems. In computer graphics, it is used to create and manipulate images and animations.</p>
+    <p>Coordinate geometry also has applications in real-life situations, such as navigation and mapping. GPS devices use coordinate geometry to locate and track the position of objects and people. Maps also use coordinate geometry to represent the location of cities, towns, and landmarks.
+</p>
+   </div>

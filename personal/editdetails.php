@@ -44,14 +44,14 @@ if($_SERVER['REQUEST_METHOD'] === 'POST'){
     <form id="sdiv" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="POST" autocomplete="on" accept-charset="">       
         <div class="mvr3">
             <div class="mvr1">
-                <label for="" class="mlm">First Name</label>
-                <label for="" class="mlm">Last Name</label>
-                <label for="" class="mlm" >E-mail</label>
-                <label for="" class="mlm">Matric No</label>
-                <label for="" class="mlm">Faculty</label>
-                <label for="" class="mlm">Department </label>
-                <label for="" class="mlm">Password</label>
-                
+                <label for="" class="mlm">FIRST NAME</label>
+                <label for="" class="mlm">LAST NAME</label>
+                <label for="" class="mlm" >E-MAIL</label>
+                <label for="" class="mlm">MATRIC NO</label>
+                <label for="" class="mlm">FACULTY</label>
+                <label for="" class="mlm">DEPARTMENT </label>
+                <label for="" class="mlm">LEVEL</label>
+                <label for="" class="mlm">PASSWORD</label>
             </div>
             <div class="mvr2">
                 <input type="text"  class="form-control mlm"  name="fname" value="<?php echo ucfirst($firstname); ?>">   
@@ -63,7 +63,14 @@ if($_SERVER['REQUEST_METHOD'] === 'POST'){
                 <?php 
                     include_once('./editfac.php');
                 ?>
-                
+                <select name="level" id="Level" class="mlm nrer">
+                <option selected hidden value="No">None</option>
+                    <option <?php if($lev == 100){ ?> selected <?php } ?> value="100">100 level</option>
+                    <option <?php if($lev == 200){ ?> selected <?php } ?> value="200">200 level</option>
+                    <option <?php if($lev == 300){ ?> selected <?php } ?> value="300">300 level</option>
+                    <option <?php if($lev == 400){ ?> selected <?php } ?> value="400">400 level</option>
+                    <option <?php if($lev == 500){ ?> selected <?php } ?> value="500">500 level</option>
+                </select>
                 <input type="text" class="mlm" name="password" value="<?php echo $password2; ?>">
                 <div class="updateit">
                     <button type="submit" class="same" name="updatebtn">Update Details</button>
@@ -88,3 +95,21 @@ if($_SERVER['REQUEST_METHOD'] === 'POST'){
 </body>
 
 
+<style>
+    /* Apply styles to the labels */
+    label {
+        color: #0b5cd6e7;
+        font-weight: bold;
+        margin-top: 5px;
+
+    }
+    
+    /* Apply styles to the input fields */
+    input[type="text"], select {
+        border: 1px solid #0b5cd6e7;
+        border-radius: 3px;
+        padding: 5px;
+        margin-top: 5px;
+    }
+
+</style>

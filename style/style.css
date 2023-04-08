@@ -72,6 +72,7 @@ body{
 }
 .header1{
     font-size: 3.1rem;
+    text-align: justify;
     padding: 0rem 0rem 0rem 0rem;
     margin: 0rem;
     font-family: Georgia, Times, 'Times New Roman', serif;

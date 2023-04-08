@@ -2,7 +2,7 @@
     require_once('userdata.php');
 ?>
 <link rel="stylesheet" href="../style/logout.css">
-<link rel="stylesheet" href="../style/leftnav.css">
+<!-- <link rel="stylesheet" href="../style/leftnav.css"> -->
 
 <!DOCTYPE html>
 <html lang="en">

@@ -10,7 +10,8 @@ $query1 = "SELECT * FROM test WHERE `ccourse` = '$testcode'";
 // if (in_array(strtolower($testcode), array_map('strtolower', $arrtest))) {
 //   header('Location: ./notest.php');
 // }
-
+$_SESSION['atest'] = $testcode;
+$_SESSION['pageLoaded2'] = null;
 
 $query2 = "SELECT * FROM courses WHERE `Course Code` = '$testcode'";
 $result1 = mysqli_query($conn, $query1);
@@ -20,7 +21,6 @@ $row2 = mysqli_fetch_assoc($result2);
 ?>
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -46,7 +46,7 @@ $row2 = mysqli_fetch_assoc($result2);
     </div><br>
     <div class="instructions">
       <?php echo "
-    <center><a method='' href='./testpage.php?j=$testcode'><button class='test_button'>Take Test</button></a></center>";
+    <center><a method='' href='./testpage.php?tst=$testcode'><button class='test_button'>Take Test</button></a></center>";
       ?>
     </div>
     

@@ -18,6 +18,10 @@
                 <a href="/vent/personal/allcourses.php"><li class="left-section selection"><img class="blue" src="../icons/librarybooks.svg">All Courses</li></a>
                 <a href="/vent/personal/search.php"><li class="left-section"><img src="../icons/search.svg">Search List</li></a>
                 <a href="/vent/personal/editdetails.php"><li class="left-section"><img src="../icons/editn.svg">Edit Profile</li></a>
+                <?php include_once('../personal/userdata.php');
+                if($array1['admin'] == "1"){
+                  echo '<a href="/vent/admin/admin.php"><li class="left-section Settings"><img src="../icons/logout.svg">Admin User</li></a>
+                '; }?>  
                 <a href="/vent/personal/logout.php"><li class="left-section Settings"><img src="../icons/logout.svg">Log Out</li></a>
             </ul>
         </div>

@@ -5,18 +5,21 @@ $save = $_SESSION['id'];
   if($conn->connect_error){
     die("Connection failed: " . $conn->connect_error);
 } 
-$testcode = $_GET['j'];
-$query1 = "SELECT * FROM test WHERE `ccourse` = '$testcode'";
+$testcode = $_SESSION['atest'];
+if (!isset($_POST['add']) && isset($_SESSION['pageLoaded2'])) {
+  echo "<meta http-equiv='refresh' content='0; url=test.php?tst=$testcode'>";    
+  exit; 
+} else {
+  $_SESSION['pageLoaded2'] = true;
+// $query1 = "SELECT * FROM test WHERE `ccourse` = '$testcode'";
+$query1 = "SELECT * FROM test WHERE `ccourse` = '$testcode' ORDER BY RAND() LIMIT 4";
 $query2 = "SELECT * FROM courses WHERE `Course Code` = '$testcode'";
-
 $result1 = mysqli_query($conn, $query1);
 $result2 = mysqli_query($conn, $query2);
-
 $row1 = mysqli_fetch_assoc($result1);
 $row2 = mysqli_fetch_assoc($result2);
 $row4 = mysqli_num_rows($result1);
-
-$options = explode(",", $row1['options']);
+// $options = explode(",", $row1['options']);
 $lll = $row1['ccourse'] ;
 ?>
 <?php 
@@ -52,22 +55,26 @@ $lll = $row1['ccourse'] ;
   if($_SESSION['attnum']){
     $trt = $_SESSION['attnum'];
     $query3 = "SELECT * FROM test WHERE `ccourse` = '$testcode' AND `questionid` = $trt";
+
+    // $query1 = "SELECT * FROM test WHERE `ccourse` = '$testcode' ORDER BY RAND() LIMIT 4";
+
     $result3 = mysqli_query($conn, $query3);
     $row3 = mysqli_fetch_assoc($result3);
-    $options = explode(",", $row3['options']);
+    // $options = explode(",", $row3['options']);
+    echo $row3['answer']; 
     $_SESSION['answw'][] = $row3['answer'];
     if($row3['questionid'] == $trt){ 
 ?>
   <ol>
     <h6 class="h6_1"><?php echo $row3['question']; ?></h6>
-    <li><input type="radio" required name="q1" value="<?php echo $options[0]; ?>" id=""  oninvalid="this.setCustomValidity('Choose your answer')"
-  oninput="this.setCustomValidity('')"/><label for=""><?php echo $options[0]; ?>
+    <li><input type="radio" required name="q1" value="<?php echo $row3['option1']; ?>" id=""  oninvalid="this.setCustomValidity('Choose your answer')"
+  oninput="this.setCustomValidity('')"/><label for=""><?php echo $row3['option1']; ?>
     </label></li>
-    <li><input type="radio" required name="q1" value="<?php echo $options[1]; ?>" id=""><label for=""> <?php echo $options[1]; ?>
+    <li><input type="radio" required name="q1" value="<?php echo $row3['option2'] ?>" id=""><label for=""> <?php echo $row3['option2']; ?>
     </label></li>
-    <li><input type="radio" required name="q1" value="<?php echo $options[2]; ?>" id=""><label for=""> <?php echo $options[2]; ?>
+    <li><input type="radio" required name="q1" value="<?php echo $row3['option3'] ; ?>" id=""><label for=""> <?php echo $row3['option3']; ?>
     </label></li>
-    <li><input type="radio" required name="q1" value="<?php echo $options[3]; ?>" id=""><label for=""> <?php echo $options[3]; ?>
+    <li><input type="radio" required name="q1" value="<?php echo $row3['option4'] ; ?>" id=""><label for=""> <?php echo $row3['option4']; ?>
     </label></li>
     </ol>
   <?php }
@@ -94,19 +101,15 @@ $lll = $row1['ccourse'] ;
         }
         else{
           echo "<td><b>". $_SESSION['answw'][$i]. "</b><br/></td><td><b style='color:red'>". $_SESSION['incr'][$i]. "</b><br/></td>";
-        }
-        
-        
+        }  
     }
     echo "</table><div>You scored ". $score . "/" .$i . "<br/>";
         echo"<a class='button_mark' href='../personal/mycourses.php'><div>End Test</div></a>";
         echo"<a class='button_mark' href='http://localhost/vent/test/test.php?tst=".$testcode ."'><div>Restart Test</div></a></div></div>";
 
       $testscore = "UPDATE `dashboard` SET `testScore` = '$score', `lastTest` = '$testcode'  where `id` = '$save'";
-      mysqli_query($conn, $testscore);
-
-   
-  }
+      mysqli_query($conn, $testscore); 
+  }}
 // }?>
 </form>
 </div>

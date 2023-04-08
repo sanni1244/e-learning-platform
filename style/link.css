@@ -48,17 +48,16 @@
     text-align: center;
     width: min(40vw, 30rem);
     margin: 3rem auto;
-    border: #9cb6dde7 6px groove;
+    border: #749ff7 6px groove;
     padding: 3px;
     color:black;
     border-radius: 1rem;
   }
   .enrol:hover{
-    background-color: #9cb6dde7;
+    background-color: #749ff7;
   }
   .enrolled{
-    color:white;
-    background-color: #9cb6dde7;
+    background-color: #ffffff;
   }
   .yyy{
     position: relative;
@@ -70,14 +69,14 @@
     border-radius: 1rem;
   }
   .yyy:nth-child(odd){
-    background-color: #9cb6dde7;
+    background-color: #a4b4d5;
   }
   .yyy:nth-child(even){
-    background-color: #869dbea2;
+    background-color: #74a0f7a7;
   }
   .yyy a:hover{
     border-radius: 1rem;
-    background-color: #ccd2db7e;
+    background-color: #6301ff44;
   }
   .dwl{
     padding: 0.5rem;
@@ -110,7 +109,7 @@
   }
   .none h3{
     font-size: 1.5rem;
-    color: rgba(101, 27, 27, 0.742);
+    color: #749ff7;
     text-decoration: underline;
     font-weight: 900;
     text-transform: capitalize;
@@ -121,7 +120,7 @@
   }
 h4{
   font-size: 1.4rem;
-  color: #9cb6dde7;
+  color: #749ff7;
 }
   
   
