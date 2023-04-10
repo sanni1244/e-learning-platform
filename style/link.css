@@ -48,16 +48,22 @@
     text-align: center;
     width: min(40vw, 30rem);
     margin: 3rem auto;
-    border: #749ff7 6px groove;
+    border: 3px groove;
     padding: 3px;
     color:black;
     border-radius: 1rem;
+    border-color: black;
+
   }
   .enrol:hover{
     background-color: #749ff7;
+    color: white;
+
   }
   .enrolled{
-    background-color: #ffffff;
+    background-color: #b2b2b2;
+    color: white;
+
   }
   .yyy{
     position: relative;

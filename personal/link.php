@@ -85,9 +85,9 @@
                     return 0;
                 }}  
     if(mysqli_num_rows($yr1) !== 0){
-        echo "<a href='/vent/personal/link.php?aq={$rtr}&enr=yes'><div class='enrol enrolled'><b>Add To My Courses</b></div></a>";}
+        echo "<a href='/vent/personal/link.php?aq={$rtr}&enr=yes'><div class='enrol enrolled'><b>Added</b></div></a>";}
     else{
-        echo "<a href='/vent/personal/link.php?aq={$rtr}&enr=no'><div class='enrol'><b>Added</b></div></a>";
+        echo "<a href='/vent/personal/link.php?aq={$rtr}&enr=no'><div class='enrol'><b>Add To My Courses</b></div></a>";
         }      
         if(isset($_GET['enr']) && $_GET['enr'] == 'yes') {
             runMyFunction1();
