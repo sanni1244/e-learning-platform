@@ -107,11 +107,13 @@ $tot = 10;  // Total number of questions or loops
               echo "<td><b>". $_SESSION['answw'][$i]. "</b><br/></td><td><b style='color:red'>". $_SESSION['incr'][$i]. "</b><br/></td>";}  
             }
             echo "</table><div>You scored ". $score . "/" .$i . "<br/>";
-            echo"<a class='button_mark' href='../personal/mycourses.php'><div>End Test</div></a>";
+            echo"<a class='button_mark' href='../personal/dashboard.php'><div>End Test</div></a>";
             echo"<a class='button_mark' href='http://localhost/vent/test/test.php?tst=".$testcode ."'><div>Restart Test</div></a></div></div>";
             $testscore = "UPDATE `dashboard` SET `testScore` = '$score', `lastTest` = '$testcode'  where `id` = '$save'";
             mysqli_query($conn, $testscore); 
-          }}?>
+          }}
+
+          ?>
 </form>
 </div>
 </div>

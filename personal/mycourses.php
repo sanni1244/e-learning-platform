@@ -6,7 +6,7 @@
 <body class="b4">
 <?php 
     include_once("../sections/check.php");
-    include_once("../personal/userdata.php");   
+    include_once("../personal/userdata.php");    
 ?>
 <div class="container2">
     <div class="one left">
@@ -26,7 +26,6 @@
     <div class="one center">
         <div class="tax">
         <?php
-        
             echo "<table class='table1'>
                     <tr  class='tr1'>
                         <td>COURSE CODE</td>
@@ -52,8 +51,8 @@
             <tr class='tr1'>
             <?php 
                 if(@$htl[2] == null){
-                    $htl[2] = "<p style='color: red;'>This course has been deleted from the database</p>";
-                    $htl[3] = "<p style='color: red;'>This course has been deleted from the database</p>";
+                    $htl[2] = "<p style='color: red;'>This course no longer exists</p>";
+                    $htl[3] = "<p style='color: red;'>-</p>";
                 }
                 ?>
                 <td><?php echo $ttt ?></td>
@@ -61,7 +60,7 @@
                 <td><?php echo $htl[3]; ?></td>
                 <?php 
                 if($ttt[2] == null){
-                    $ttt[2] = "This course has been deleted from the database";
+                    $ttt[2] = "This course no longer exists";
                 }
                 echo "<td><a class='stake' href='/vent/personal/link.php?aq=$newop'><img class='sym' title='Read course' src='../icons/menedit.svg'></a></td>"?>
                 <?php echo "<td><a class='stake' href='../test/test.php?tst=$ttt'><img title='Take a test' class='sym' src='../icons/quiz.svg'></a></td> ";?>
@@ -69,7 +68,7 @@
             </tr>
         <?php }
         else{
-            echo "<h3 class='noterrolled'>You have not yet enrolled for a course</h3>";
+            echo "<h3 class='noterrolled'>You have not added a course</h3>";
         }}
         ?>
         </table>

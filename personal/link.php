@@ -1,7 +1,5 @@
 <link rel="stylesheet" href="../style/link.css">
-
 <link rel="stylesheet" href="../style/leftnav.css">
-
 <link rel="shortcut icon" href="../images/z2.png" type="image/x-icon">
 <title>Material</title>
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js">
@@ -46,7 +44,7 @@
                             $f2 = $nnb['Course Code'];
                             $last_read = $word;
             $yr = "SELECT mycourse FROM users WHERE id = $save AND `mycourse` like '%$rtr%'";
-            $lkl = "UPDATE `dashboard` SET `lastRead` = '$last_read' where id = '$save'";
+            $lkl = "UPDATE `dashboard` SET `lastRead` = '$last_read' where `id` = '$save'";
             mysqli_query($conn, $lkl);
             $yr1 = mysqli_query($conn, $yr);
             $nnbdd= mysqli_fetch_array($yr1);
@@ -104,16 +102,10 @@ $(function() {
 $.getJSON('./elist.json', function(data) {
    $.each(data[creater], function(i, f) {
       var tblRow = "<p  class='yyy'>" + "<span>" + f.materialname + "</span><a href='" + f.link + "'><img class='dwl' src='/Vent/icons/download.png'></a></p>"
-       $(tblRow).appendTo("#userdata ");
- });
-
-});
-
-});
-
+       $(tblRow).appendTo("#userdata");
+});});});
 </script>
 </head>
-
 <div class="wrapper">
 <div class="profile">
 <div id= "userdata" border="2">
@@ -135,6 +127,5 @@ $.getJSON('./elist.json', function(data) {
     else{
         header("location:/vent/personal/allcourses.php");
     }
-    
 ?><br><br><br>
 </div></div>

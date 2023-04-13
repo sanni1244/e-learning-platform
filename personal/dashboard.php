@@ -4,20 +4,18 @@
 <link rel="shortcut icon" href="../images/z2.png" type="image/x-icon">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
 <title>Dashboard</title>
 <body onload="displayRandomQuote()">
 <?php
-include_once("../personal/userdata.php");   
-$check7 = "INSERT IGNORE into `Dashboard`(id) value ('$save')";
-$check13 = "SELECT * FROM `Dashboard` WHERE `id` = '$save'";
-  $okay = mysqli_query($conn, $check7);
+  include_once("../personal/userdata.php");   
+  $check7 = "INSERT into `Dashboard`(id) value ('$save')";
+  mysqli_query($conn, $check7);
+  $check13 = "SELECT * FROM `Dashboard` WHERE `id` = '$save'";
   $okay = mysqli_query($conn, $check13);
-
-            $flex1 = mysqli_fetch_array($okay);
-            $flex2 = @$flex1['lastTest'];
-            $flex3 = @$flex1['testScore'];
-            $ver = "SELECT * from `courses` where `Course Code` = '$flex2'";
+  $flex1 = mysqli_fetch_array($okay);
+  $flex2 = @$flex1['lastTest'];
+  $flex3 = @$flex1['testScore'];
+  $ver = "SELECT * from `courses` where `Course Code` = '$flex2'";
   $okay1 = mysqli_query($conn, $ver);
   $flex12 = mysqli_fetch_array($okay1);
   $flex14 = @$flex12['Course Title'];
@@ -80,7 +78,7 @@ $check13 = "SELECT * FROM `Dashboard` WHERE `id` = '$save'";
             $level = @$ry['level'];
             $title = @$ry['Course Title'];
             $codeinsmall = strtolower(@$code[0]).strtolower(@$code[1]).strtolower(@$code[2]).@$code[4].@$code[5].@$code[6];
-        if($lr !== ""){
+        if($lr !== "" && $lr !== null){
           echo "
           <fieldset class='lst_read_content'>
           <legend  >Last Course</legend>
@@ -90,10 +88,10 @@ $check13 = "SELECT * FROM `Dashboard` WHERE `id` = '$save'";
             <span class='lst_read_content_text'><span><a href='./link.php?aq=$codeinsmall'>Continue Reading</a><a href='../test/test.php?tst=$code'>Test</a></span></span></span>
 </fieldset>
 ";}
-          if($flex2 !== ""){
+          if($flex2 !== "" && $flex2 !== null){
             echo "
             <fieldset class='lst_read_content'>
-          <legend  >Last Test</legend>
+          <legend>Last Test</legend>
               <img src='../images/test.png' class='read' alt=''>
               <span class='lst_read_content_text'><span><span class='ferf'>$flex2: $flex14</span><br/><br/><span><a href='../test/test.php?tst=$flex2'>Retake Test</a></span></span>
             </span>
@@ -227,6 +225,10 @@ var quotes = [
    
 
 
-
+<style>
+  .quotes{
+    font-size: 0.85rem
+  }
+</style>
 
 

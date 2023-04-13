@@ -128,7 +128,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['login'])){
                                 $warning = "Login was successful";
                                     $wemail = $_POST['email'];
                                    $_SESSION['id'] = $array4;
-                                    header("refresh: 3; url=../personal/dashboard.php");
+                                    header("refresh: 0; url=../personal/dashboard.php");
                             }
                             else{
                                     $warning = "Incorrect details";                      
@@ -144,7 +144,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['login'])){
                             $matric1 = $_POST['matric'];
                             // echo "<script>localStorage.setItem('sd12133', '$matric1');</script>";
                             $_SESSION['id'] = $array4;
-                            header("refresh: 1; url=../personal/dashboard.php");
+                            header("refresh: 0; url=../personal/dashboard.php");
                         }
                         else{
                             $warning = "Incorrect details";                      

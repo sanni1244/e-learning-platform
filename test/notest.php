@@ -11,7 +11,7 @@
 <body>
     <?php
 
-echo "<p style='color: white; font-size: 1.6rem;'>This course does not include a test. This is likely that this is a practical course. You will be redirected to the dashboard.</p>"
+echo "<p style='color: white; font-size: 1.6rem;'>This course does not include a test. It's possible that this is a practical course. You will be redirected to the dashboard.</p>"
 
 ?>
 </body>
