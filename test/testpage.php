@@ -22,7 +22,6 @@ $tot = 10;  // Total number of questions or loops
     $prefix = $row1['questionid'][0] . $row1['questionid'][1] .$row1['questionid'][2];
     $queryz = "SELECT * FROM test WHERE LEFT(questionid, 3) = '$prefix'";
     $resultz = mysqli_query($conn, $queryz);
-    
     if(isset($_SESSION['past'])){
       $dataa = $_SESSION['past'];
       }
