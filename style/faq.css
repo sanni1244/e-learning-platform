@@ -1,5 +1,3 @@
-
-
 body{
     box-sizing: border-box;
     overflow-x: hidden;
@@ -14,17 +12,6 @@ body{
 .acct a{
     border: 2px solid white;
 }
-.faq{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    margin-top: 1rem;
-    width: 100vw;
-    align-items: center;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 0.9rem;
-    transition: all 600ms ease-in-out;
-}
 .flex_bttn{
     display: flex;
     column-gap: 1.3rem;
@@ -32,7 +19,7 @@ body{
     align-items: center;
     border: 2px solid #0b5cd6e7;
     height: 3.2rem;
-    background-color: rgba(216, 216, 255, 0.466);
+    background-color: rgba(10, 18, 32, 0.436);
     border-radius: 10px;
     box-sizing: border-box;
     padding: 1rem;
@@ -44,26 +31,10 @@ body{
 .creet1{
     width: 19px;
 }
-.dropText1{
-    display: flex;
-    column-gap: 1.3rem;
-    background-color: white;
-    font-size: 0.9rem;
-    height: 8rem;
-    color: black;
-    width:  max(35vw, 20rem);
-    box-shadow: 0rem 0rem 0.5rem 0.01rem rgba(0, 0, 0, 0.314);
-    border-radius: 6px;
-    padding: 1.5vw 2vw 0vw 2vw;
-    box-sizing: border-box;
-    margin-bottom: 2rem; 
-}
 .navsaw{
     background-color: #0b5cd6e7;
     margin-bottom: 0.6rem;
-
 }
-
 .contact_lasu{
     padding: 1rem;
     box-sizing: border-box;
@@ -83,29 +54,6 @@ body{
 .contact_lasu a:hover{
     text-decoration: underline;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* Style for the FAQ section */
-.faq {
-    margin-top: 10px;
-    /* height: 30rem; */
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    padding: 20px;
-  }
-  
-  /* Style for the question buttons */
   .flex_bttn {
     display: flex;
     align-items: center;
@@ -113,21 +61,52 @@ body{
     cursor: pointer;
     margin-bottom: 10px;
   }
-  
-  /* Style for the button icon */
+  p:last-of-type{
+    position: fixed;
+    bottom: 4rem;
+    right: 10rem;
+  }
   .creet {
     margin-right: 10px;
   }
-  
-  /* Style for the drop-down answer text */
   .dropText1 {
     margin-top: 10px;
     display: none;
     font-size: 14px;
   }
-  
-  /* Style for the displayed answer text */
   .dropText1.show {
     display: block;
   }
-  
+  .mainthing {
+    background-image: url('../images/pexel.jpg');
+    background-size: cover;
+  }
+  .overlay {
+    backdrop-filter: blur(3.5px); 
+    -webkit-backdrop-filter: blur(3.5px);
+     display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+    width: 100vw;
+    align-items: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 0.9rem;
+    color: #fff;
+    text-shadow: 0.4px 0.4px #000;
+    padding: 20px;
+    height: 24rem;
+    overflow-y: scroll;
+  }
+  .dropText1{
+    display: flex;
+    column-gap: 1.3rem;
+    background-color: white;
+    font-size: 0.9rem;
+    color: black;
+    width:  max(35vw, 20rem);
+    box-shadow: 0rem 0rem 0.5rem 0.01rem rgba(0, 0, 0, 0.314);
+    border-radius: 6px;
+    padding: 3rem;
+    box-sizing: border-box;
+    margin-bottom: 2rem; 
+}

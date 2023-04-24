@@ -3,7 +3,6 @@
 <?php include_once("../personal/userdata.php"); ?>
 <title>Admin user view</title>
 <div class="container1">
-
     <div class="one left">
                 <a href="/vent/index.html"><div class="brand"><h4 class="h4">YEET KNOWLEDGE</h4></div></a>
                 <ul>
@@ -16,7 +15,6 @@
                     <a href="/vent/personal/logout.php"><li class="left-section Settings"><img src="../icons/logout.svg">Log Out</li></a>
                 </ul>
             </div>
-
 <div class="one center">
 <a class="goback" href="../admin/admin.php"><img src="../icons/back.svg" alt=""></a>
 <?php include_once("../personal/userdata.php");
