@@ -1,30 +1,30 @@
 let physicsCourses = [
     {
-        img: "/vent/material/phy101/phy101.png",
+        img: "/elearning/material/phy101/phy101.png",
         courseCode: "PHY 101",
         name: "GENERAL PHYSICS I",
         level: "100 Level",
         material_no: "1",
-        location: "/vent/material/Phy101/1.pdf",
-        mylink: "/vent/personal/link.php?aq=phy101"
+        location: "/elearning/material/Phy101/1.pdf",
+        mylink: "/elearning/personal/link.php?aq=phy101"
     },
     {
-        img: "/vent/material/phy103/phy103.jpg",
+        img: "/elearning/material/phy103/phy103.jpg",
         courseCode: "PHY 103",
         name: "BASIC HEAT",
         level: "100 Level",
         material_no: "1",
-        location: "/vent/material/phy103/1.ppt",
-        mylink: "/vent/personal/link.php?aq=phy103"
+        location: "/elearning/material/phy103/1.ppt",
+        mylink: "/elearning/personal/link.php?aq=phy103"
     },
     {
-        img: "/vent/material/phy105/phy105.png",
+        img: "/elearning/material/phy105/phy105.png",
         courseCode: "PHY 105",
         name: "EXPERIMENTAL PHYSICS I",
         level: "100 Level",
         material_no: "1",
-        location: "/vent/material/phy105/1.pdf",
-        mylink: "/vent/personal/link.php?aq=phy105"
+        location: "/elearning/material/phy105/1.pdf",
+        mylink: "/elearning/personal/link.php?aq=phy105"
     }
 ]
 function physics(){    
@@ -40,7 +40,7 @@ function physics(){
     var bar1 = ``;
     var sdds = document.getElementsByClassName("allcourse")[0]
     bar1 += `
-    <a class="availableButton" href="/vent/courses/phy.php"><button>View Courses</button></a>
+    <a class="availableButton" href="/elearning/courses/phy.php"><button>View Courses</button></a>
 
     `
     sdds.innerHTML = bar1;

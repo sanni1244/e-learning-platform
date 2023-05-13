@@ -1,52 +1,52 @@
 let gnsCourse = [
     {
-        img: "/vent/material/gns101/gns101.jpg",
+        img: "/elearning/material/gns101/gns101.jpg",
         courseCode: "GNS 101",
         name: "USE OF LIBRARY",
         level: "100 Level",
         material_no: "1",
-        location: "/vent/material/gns101/1.pdf",
-                mylink: "/vent/personal/link.php?aq=gns101"
+        location: "/elearning/material/gns101/1.pdf",
+                mylink: "/elearning/personal/link.php?aq=gns101"
 
     },
     {
-        img: "/vent/material/gns201/gns201.jpg",
+        img: "/elearning/material/gns201/gns201.jpg",
         courseCode: "GNS 201",
         name: "LAGOS AND IT'S ENVIRONMENTS",
         level: "200 Level",
         material_no: "1",
-        location: "/vent/material/gns201/1.ppt",
-        mylink: "/vent/personal/link.php?aq=gns201"
+        location: "/elearning/material/gns201/1.ppt",
+        mylink: "/elearning/personal/link.php?aq=gns201"
 
     },
     {
-        img: "/vent/material/ent202/ent202.png",
+        img: "/elearning/material/ent202/ent202.png",
         courseCode: "ENT 202",
         name: "BASIC PRINCIPLES OF ENTREPRENEURSHIP",
         level: "200 Level",
         material_no: "1",
-        location: "/vent/material/ent202/1.pdf",
-        mylink: "/vent/personal/link.php?aq=ent202"
+        location: "/elearning/material/ent202/1.pdf",
+        mylink: "/elearning/personal/link.php?aq=ent202"
 
     },
     {
-        img: "/vent/material/gns301/gns301.jpg",
+        img: "/elearning/material/gns301/gns301.jpg",
         courseCode: "GNS 301",
         name: "LOGIC AND PHYLOSOPHY",
         level: "300 Level",
         material_no: "1",
-        location: "/vent/material/Phy101/1.pdf",
-        mylink: "/vent/personal/link.php?aq=gns301"
+        location: "/elearning/material/Phy101/1.pdf",
+        mylink: "/elearning/personal/link.php?aq=gns301"
 
     },
     {
-        img: "/vent/material/ent302/ent302.png",
+        img: "/elearning/material/ent302/ent302.png",
         courseCode: "ENT 302 (WATER TREATMENT)",
         name: "ENTREPRENEURSHIP II",
         level: "300 Level",
         material_no: "1",
-        location: "/vent/material/ent302/1.pdf",
-        mylink: "/vent/personal/link.php?aq=ent302"
+        location: "/elearning/material/ent302/1.pdf",
+        mylink: "/elearning/personal/link.php?aq=ent302"
 
     }
 ]
@@ -64,7 +64,7 @@ function gns(){
     var bar1 = ``;
     var sdds = document.getElementsByClassName("allcourse")[0]
     bar1 += `
-    <a class="availableButton" href="/vent/courses/gns.php"><button>View Courses</button></a>
+    <a class="availableButton" href="/elearning/courses/gns.php"><button>View Courses</button></a>
     `
     sdds.innerHTML = bar1;
     let html = ``;

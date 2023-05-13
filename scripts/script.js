@@ -1,57 +1,57 @@
     let courses = [
         {
-            img: "/vent/material/csc111/csc111.png",
+            img: "/elearning/material/csc111/csc111.png",
             courseCode: "CSC 111",
             name: "Introduction to Computer Science",
             level: "100 Level",
             material_no: "1",
-            location: "/vent/material/csc111/1.ppt",
-            mylink: "/vent/personal/link.php?aq=csc111"
+            location: "/elearning/material/csc111/1.ppt",
+            mylink: "/elearning/personal/link.php?aq=csc111"
         },
         {
-            img: "/vent/material/gns101/gns101.jpg",
+            img: "/elearning/material/gns101/gns101.jpg",
             courseCode: "GNS 101",
             name: "Use of Library",
             level: "100 Level",
             material_no: "1",
-            location: "/vent/material/gns101/1.pdf",
-            mylink: "/vent/personal/link.php?aq=gns101"
+            location: "/elearning/material/gns101/1.pdf",
+            mylink: "/elearning/personal/link.php?aq=gns101"
         },
         {
-            img: "/vent/material/chm101/chem101.png",
+            img: "/elearning/material/chm101/chem101.png",
             courseCode: "CHM 101",
             name: "GENERAL CHEMISTRY 1",
             level: "100 Level",
             material_no: "1",
-            location: "/vent/material/chem101/1.pdf",
-            mylink: "/vent/personal/link.php?aq=chm101"
+            location: "/elearning/material/chem101/1.pdf",
+            mylink: "/elearning/personal/link.php?aq=chm101"
         },
         {
-            img: "/vent/material/bio101/bio101.png",
+            img: "/elearning/material/bio101/bio101.png",
             courseCode: "BIO 101",
             name: "BASIC PRINCIPLES OF BIOLOGY",
             level: "100 Level",
             material_no: "1",
-            location: "/vent/material/bio101/1.ppt",
-            mylink: "/vent/personal/link.php?aq=bio101"
+            location: "/elearning/material/bio101/1.ppt",
+            mylink: "/elearning/personal/link.php?aq=bio101"
         },
         {
-            img: "/vent/material/csc208/csc208.jpg",
+            img: "/elearning/material/csc208/csc208.jpg",
             courseCode: "CSC 208",
             name: "INTRODUCTION TO HARDWARE LABORATORY",
             level: "200 Level",
             material_no: "1",
             location: "./material/",
-            mylink: "/vent/personal/link.php?aq=csc208"
+            mylink: "/elearning/personal/link.php?aq=csc208"
         },
         {
-            img: "/vent/material/ent302/ent302.png",
+            img: "/elearning/material/ent302/ent302.png",
             courseCode: "ENT 302 (Water Treatment)",
             name: "Water Treatment, packaging and marketing",
             level: "300 Level",
             material_no: "1",
-            location: "/vent/material/ent302/1.pdf",
-            mylink: "/vent/personal/link.php?aq=ent302"
+            location: "/elearning/material/ent302/1.pdf",
+            mylink: "/elearning/personal/link.php?aq=ent302"
         }
     ]
     

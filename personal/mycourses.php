@@ -1,5 +1,5 @@
-<link rel="stylesheet" href="/vent/style/mycourse.css">
-<link rel="stylesheet" href="/vent/style/leftnav.css">
+<link rel="stylesheet" href="/elearning/style/mycourse.css">
+<link rel="stylesheet" href="/elearning/style/leftnav.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 <link rel="shortcut icon" href="../images/z2.png" type="image/x-icon">
 <title>My courses</title>
@@ -10,17 +10,17 @@
 ?>
 <div class="container2">
     <div class="one left">
-        <a href="/vent/index.html"><div class="brand"><h4 class="h4">YEET KNOWLEDGE</h4></div></a>
+        <a href="/elearning/index.html"><div class="brand"><h4 class="h4">YEET KNOWLEDGE</h4></div></a>
             <ul>
-                <a href="/vent/personal/dashboard.php"><li class="left-section "><img src="../icons/home.svg">Dashboard</li></a>
-                <a href="/vent/personal/mycourses.php"><li class="left-section selection"><img  class="blue" src="../icons/menubook.svg">My Courses</li></a>
-                <a href="/vent/personal/allcourses.php"><li class="left-section"><img src="../icons/librarybooks.svg">All Courses</li></a>
-                <a href="/vent/personal/search.php"><li class="left-section"><img src="../icons/search.svg">Search List</li></a>
-                <a href="/vent/personal/editdetails.php"><li class="left-section"><img src="../icons/editn.svg">Edit Profile</li></a>
+                <a href="/elearning/personal/dashboard.php"><li class="left-section "><img src="../icons/home.svg">Dashboard</li></a>
+                <a href="/elearning/personal/mycourses.php"><li class="left-section selection"><img  class="blue" src="../icons/menubook.svg">My Courses</li></a>
+                <a href="/elearning/personal/allcourses.php"><li class="left-section"><img src="../icons/librarybooks.svg">All Courses</li></a>
+                <a href="/elearning/personal/search.php"><li class="left-section"><img src="../icons/search.svg">Search List</li></a>
+                <a href="/elearning/personal/editdetails.php"><li class="left-section"><img src="../icons/editn.svg">Edit Profile</li></a>
                 <?php if($array1['admin'] == "1"){
-                  echo '<a href="/vent/admin/admin.php"><li class="left-section Settings"><img src="../icons/admin.svg">Admin User</li></a>
+                  echo '<a href="/elearning/admin/admin.php"><li class="left-section Settings"><img src="../icons/admin.svg">Admin User</li></a>
                 '; }?>
-                <a href="/vent/personal/logout.php"><li class="left-section Settings"><img src="../icons/logout.svg">Log Out</li></a>   
+                <a href="/elearning/personal/logout.php"><li class="left-section Settings"><img src="../icons/logout.svg">Log Out</li></a>   
             </ul>
     </div>
     <div class="one center">
@@ -62,7 +62,7 @@
                 if($ttt[2] == null){
                     $ttt[2] = "This course no longer exists";
                 }
-                echo "<td><a class='stake' href='/vent/personal/link.php?aq=$newop'><img class='sym' title='Read course' src='../icons/menedit.svg'></a></td>"?>
+                echo "<td><a class='stake' href='/elearning/personal/link.php?aq=$newop'><img class='sym' title='Read course' src='../icons/menedit.svg'></a></td>"?>
                 <?php echo "<td><a class='stake' href='../test/test.php?tst=$ttt'><img title='Take a test' class='sym' src='../icons/quiz.svg'></a></td> ";?>
                 <?php echo "<td><a class='stake' href='./vet.php?j=$newop'><img title='Remove from your course list' class='sym' src='../icons/delete.svg'></a></td> "; ?>
             </tr>
@@ -76,4 +76,4 @@
 </div>
 </div>
 </body>
-<script src="../scripts/jquery-3.6.3.min.js"></script>
+<script src="../scripts/jquery.js"></script>

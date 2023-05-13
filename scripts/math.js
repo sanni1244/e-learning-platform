@@ -1,52 +1,52 @@
 let mathCourses = [
     {
-        img: "/vent/material/mat101/mat101.jpg",
+        img: "/elearning/material/mat101/mat101.jpg",
         courseCode: "MAT 101",
         name: "ALGEBRA",
         level: "100 Level",
-        location: "/vent/material/mat101/1.pdf",
-        mylink: "/vent/personal/link.php?aq=mat101"
+        location: "/elearning/material/mat101/1.pdf",
+        mylink: "/elearning/personal/link.php?aq=mat101"
     },
     {
-        img: "/vent/material/mat111/mat111.jpg",
+        img: "/elearning/material/mat111/mat111.jpg",
         courseCode: "MAT 111",
         name: "TRIGONOMETRY",
         level: "100 Level",
-        location: "/vent/material/mat111/Introductory_trigonometry.pdf",
-        mylink: "/vent/personal/link.php?aq=mat111"
+        location: "/elearning/material/mat111/Introductory_trigonometry.pdf",
+        mylink: "/elearning/personal/link.php?aq=mat111"
     },
     {
-        img: "/vent/material/mat112/mat112.png",
+        img: "/elearning/material/mat112/mat112.png",
         courseCode: "MAT 112",
         name: "CALCULUS",
         level: "100 Level",
-        location: "/vent/material/mat112/Calculus-Presentation1.pdf",
-        mylink: "/vent/personal/link.php?aq=mat112"
+        location: "/elearning/material/mat112/Calculus-Presentation1.pdf",
+        mylink: "/elearning/personal/link.php?aq=mat112"
     },
     {
-        img: "/vent/material/MAT141/mat141.png",
+        img: "/elearning/material/MAT141/mat141.png",
         courseCode: "MAT 141",
         name: "COORDINATE GEOMETRY I",
         level: "100 Level",
-        location: "/vent/material/MAT141/jeep207.pdf",
-        mylink: "/vent/personal/link.php?aq=mat141"
+        location: "/elearning/material/MAT141/jeep207.pdf",
+        mylink: "/elearning/personal/link.php?aq=mat141"
     },
     // {
-    //     img: "/vent/material/mat162/mat162.png",
+    //     img: "/elearning/material/mat162/mat162.png",
     //     courseCode: "MAT 162",
     //     name: "	INTRODUCTORY STATISTICS",
     //     level: "100 Level",
     //  
-    //     location: "/vent/material/mat162/1.pdf",
-    //     mylink: "/vent/personal/link.php?aq=ent302"
+    //     location: "/elearning/material/mat162/1.pdf",
+    //     mylink: "/elearning/personal/link.php?aq=ent302"
     // },
     {
-        img: "/vent/material/mat251/mat251.jpg",
+        img: "/elearning/material/mat251/mat251.jpg",
         courseCode: "MAT 251",
         name: "MATHEMATICAL METHODS I",
         level: "200 Level",
-        location: "/vent/material/mat251/1.pdf",
-        mylink: "/vent/personal/link.php?aq=mat251"
+        location: "/elearning/material/mat251/1.pdf",
+        mylink: "/elearning/personal/link.php?aq=mat251"
     }
 ]
 function math(){
@@ -62,7 +62,7 @@ function math(){
     var bar1 = ``;
     var sdds = document.getElementsByClassName("allcourse")[0]
     bar1 += `
-    <a class="availableButton" href="/vent/courses/math.php"><button>View Courses</button></a>
+    <a class="availableButton" href="/elearning/courses/math.php"><button>View Courses</button></a>
 
     `
     sdds.innerHTML = bar1;

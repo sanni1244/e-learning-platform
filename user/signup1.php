@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="/vent/style/style.css">
+<link rel="stylesheet" href="/elearning/style/style.css">
 <?php 
 if(isset($_POST["facrrr"]) && $_POST["facrrr"] != null){
 if(!isset($sssrrt)){

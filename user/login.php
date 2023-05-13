@@ -9,9 +9,9 @@
 <!--NavBar section-->
 <div class="">
     <div class="navsaw">
-        <a href="/vent/index.html"><div class="brand"><h1>YEET KNOWLEDGE</h1></div>   </a>        
+        <a href="/elearning/index.html"><div class="brand"><h1>YEET KNOWLEDGE</h1></div>   </a>        
         <div class="acct">
-            <a href="/vent/user/signup.php">Sign Up</a>
+            <a href="/elearning/user/signup.php">Sign Up</a>
        </div>
     </div>
 </div>
@@ -24,8 +24,8 @@
             <h1 class="h1">Login</h1>
             <form class="form" action="" id="form1" method="post">
                 <div class="myoptions">
-                    <a href="/vent/user/login.php?e=1" id="link1"><div class="button button1">E-mail</div></a> 
-                    <a href="/vent/user/login.php?e=0" id="link2"><div class="button">Matric No.</div></a>
+                    <a href="/elearning/user/login.php?e=1" id="link1"><div class="button button1">E-mail</div></a> 
+                    <a href="/elearning/user/login.php?e=0" id="link2"><div class="button">Matric No.</div></a>
                 </div>
                 <?php if (!(isset($_GET['e'])) || isset($_GET['e']) && $_GET['e'] != 0){  ?>
 

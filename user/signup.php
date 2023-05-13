@@ -16,9 +16,9 @@ elseif(isset($_POST['radio']) && $_POST['radio'] == "no"){
     <!--NavBar section-->
     <div class="">
     <div class="navsaw">
-        <a href="/vent/index.html"><div class="brand"><h1>YEET KNOWLEDGE</h1></div>   </a>        
+        <a href="/elearning/index.html"><div class="brand"><h1>YEET KNOWLEDGE</h1></div>   </a>        
         <div class="acct">
-            <a href="/vent/user/login.php">Log In</a>
+            <a href="/elearning/user/login.php">Log In</a>
        </div>
     </div>
 </div>

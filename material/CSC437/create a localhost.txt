@@ -1,0 +1,21 @@
+php -S 0.0.0.0:8080
+
+
+localhost:8080
+
+
+
+write an sql statement that inserts 6 questions with 4 options and an answer. The answer must be identIcal to one of the options and the answer should be placed randomly betwenn option 1 - 4. ccourse = MAT 101. Do not repeat question
+
+Real number system, principle of Mathematical induction, theory of quadratic equations, inequalities and partial fractions, series, AP, GP, Taylor's and Maclaurin's series. The Binomial theorem, set theory, set law, equivalence relations. Set functions and inverse set functions; polynomials. The remainder and factor theorems. Polynomial equations and inequalities (especially linear, quadratic and cubic). Domain and zeros of Rational functions; curve sketching of polynomials and rational functions. n root of unity. Introduction to algebra of m x n and square matrices. Properties of determinants.
+
+ Follow the format: INSERT INTO test (questionid, question, answer, option1, option2, option3, option4, ccourse). questionid  auto increments from 10801. 
+
+
+
+generate 6 more and make sure option3 has thesame value as the answer
+
+
+
+C8XIP-2YHL2-39UMI-QVR56-4CI6L
+KXNCU-LEW5F-T3K41-NC37V-M6QIP

@@ -107,7 +107,7 @@ $tot = 10;  // Total number of questions or loops
             }
             echo "</table><div>You scored ". $score . "/" .$i . "<br/>";
             echo"<a class='button_mark' href='../personal/dashboard.php'><div>End Test</div></a>";
-            echo"<a class='button_mark' href='http://localhost/vent/test/test.php?tst=".$testcode ."'><div>Restart Test</div></a></div></div>";
+            echo"<a class='button_mark' href='http://localhost/elearning/test/test.php?tst=".$testcode ."'><div>Restart Test</div></a></div></div>";
             $testscore = "UPDATE `dashboard` SET `testScore` = '$score', `lastTest` = '$testcode'  where `id` = '$save'";
             mysqli_query($conn, $testscore); 
           }}
